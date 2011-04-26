@@ -1,4 +1,4 @@
-Encoding.default_external = Encoding.default_internal = 'utf-8'
+# Ruby1.9 only... Encoding.default_external = Encoding.default_internal = 'utf-8'
 
 require 'rdiscount'
 
