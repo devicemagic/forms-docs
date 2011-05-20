@@ -5,8 +5,9 @@ require 'sass'
 require 'indextank'
 require './topic'
 
-require 'heroku/nav'
-use Heroku::Nav::Header
+# We'll insert a static header:
+# require 'heroku/nav'
+# use Heroku::Nav::Header
 
 # require 'rack/coderay'
 # use Rack::Coderay, "//pre[@lang]>code"
