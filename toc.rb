@@ -8,6 +8,11 @@ section 'getting-started', "Getting Started" do
 	topic 'rails',           'Running Rails apps'
 end
 
+section 'api', "API" do
+  topic 'http-connector', "HTTP Connector"
+  topic 'push-api',       "Push API"
+end   
+
 section 'howto', "How To" do
 	topic 'background-jobs',    'Background jobs'
 	topic 'full-text-search',   'Full text search'
