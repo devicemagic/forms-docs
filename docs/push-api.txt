@@ -103,6 +103,28 @@ In the event you want to enquire which forms are still outstanding from the API,
 	:::term
 	GET /clients/[device_id]/oneshots
 	
+You will receive an XML document containing each form's definition (ommitted here) and some metatdata:
+	:::xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<forms type="array">
+		<form>
+			<created-at type="datetime">2011-05-20T12:39:50Z</created-at>
+			<definition>{{OMMITTED FOR CLARITY}}</definition>
+			<description>This is a sample Push Form</description>
+			<device-id type="integer">4837</device-id>
+			<enabled type="boolean">true</enabled>
+			<id type="integer">40007</id>
+			<name>A First Form</name>
+			<namespace>http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72?b10e3ba0-6521-012e-197f-12313b079c72</namespace>
+			<oneshot type="boolean">true</oneshot>
+			<organization-id type="integer">3569</organization-id>
+			<updated-at type="datetime">2011-05-20T15:13:50Z</updated-at>
+			<version>1.1</version>
+		</form>
+	</forms>
+	
+You will notice a new namespace has been generated for this form (it's simply the original namespace with a question mark and a GUID following).
+	
 
 Revoking PUSHed forms
 ---------------------
