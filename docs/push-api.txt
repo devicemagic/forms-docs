@@ -1,0 +1,116 @@
+Push API
+========
+
+With this API, you can extend the basic Mobile Forms platform in two important ways:
+
+1. **Enable pre-population of form templates with values loaded from a database, for example.**
+
+2. **Build complex workflow scenarios where the submission of one form can trigger delivery of another to a manger, for example.**
+
+NOTE: The Push API is currently only supported on BlackBerry devices, but will work on other platforms too.
+
+The API is implemented as a RESTful web service, with appropriate GET, PUT, POST & DELETE verbs. To use the API, one needs to obtain an access token and pass this along in each call via HTTP Basic Authentication. Your API token can be obtained from your "Edit Organization" screen.
+
+Once a form is "pushed" to a device, it lives on the device until the user completes and submits it. In this way, it can be an effective task list for the user. API methods exist to enquire about outstanding forms as well as revoke forms that were previously pushed.
+
+
+Device Enquiry
+--------------
+
+Before anything useful can be accomplished, a list of devices connected to the organization needs to be obtained. This can be obtained as follows:
+	:::term
+	HTTP GET /organizations/[organization_id]/devices.xml
+
+where your organization_id is evident from the URL to your dashboard when browsing www.devicemagic.com/organizations/[organization_id]/.
+
+The resulting XML fragment will look similar to the following:
+	:::xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<devices type="array">
+	  <device>
+	    <created-at type="datetime">2011-05-20T14:50:52Z</created-at>
+	    <description nil="true"></description>
+	    <device-status-id type="integer">3</device-status-id>
+	    <id type="integer">4836</id>
+	    <identifier>iPhone_d6e2542effafbcc8d0e6bf0ef2917b76dea4faf8</identifier>
+	    <organization-id type="integer">3569</organization-id>
+	    <owner>Dusan Babich</owner>
+	    <updated-at type="datetime">2011-05-20T14:51:51Z</updated-at>
+	  </device>
+	  <device>
+	    <created-at type="datetime">2011-05-20T14:51:35Z</created-at>
+	    <description nil="true"></description>
+	    <device-status-id type="integer">3</device-status-id>
+	    <id type="integer">4837</id>
+	    <identifier>Android_351751049564712</identifier>
+	    <organization-id type="integer">3569</organization-id>
+	    <owner>John Doe</owner>
+	    <updated-at type="datetime">2011-05-20T14:51:53Z</updated-at>
+	  </device>
+	</devices>
+	
+Sending a Push
+--------------
+Depending on the platform, pushing a form to an organization's device will have a different effect. On the BlackBerry platform, the red indicator light is illuminated, the unified inbox receives a message and the device status bar indicates an outstanding form for completion.
+
+Currently, other platforms are required to refresh their forms list before seeing the form.
+
+The first thing to realise about the push API is that it allows a "copy" of an existing form (the "template") to be sent to a device with some of the field values automatically populated. Programatically, an XML payload is POST'ed as follows (be sure to set the content type to "application/xml"):
+	:::term
+	HTTP POST /clients/[device_identifier]/oneshots
+	HTTP POST /clients/Android_351751049564712/oneshots
+	
+The device_id url parameter is obtained from the [Device Enquiry API](push-api#device-enquiry). In the following XML snippet, we are referencing an existing "template" form via it's form namespace. The easiest way to get this form a form is to view in the designer and then use the Export button to see it's XML. Let's continue using the example of the demo form, "A First Form".
+	:::xml
+	<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:dm="http://www.devicemagic.com/XMLSchemaDataTypes" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<h:head>
+			<h:title>A First Form</h:title>
+			<model>
+				<instance xmlns="http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72">
+					<untitled_form_1>
+						<quality_of_day/>
+						<inbox_overflow/>
+						<next_holiday/>
+						<comments/>
+					</untitled_form_1>
+				</instance>
+				<bind nodeset="inbox_overflow" type="boolean"/>
+				<bind nodeset="next_holiday" type="date"/>
+			</model>
+		</h:head>
+		<!-- BODY section omitted -->
+	</h:html>
+	
+Notice the xmlns attribute on the instance node? This is that particular form's namespace. We're also going to be substituting the "comments" field with some predefined values. So the XML fragment we POST to the endpoint above turns out to be:
+	
+	:::xml
+	<?xml version='1.0'?>
+	<oneshot xmlns='http://www.w3.org/2002/xforms' xmlns:dm='http://mobileforms.devicemagic.com/xforms' xmlns:h='http://www.w3.org/1999/xhtml' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+	<dm:form_namespace>http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72</dm:form_namespace>
+	<dm:form_description>This is a sample Push Form</dm:form_description>
+	<comments>Easy, wasn't it?</comments>
+	</oneshot>
+	
+The <dm:form_description> tag allows you to supply some additional text to the UI. In this way, it would be very easy to send your sales staff a list of people to call on by pre-populating, for example, customer name, address, revenue etc.
+
+In the event of a successful POST, you will receive an HTTP 202 Created.
+
+Checking outstanding PUSH forms
+-------------------------------
+
+In the event you want to enquire which forms are still outstanding from the API, simply issue a GET request as follows:
+	:::term
+	GET /clients/[device_id]/oneshots
+	
+
+Revoking PUSHed forms
+---------------------
+
+To revoke a form, issue an HTTP DELETE as follows:
+	:::term
+	DELETE /clients/[device_id]/oneshots/[oneshot_id]
+
+where the [oneshot_id] is obtained by performing an enquiry as above.
+
+
