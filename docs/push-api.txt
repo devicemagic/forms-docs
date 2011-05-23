@@ -103,7 +103,7 @@ In the event you want to enquire which forms are still outstanding from the API,
 	:::term
 	GET /clients/[device_id]/oneshots
 	
-You will receive an XML document containing each form's metatdata, but excluding the definition:
+You will receive an XML document containing each form's metatdata, but excluding the definitions:
 	:::xml
 	<?xml version="1.0" encoding="UTF-8"?>
 	<forms type="array">
