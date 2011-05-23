@@ -133,7 +133,7 @@ You will then receive the same metadata as above, but also the form definition:
 	<?xml version="1.0" encoding="UTF-8"?>
 	<form>
 		<created-at type="datetime">2011-05-20T12:39:50Z</created-at>
-		<definition>{{OMMITTED FOR CLARITY}}</definition>
+		<definition>{{OMITTED FOR CLARITY}}</definition>
 		... etc ...
 	</form>
 	
