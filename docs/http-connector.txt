@@ -3,6 +3,8 @@ HTTP Connector
 
 When you need more flexibility than a simple e-mail or Google Spreadsheet, use the HTTP Connector to receive data at a web endpoint you specify. For each form submission received by the Mobile Forms server, a corresponding XML payload including both the form data and some metadata will be delivered to the URI you specify. Please note that the HTTP Connector is only available with [Mobile Forms Advanced](http://www.devicemagic.com/pricing).
 
+We have a .NET sample published on our [Support Forums](http://devicemagic.zendesk.com/entries/20210233-http-connector-net-receiver-service-sample).
+
 Using the "First Form" demo form as an example, this would be a corresponding XML payload:
 
 ### Example XML Payload
