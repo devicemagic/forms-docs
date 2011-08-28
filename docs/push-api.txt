@@ -9,7 +9,7 @@ With this API, you can extend the basic Mobile Forms platform in two important w
 
 NOTE: The Push API is currently only supported on BlackBerry devices, but will work on other platforms too.
 
-The API is implemented as a RESTful web service, with appropriate GET, PUT, POST & DELETE verbs. To use the API, one needs to obtain an access token and pass this along in each call via HTTP Basic Authentication. Your API token can be obtained from your "Edit Organization" screen.
+The API is implemented as a RESTful web service, with appropriate GET, PUT, POST & DELETE verbs. To use the API, one needs to obtain an access token and pass this along in each call - please see our [authentication topic](auth) for more information. Your API token can be obtained from your "Edit Organization" screen.
 
 Once a form is "pushed" to a device, it lives on the device until the user completes and submits it. In this way, it can be an effective task list for the user. API methods exist to enquire about outstanding forms as well as revoke forms that were previously pushed.
 

@@ -1,0 +1,77 @@
+Authentication
+==============
+
+In order to use the [Push API](push-api), you need to authenticate with our servers using [HTTP Basic Authentication](http://en.wikipedia.org/wiki/Basic_access_authentication). Please consult relevant documentation for how to supply Basic Auth on all REST requests.
+
+Obtaining credentials
+---------------------
+For a username, you need obtain an API key for your organization. This can be found on your dashboard, after clicking "Edit Organization" and then "Obtain API Key". Use 'x' or any other character as your password (this is ignored). 
+
+Sample Code
+-----------
+We have provided a C# sample to give you a general idea of how this would work using the standard .NET HTTP stack (the [WCF REST Starter Kit]() is definitely a simpler way of consuming RESTful services from .NET):
+
+    :::ruby
+		using System;
+		using System.Collections.Generic;
+		using System.Linq;
+		using System.Text;
+		using System.Net;
+		using System.IO;
+
+		namespace MobileFormsAPI
+		{
+		    class Program
+		    {
+		        static string BASE_URL = "https://www.devicemagic.com/organizations/10";
+		        static string USER_NAME = "YOUR_API_KEY_GOES_HERE";
+		        static string PASSWORD = "x";
+
+		        static void Main(string[] args)
+		        {
+		            HttpWebRequest req = (HttpWebRequest)HttpWebRequest.Create(BASE_URL + "/devices.xml");
+		            string authInfo = USER_NAME + ":" + PASSWORD;
+		            authInfo = Convert.ToBase64String(Encoding.Default.GetBytes(authInfo));
+		            req.Headers["Authorization"] = "Basic " + authInfo;
+
+		            HttpWebResponse response = (HttpWebResponse)req.GetResponse();
+		            Stream s = response.GetResponseStream();
+
+		            StreamReader reader = new StreamReader(s, Encoding.UTF8);
+		            string content = reader.ReadToEnd();
+
+		            Console.WriteLine(content);
+								Console.ReadLine();
+
+		        }
+		    }
+		}
+		
+Your output should like something like the following (depending on how many devices you have joined to your organization):
+
+    :::xml
+    <?xml version="1.0" encoding="UTF-8"?>
+		<devices type="array">
+		  <device>
+		    <created-at type="datetime">2011-07-05T15:33:20Z</created-at>
+		    <description nil="true"></description>
+		    <device-status-id type="integer">3</device-status-id>
+		    <id type="integer">6537</id>
+		    <identifier>iPad_89E361BA-044A-55E5-A929-F2D52C4D310D</identifier>
+		    <organization-id type="integer">10</organization-id>
+		    <owner>iPad Simulator</owner>
+		    <updated-at type="datetime">2011-07-05T15:35:26Z</updated-at>
+		  </device>
+		  <device>
+		    <created-at type="datetime">2011-07-11T18:36:10Z</created-at>
+		    <description nil="true"></description>
+		    <device-status-id type="integer">3</device-status-id>
+		    <id type="integer">6738</id>
+		    <identifier>Android_000000000000000</identifier>
+		    <organization-id type="integer">10</organization-id>
+		    <owner>Android Simulator</owner>
+		    <updated-at type="datetime">2011-07-11T18:37:41Z</updated-at>
+		  </device>
+		</devices>
+		
+Be sure to authenticate in a similar way for other API requests. 
