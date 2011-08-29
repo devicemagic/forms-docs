@@ -13,6 +13,15 @@ The API is implemented as a RESTful web service, with appropriate GET, PUT, POST
 
 Once a form is "pushed" to a device, it lives on the device until the user completes and submits it. In this way, it can be an effective task list for the user. API methods exist to enquire about outstanding forms as well as revoke forms that were previously pushed.
 
+Base URL
+--------
+All API requests to Device Magic must be made to the following URL (note the HTTPS):
+	:::term
+	https://www.devicemagic.com/organizations/[organization_id]/
+	
+where your organization_id is evident from the URL to your dashboard when browsing www.devicemagic.com/organizations/[organization_id]/.
+
+
 
 Device Enquiry
 --------------
@@ -21,7 +30,6 @@ Before anything useful can be accomplished, a list of devices connected to the o
 	:::term
 	HTTP GET /organizations/[organization_id]/devices.xml
 
-where your organization_id is evident from the URL to your dashboard when browsing www.devicemagic.com/organizations/[organization_id]/.
 
 The resulting XML fragment will look similar to the following:
 	:::xml
