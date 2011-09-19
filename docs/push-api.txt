@@ -7,7 +7,7 @@ With this API, you can extend the basic Mobile Forms platform in two important w
 
 2. **Build complex workflow scenarios where the submission of one form can trigger delivery of another to a manger, for example.**
 
-NOTE: The Push API is currently only supported on BlackBerry devices, but will work on other platforms too.
+NOTE: The Push API is currently not supported on Android devices, but we'll be adding support soon!
 
 The API is implemented as a RESTful web service, with appropriate GET, PUT, POST & DELETE verbs. To use the API, one needs to obtain an access token and pass this along in each call - please see our [authentication topic](auth) for more information. Your API token can be obtained from your "Edit Organization" screen.
 
@@ -59,9 +59,9 @@ The resulting XML fragment will look similar to the following:
 	
 Sending a Push
 --------------
-Depending on the platform, pushing a form to an organization's device will have a different effect. On the BlackBerry platform, the red indicator light is illuminated, the unified inbox receives a message and the device status bar indicates an outstanding form for completion.
+Depending on the platform, pushing a form to an organization's device will have a different effect. On the BlackBerry platform, the red indicator light is illuminated, the unified inbox receives a message and the device status bar indicates an outstanding form for completion. On iPhone a message will popup if the app is closed. The app icon's badge indicator will also reflect the amount of uncompleted pushed forms
 
-Currently, other platforms are required to refresh their forms list before seeing the form.
+Android devices will need to refresh their forms list before seeing the form.
 
 The first thing to realise about the push API is that it allows a "copy" of an existing form (the "template") to be sent to a device with some of the field values automatically populated. Programatically, an XML payload is POST'ed as follows (be sure to set the content type to "application/xml"):
 	:::term
@@ -100,7 +100,7 @@ Notice the xmlns attribute on the instance node? This is that particular form's 
 	<comments>Easy, wasn't it?</comments>
 	</oneshot>
 	
-The <dm:form_description> tag allows you to supply some additional text to the UI. In this way, it would be very easy to send your sales staff a list of people to call on by pre-populating, for example, customer name, address, revenue etc.
+The <dm:form_description> tag allows you to supply some additional text to the UI. In this way, it would be very easy to send your sales staff a list of people to call on by pre-populating, for example, customer name, address, revenue etc. If you want to replace the entire form name (be careful, as this could confuse users), use the dm:form_name tag.
 
 In the event of a successful POST, you will receive an HTTP 202 Created.
 
