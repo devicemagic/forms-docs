@@ -7,11 +7,17 @@ With this API, you can extend the basic Mobile Forms platform in two important w
 
 2. **Build complex workflow scenarios where the submission of one form can trigger delivery of another to a manger, for example.**
 
+
+Have a look at the API in action over here:
+
+<iframe src="http://player.vimeo.com/video/30932481?title=0&amp;byline=0&amp;portrait=0&amp;color=d7bbfc" width="640" height="400" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+
 NOTE: The Push API is currently not supported on Android devices, but we'll be adding support soon!
 
 The API is implemented as a RESTful web service, with appropriate GET, PUT, POST & DELETE verbs. To use the API, one needs to obtain an access token and pass this along in each call - please see our [authentication topic](auth) for more information. Your API token can be obtained from your "Edit Organization" screen.
 
 Once a form is "pushed" to a device, it lives on the device until the user completes and submits it. In this way, it can be an effective task list for the user. API methods exist to enquire about outstanding forms as well as revoke forms that were previously pushed.
+
 
 Base URL
 --------
