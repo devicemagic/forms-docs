@@ -12,7 +12,6 @@ Have a look at the API in action over here:
 
 <iframe src="http://player.vimeo.com/video/30932481?title=0&amp;byline=0&amp;portrait=0&amp;color=d7bbfc" width="640" height="400" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
 
-NOTE: The Push API is currently not supported on Android devices, but we'll be adding support soon!
 
 The API is implemented as a RESTful web service, with appropriate GET, PUT, POST & DELETE verbs. To use the API, one needs to obtain an access token and pass this along in each call - please see our [authentication topic](auth) for more information. Your API token can be obtained from your "Edit Organization" screen.
 
@@ -67,7 +66,6 @@ Sending a Push
 --------------
 Depending on the platform, pushing a form to an organization's device will have a different effect. On the BlackBerry platform, the red indicator light is illuminated, the unified inbox receives a message and the device status bar indicates an outstanding form for completion. On iPhone a message will popup if the app is closed. The app icon's badge indicator will also reflect the amount of uncompleted pushed forms
 
-Android devices will need to refresh their forms list before seeing the form.
 
 The first thing to realise about the push API is that it allows a "copy" of an existing form (the "template") to be sent to a device with some of the field values automatically populated. Programatically, an XML payload is POST'ed as follows (be sure to set the content type to "application/xml"):
 	:::term
