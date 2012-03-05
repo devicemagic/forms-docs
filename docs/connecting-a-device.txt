@@ -1,0 +1,50 @@
+Connecting a device
+===================
+
+To follow the steps bellow you will need access to an Android, BlackBerry or iPhone device/tablet. We've only shown steps for a BlackBerry smartphone, but the steps are identical on different platforms.
+
+Inviting a device
+-----------------
+
+To add a device you will need to switch to the devices view: 
+
+![devices!](http://s3.amazonaws.com/docs_resources/menu_devices.png)
+
+If the device you wish to add has a valid email address you can send it an invite to connect to your new organization. Alternatively, direct the device owner to download the Device Magic Mobile Forms app from the relevant app store.
+
+In a few minutes the device should receive a new email. Open the email and follow the link to download the client. 
+
+![email!](http://s3.amazonaws.com/docs_resources/device_bb_invite_email.gif)
+
+
+The device will launch a download dialog. Click Download to start downloading. If you already have a version of the "Forms" application on your BlackBerry it may ask you if you wish to replace it. 
+
+![download!](http://s3.amazonaws.com/docs_resources/device_bb_download.png)
+
+Once the download is complete browse to the application and open it - usually it will be found in the Downloads folder:
+
+
+![folder!](http://s3.amazonaws.com/docs_resources/device_bb_downloads.jpg) &nbsp;
+![icon!](http://s3.amazonaws.com/docs_resources/device_bb_icon.jpg)
+
+When the application starts for the first time you will be asked if you wish to join an existing organization or create a new one. If you created an organization when going through the earlier chapters in this guide select "Join Existing Organization" otherwise select Sign up for free and follow the prompts in the email you will receive. If you are joining an existing organization you will be presented with the following registration screen. 
+
+![start](http://s3.amazonaws.com/docs_resources/device_bb_start.png)
+
+Enter your full name under operator name and your organization key:
+
+![operator](http://s3.amazonaws.com/docs_resources/device_bb_join.png)
+
+NOTE: You can find the organization key in the invitation email, or on your dashboard. 
+
+Finally click "Request Assignment" - the device will attempt to contact our servers and join your organization. The account administrator (this is probably you if you're reading this!) should receive an email to notify you that the device is awaiting your approval. 
+
+![waiting](http://s3.amazonaws.com/docs_resources/device_bb_waiting.png)
+
+Switch back to the website. If you click "devices" the devices page should refresh and you should see your device waiting to be assigned. If you don't see anything double check that you entered the Organization ID correctly on your device.
+
+![approve](http://s3.amazonaws.com/docs_resources/device_approve.png)
+
+Now have a look at your BlackBerry. If the application the has not already moved past the requesting assignment screen click "Recheck status" - the application should open and begin downloading forms. Notice that our new form has been starred to alert the user to its presence.
+
+![forms](http://s3.amazonaws.com/docs_resources/device_bb_forms.png)

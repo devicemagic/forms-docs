@@ -1,0 +1,100 @@
+Building your first Form
+=========================
+
+The Dashboard
+-------------
+
+Your organization's dashboard gives you all the basic information you need to know to manage your organization and its forms. At a glance you can see how many forms you have in your account, how many devices are connected that can view and submit these forms. A graph of the last months' form submissions is also included. 
+
+The right-hand blue box on the dashboard has a link to edit your account accounts, as well as the very import organization key which your devices must supply when connecting to your organization.
+
+![Organization dashboard!](http://s3.amazonaws.com/docs_resources/dashboard_shrunk.png)
+
+
+Add a form
+----------
+
+When your trial account is first configured, we'll install some demo forms to get you started. Feel free to play around with these, copy them to serve as the basis of your own forms an so on.
+
+To build our own form, click the "5 Forms" link or use the blue navigation bar on the upper right. This will take you to the forms working area. 
+
+Now click the "Build my own form" button.
+
+![new form!](http://s3.amazonaws.com/docs_resources/build_form_button.png)
+
+After a redirect, your new form will be loaded into our web-based form designer tool. The forms designer is where you create and edit your team's forms. On the top we have row of form-level activities like save, discard, import/export. In the middle of the screen you will see a form surface area where you can manipulate the forms fields visually. The left hand area of the screen is the Toolbox - essentially a catalog of fields that you can include on your form. Lastly, the right-hand area is the properties inspector, which alters its contents based on the currently selected form, field or repeat group.
+
+![Builder!](http://s3.amazonaws.com/docs_resources/designer.png)
+
+Building a travel log form
+--------------------------
+
+Just to get started we will create a quick business travel logging form. First configure the title and description of the form, as this will aid your users in the field:.
+
+![properties!](http://s3.amazonaws.com/docs_resources/form_title.png)
+
+Now we must add the questions or fields to be captured. Questions are added by dragging the type of question you need from the toolbox on the left, into place on the forms surface. Alternatively, simply click the item in the toolbox and re-arrange the order of fields in the form later. 
+
+In our first question we will capture the date of the business trip. 
+
+![date!](http://s3.amazonaws.com/docs_resources/form_date.png)
+
+Change the default question text from "Date Question" to "Trip Date".
+
+Next, you will need to add the remaining questions to your form and specify their question texts. Drag each field from the toolbox onto your form canvas as below:
+
+![drag!](http://s3.amazonaws.com/docs_resources/form_text.png)
+
+### Travel Log Questions and field types
+
+<table class="compare">
+	<tr>
+		<th>Field type</th>
+		<th>Question text</th>
+		<th>Data</th>
+	</tr>
+	<tr>
+		<td>Free Text</td>
+		<td>To</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Location</td>
+		<td>Place visited</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Decimal</td>
+		<td>Total Miles</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Select</td>
+		<td>Reason for trip</td>
+		<td>
+			<ul>
+				<li>Sales Call</li>
+				<li>Client Visit</li>
+				<li>Delivery</li>
+				<li>Collection</li>
+				<li>Support Callout</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>Free Text</td>
+		<td>Notes</td>
+		<td></td>
+	</tr>
+</table>
+	
+To configure the "Reason for Trip", we use the Select field type and configure the list of options via the Property Inspector:
+
+![select!](http://s3.amazonaws.com/docs_resources/form_select.png)
+
+NOTE: For a full catalog of the question types and their configuration, please see this section of our documentation.
+
+
+When you are done building your form you can click Save and Exit in the top right of the screen to return to the forms page. 
+
+![save!](http://s3.amazonaws.com/docs_resources/form_save.png)
