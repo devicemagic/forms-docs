@@ -7,6 +7,9 @@ section 'getting-started', "Getting Started" do
   topic 'submitting-data', "Submitting data"
 end
 
+section 'reference', "Reference" do
+  topic 'supported-platforms', "Supported Platforms"
+end
 
 section 'api', "Developer API" do
   topic 'http-connector', "HTTP Connector"

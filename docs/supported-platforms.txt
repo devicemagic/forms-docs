@@ -1,0 +1,28 @@
+Mobile Forms Supported Platforms
+================================
+
+Device Magic Mobile Forms runs on and is tested on the following platforms:
+
+Mobile Devices
+--------------
+* <a href="https://market.android.com/details?id=com.devicemagic.androidx.forms">Android 2.2 and above</a>
+* <a href="https://appworld.blackberry.com/webstore/content/23200">BlackBerry 4.6.1 and above (5.0 and above is recommended)</a>
+* <a href="http://itunes.apple.com/us/app/mobile-forms/id412808376?mt=8">iPhone (all)</a>
+
+Tablets
+-------
+* <a href="https://market.android.com/details?id=com.devicemagic.androidx.forms">Android 2.2 and above</a>
+* BlackBerry PlayBook (in beta, available soon)
+* <a href="http://itunes.apple.com/us/app/mobile-forms/id412808376?mt=8">iPad</a>
+
+Desktop (coming soon)
+-------
+* FireFox, IE, Chrome, Safari
+
+Your platform missing? <a href="http://devicemagic.zendesk.com">Let us know</a>.
+
+Mobile Forms for for Android is also available from the Amazon market (US-only):
+
+<a href="http://www.amazon.com/Device-Magic-Forms/dp/B005SE8J4C"><img style="margin: 1.5em;" class="middle" alt="Amazon Market link" src="http://www.devicemagic.com/images/amazon_market.jpg" /></a>
+
+
