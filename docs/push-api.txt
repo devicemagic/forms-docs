@@ -41,24 +41,20 @@ The resulting XML fragment will look similar to the following:
 	<?xml version="1.0" encoding="UTF-8"?>
 	<devices type="array">
 	  <device>
-	    <created-at type="datetime">2011-05-20T14:50:52Z</created-at>
 	    <description nil="true"></description>
 	    <device-status-id type="integer">3</device-status-id>
 	    <id type="integer">4836</id>
 	    <identifier>iPhone_d6e2542effafbcc8d0e6bf0ef2917b76dea4faf8</identifier>
 	    <organization-id type="integer">3569</organization-id>
 	    <owner>Dusan Babich</owner>
-	    <updated-at type="datetime">2011-05-20T14:51:51Z</updated-at>
 	  </device>
 	  <device>
-	    <created-at type="datetime">2011-05-20T14:51:35Z</created-at>
 	    <description nil="true"></description>
 	    <device-status-id type="integer">3</device-status-id>
 	    <id type="integer">4837</id>
 	    <identifier>Android_351751049564712</identifier>
 	    <organization-id type="integer">3569</organization-id>
 	    <owner>John Doe</owner>
-	    <updated-at type="datetime">2011-05-20T14:51:53Z</updated-at>
 	  </device>
 	</devices>
 	
@@ -95,7 +91,6 @@ The device_id url parameter is obtained from the [Device Enquiry API](push-api#d
 	</h:html>
 	
 Notice the xmlns attribute on the instance node? This is that particular form's namespace. We're also going to be substituting the "comments" field with some predefined values. So the XML fragment we POST to the endpoint above turns out to be:
-	
 	:::xml
 	<?xml version='1.0'?>
 	<oneshot xmlns='http://www.w3.org/2002/xforms' xmlns:dm='http://mobileforms.devicemagic.com/xforms' xmlns:h='http://www.w3.org/1999/xhtml' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
@@ -107,49 +102,42 @@ Notice the xmlns attribute on the instance node? This is that particular form's 
 	
 The <dm:form_description> tag allows you to supply some additional text to the UI. In this way, it would be very easy to send your sales staff a list of people to call on by pre-populating, for example, customer name, address, revenue etc. If you want to replace the entire form name (be careful, as this could confuse users), use the dm:form_name tag.
 
-In the event of a successful POST, you will receive an HTTP 202 Created.
+In the event of a successful POST, you will receive an HTTP 202 Created. The Payload of a successful POST is XML describing the submitted oneshot:
+  :::xml
+  <oneshot_list>
+    <oneshot>
+      <id>60</id>
+      <namespace>http://www.devicemagic.com/xforms/demo/b4bcf250-2fcb-012f-f75c-0026b0eb68e4?52aa3980-5592-012f-33e8-0026b0eb68e4</namespace>
+      <name>Oneshot Test</name>
+    </oneshot>
+  </oneshot_list>
 
 Checking outstanding PUSH forms
 -------------------------------
 
-In the event you want to enquire which forms are still outstanding from the API, simply issue a GET request as follows:
+In the event you want to enquire which forms are still outstanding for a device, simply issue a GET request as follows:
 	:::term
 	GET /clients/[device_id]/oneshots
+
+You can also query for outstanding oneshots across all devices for your organization:
+  :::term
+  GET /organizations/[organization_id]/oneshots
 	
-You will receive an XML document containing each form's metatdata, but excluding the definitions:
+You will receive an XML document containing each form's details:
 	:::xml
 	<?xml version="1.0" encoding="UTF-8"?>
 	<forms type="array">
 		<form>
-			<created-at type="datetime">2011-05-20T12:39:50Z</created-at>
 			<description>This is a sample Push Form</description>
 			<device-id type="integer">4837</device-id>
-			<enabled type="boolean">true</enabled>
 			<id type="integer">40007</id>
 			<name>A First Form</name>
 			<namespace>http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72?b10e3ba0-6521-012e-197f-12313b079c72</namespace>
-			<oneshot type="boolean">true</oneshot>
 			<organization-id type="integer">3569</organization-id>
-			<updated-at type="datetime">2011-05-20T15:13:50Z</updated-at>
-			<version>1.1</version>
 		</form>
 	</forms>
 	
 You will notice a new namespace has been generated for this form (it's simply the original namespace with a question mark and a GUID following).
-
-If you would like to access the definition for a specific form:
-	:::term
-	GET /clients/[device_id]/oneshots/[form_id]
-
-You will then receive the same metadata as above, but also the form definition:
-	:::xml
-	<?xml version="1.0" encoding="UTF-8"?>
-	<form>
-		<created-at type="datetime">2011-05-20T12:39:50Z</created-at>
-		<definition>{{OMITTED FOR CLARITY}}</definition>
-		... etc ...
-	</form>
-	
 
 Revoking PUSHed forms
 ---------------------
@@ -160,4 +148,6 @@ To revoke a form, issue an HTTP DELETE as follows:
 
 where the [oneshot_id] is obtained by performing an enquiry as above.
 
-
+To revoke all oneshots for a particular device, use:
+  :::term
+  DELETE /clients/[device_id]/oneshots/destroy_all
