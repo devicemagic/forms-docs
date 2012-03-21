@@ -27,7 +27,6 @@ All API requests to Device Magic must be made to the following URL (note the HTT
 where your organization_id is evident from the URL to your dashboard when browsing www.devicemagic.com/organizations/[organization_id]/.
 
 
-
 Device Enquiry
 --------------
 
@@ -72,45 +71,45 @@ The device_id url parameter is obtained from the [Device Enquiry API](push-api#d
 	:::xml
 	<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 	<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:dm="http://www.devicemagic.com/XMLSchemaDataTypes" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-		<h:head>
-			<h:title>A First Form</h:title>
-			<model>
-				<instance xmlns="http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72">
-					<untitled_form_1>
-						<quality_of_day/>
-						<inbox_overflow/>
-						<next_holiday/>
-						<comments/>
-					</untitled_form_1>
-				</instance>
-				<bind nodeset="inbox_overflow" type="boolean"/>
-				<bind nodeset="next_holiday" type="date"/>
-			</model>
-		</h:head>
-		<!-- BODY section omitted -->
+	  <h:head>
+	    <h:title>A First Form</h:title>
+	    <model>
+	      <instance xmlns="http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72">
+	      <untitled_form_1>
+	        <quality_of_day/>
+	        <inbox_overflow/>
+	        <next_holiday/>
+	        <comments/>
+	      </untitled_form_1>
+	    </instance>
+	    <bind nodeset="inbox_overflow" type="boolean"/>
+	    <bind nodeset="next_holiday" type="date"/>
+	  </model>
+	</h:head>
+	  <!-- BODY section omitted -->
 	</h:html>
 	
 Notice the xmlns attribute on the instance node? This is that particular form's namespace. We're also going to be substituting the "comments" field with some predefined values. So the XML fragment we POST to the endpoint above turns out to be:
 	:::xml
 	<?xml version='1.0'?>
 	<oneshot xmlns='http://www.w3.org/2002/xforms' xmlns:dm='http://mobileforms.devicemagic.com/xforms' xmlns:h='http://www.w3.org/1999/xhtml' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
-	<dm:form_name>This is optional - you can omit this element</dm:form_name>
-	<dm:form_namespace>http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72</dm:form_namespace>
-	<dm:form_description>This is a sample Push Form</dm:form_description>
-	<comments>Easy, wasn't it?</comments>
+	  <dm:form_name>This is optional - you can omit this element</dm:form_name>
+	  <dm:form_namespace>http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72</dm:form_namespace>
+	  <dm:form_description>This is a sample Push Form</dm:form_description>
+	  <comments>Easy, wasn't it?</comments>
 	</oneshot>
 	
 The <dm:form_description> tag allows you to supply some additional text to the UI. In this way, it would be very easy to send your sales staff a list of people to call on by pre-populating, for example, customer name, address, revenue etc. If you want to replace the entire form name (be careful, as this could confuse users), use the dm:form_name tag.
 
 In the event of a successful POST, you will receive an HTTP 202 Created. The Payload of a successful POST is XML describing the submitted oneshot:
-  :::xml
-  <oneshot_list>
-    <oneshot>
-      <id>60</id>
-      <namespace>http://www.devicemagic.com/xforms/demo/b4bcf250-2fcb-012f-f75c-0026b0eb68e4?52aa3980-5592-012f-33e8-0026b0eb68e4</namespace>
-      <name>Oneshot Test</name>
-    </oneshot>
-  </oneshot_list>
+	:::xml
+	<oneshot_list>
+	  <oneshot>
+	    <id>60</id>
+	    <namespace>http://www.devicemagic.com/xforms/demo/b4bcf250-2fcb-012f-f75c-0026b0eb68e4?52aa3980-5592-012f-33e8-0026b0eb68e4</namespace>
+	    <name>Oneshot Test</name>
+	  </oneshot>
+	</oneshot_list>
 
 Checking outstanding PUSH forms
 -------------------------------
@@ -120,21 +119,21 @@ In the event you want to enquire which forms are still outstanding for a device,
 	GET /clients/[device_id]/oneshots
 
 You can also query for outstanding oneshots across all devices for your organization:
-  :::term
-  GET /organizations/[organization_id]/oneshots
+	:::term
+ 	GET /organizations/[organization_id]/oneshots
 	
 You will receive an XML document containing each form's details:
 	:::xml
 	<?xml version="1.0" encoding="UTF-8"?>
 	<forms type="array">
-		<form>
-			<description>This is a sample Push Form</description>
-			<device-id type="integer">4837</device-id>
-			<id type="integer">40007</id>
-			<name>A First Form</name>
-			<namespace>http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72?b10e3ba0-6521-012e-197f-12313b079c72</namespace>
-			<organization-id type="integer">3569</organization-id>
-		</form>
+	  <form>
+	    <description>This is a sample Push Form</description>
+	    <device-id type="integer">4837</device-id>
+	    <id type="integer">40007</id>
+	    <name>A First Form</name>
+	    <namespace>http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72?b10e3ba0-6521-012e-197f-12313b079c72</namespace>
+	    <organization-id type="integer">3569</organization-id>
+	  </form>
 	</forms>
 	
 You will notice a new namespace has been generated for this form (it's simply the original namespace with a question mark and a GUID following).
@@ -149,5 +148,5 @@ To revoke a form, issue an HTTP DELETE as follows:
 where the [oneshot_id] is obtained by performing an enquiry as above.
 
 To revoke all oneshots for a particular device, use:
-  :::term
-  DELETE /clients/[device_id]/oneshots/destroy_all
+	:::term
+	DELETE /clients/[device_id]/oneshots/destroy_all
