@@ -149,4 +149,4 @@ where the [oneshot_id] is obtained by performing an enquiry as above.
 
 To revoke all oneshots for a particular device, use:
 	:::term
-	DELETE /clients/[device_id]/oneshots/destroy_all
+	POST /clients/[device_id]/oneshots/destroy_all
