@@ -3,7 +3,7 @@ require 'bundler'
 Bundler.setup
 
 require 'indextank'
-require 'topic'
+require './topic'
 
 desc 'Start a development server'
 task :server do
