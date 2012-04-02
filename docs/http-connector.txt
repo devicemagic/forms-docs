@@ -10,7 +10,7 @@ Using the "First Form" demo form as an example, this would be a corresponding XM
 ### Example XML Payload
 	:::xml
 	<?xml version='1.0'?>
-	<instance dm:form_version='1.0' dm:submit_time='Fri May 20 15:34:17 UTC 2011' dm:submitting_user='Dusan Babich' writeTime='2011-04-26T15:23:11.506' dm:form='A First Form' dm:submitting_device='iPhone_d6e2542effafbcc8d0e6bf0ef2917b76dea4faf8' xmlns:dm='http://mobileforms.devicemagic.com/xforms' xmlns='http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72'>
+	<instance dm:form_version='1.0' dm:submit_time='2012-04-02 12:33:26 UTC' dm:submitting_user='Dusan Babich' writeTime='2011-04-26T15:23:11.506' dm:form='A First Form' dm:submitting_device='iPhone_d6e2542effafbcc8d0e6bf0ef2917b76dea4faf8' xmlns:dm='http://mobileforms.devicemagic.com/xforms' xmlns='http://www.devicemagic.com/xforms/demo/2d3698c0-650c-012e-7e8e-12313b079c72'>
 	  <untitled_form_1>
 	    <quality_of_day>{{VALUE}}</quality_of_day>
 	    <inbox_overflow>{{VALUE}}</inbox_overflow>

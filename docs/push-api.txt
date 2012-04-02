@@ -30,7 +30,7 @@ where your organization_id is evident from the URL to your dashboard when browsi
 Device Enquiry
 --------------
 
-Before anything useful can be accomplished, a list of devices connected to the organization needs to be obtained. This can be obtained as follows:
+Before anything useful can be accomplished, a list of devices connected and approved for the organization needs to be obtained. This can be obtained as follows:
 	:::term
 	HTTP GET /organizations/[organization_id]/devices.xml
 
@@ -41,7 +41,6 @@ The resulting XML fragment will look similar to the following:
 	<devices type="array">
 	  <device>
 	    <description nil="true"></description>
-	    <device-status-id type="integer">3</device-status-id>
 	    <id type="integer">4836</id>
 	    <identifier>iPhone_d6e2542effafbcc8d0e6bf0ef2917b76dea4faf8</identifier>
 	    <organization-id type="integer">3569</organization-id>
@@ -49,7 +48,6 @@ The resulting XML fragment will look similar to the following:
 	  </device>
 	  <device>
 	    <description nil="true"></description>
-	    <device-status-id type="integer">3</device-status-id>
 	    <id type="integer">4837</id>
 	    <identifier>Android_351751049564712</identifier>
 	    <organization-id type="integer">3569</organization-id>

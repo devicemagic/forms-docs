@@ -1,0 +1,44 @@
+Connecting your account with Wufoo
+==================================
+
+![Wufoo logo!](http://s3.amazonaws.com/docs_resources/wufoo/wufoo.jpeg)
+
+Introduction
+------------
+
+Our integration with Wufoo allows you to access forms built in Wufoo from your mobile device via Mobile Forms. You get all the benefits of rich, offline access, group publishing etc while still enjoying [Wufoo's diverse set of integrations](http://www.wufoo.com/partners) with external systems.
+
+When you submit a Wufoo form from the Mobile Forms client, we'll deliver the data back to Wufoo just as if you had submitted the form from Wufoo itself. Any notifications or integrations you've configured will be honored. 
+
+Pre-requisites
+--------------
+
+All you need is a Device Magic account (free or paid) and a Wufoo account. You will need to know your Wufoo subdomain and API key. Please consult this guide for information on how to [obtain your API key from Wufoo](http://www.wufoo.com/docs/api/v3/#key).
+
+
+Connecting your account
+-----------------------
+
+To connect your account, first navigate to your organization account settings:
+
+![Organization settings link!](http://s3.amazonaws.com/docs_resources/wufoo/web_settings_link.png)
+
+From there, click the "Wufoo Sync" link:
+
+![Wufoo link!](http://s3.amazonaws.com/docs_resources/wufoo/wufoo_sync_link.png)
+
+Supplying your Wufoo details
+----------------------------
+Enter your Wufoo domain and API key in the configuration page as below:
+
+![Wufoo settings!](http://s3.amazonaws.com/docs_resources/wufoo/wufoo_config.png)
+
+Upon successful configuration, a "Sync Wufoo Forms" button will appear. Use this every time you make changes to your Wufoo form to keep the two in sync with each other. 
+
+![Wufoo sync](http://s3.amazonaws.com/docs_resources/wufoo/wufoo_config_ok.png)
+
+To confirm your sync was successful, navigate to your Forms page on Device Magic and notice the new section for Wufoo forms.
+
+![Wufoo sync](http://s3.amazonaws.com/docs_resources/wufoo/wufoo_forms_list.png)
+
+Although you can't design these forms from within Mobile Forms, you can control their visibility to particular device groups via the group drop-down.  
