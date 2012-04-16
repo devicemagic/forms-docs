@@ -1,0 +1,191 @@
+Forms API
+=========
+
+The forms API allows you to manipulate the forms of your organization, either through XML or JSON.
+
+The API requires you to authenticate each call with your API token. Please see our [authentication topic](auth) if you need to know more.
+
+Base URL
+--------
+The forms API is RESTful, operating on this base URL (note the HTTPS):
+	:::term
+	https://www.devicemagic.com/organizations/[organization_id]/forms
+
+where your [organization_id] is the same ID in the URL when you're logged in and viewing your forms at www.devicemagic.com with your browser.
+
+Creating a new form
+-------------------
+
+To create a new form, you need to send an HTTP POST with the form definition to:
+	:::term
+	HTTP POST https://www.devicemagic.com/organizations/[organization_id]/forms
+
+If you're providing an XML definition for the form, set the content type in the request headers to application/xml:
+	:::term
+	Content-Type: application/xml
+
+And as the POST body provide the XML definition:
+	:::xml
+	<h:html
+		xmlns='http://www.w3.org/2002/xforms'
+		xmlns:dm='http://www.devicemagic.com/XMLSchemaDataTypes'
+		xmlns:ev='http://www.w3.org/2001/xml-events'
+		xmlns:h='http://www.w3.org/1999/xhtml'
+		xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+		<h:head>
+			<h:title>Dummy Form</h:title>
+			<model>
+				<instance xmlns='http://www.devicemagic.com/xforms/dummy_form'>
+					<untitled_form_1>
+						<alpha/>
+						<bravo/>
+					</untitled_form_1>
+				</instance>
+			</model>
+		</h:head>
+		<h:body>
+			<input ref='alpha'>
+				<label>Alpha</label>
+			</input>
+			<input ref='bravo'>
+				<label>Bravo</label>
+			</input>
+		</h:body>
+	</h:html>
+
+On success you'll receive a 201 Created, with a response body similar to this:
+	:::xml
+	<form>
+		<id>42</id>
+		<namespace>http://www.devicemagic.com/xforms/dummy_form</namespace>
+		<name>Dummy Form</name>
+	</form>
+
+If the request fails, check the response header 'Message' for the reason. (Common issues include an invalid XML definition, or providing a namespace that is already in use.)
+
+JSON forms work similarly. Send the POST to the same URL, with content type application/json:
+	:::term
+	HTTP POST https://www.devicemagic.com/organizations/[organization_id]/forms
+	Content-Type: application/json
+
+A JSON form definition as the POST body:
+	:::json
+	{
+		"type": "root",
+		"children": [
+		{
+			"identifier": "Free_Text_Question",
+			"title": "Free Text Question",
+			"autoIdentifier": true,
+			"type": "text"
+		},
+		{
+			"identifier": "Sketch_Question",
+			"title": "Sketch Question",
+			"autoIdentifier": true,
+			"type": "sketch"
+		} ],
+		"title": "Dummy Form",
+		"description": "Testing sample"
+	}	
+
+And the 201 Created on success will include a body like:
+	:::json
+	{
+		"id": 129,
+		"namespace": "http://www.devicemagic.com/xforms/dummy_sample",
+		"name": "Test Form"
+	}
+
+As with the XML, check the response header 'Message' for reasons if the creation fails.
+
+Updating an existing form
+-------------------------
+
+To update an existing form, you need to send an HTTP PUT with the form definition to:
+	:::term
+	HTTP PUT https://www.devicemagic.com/organizations/[organization_id]/forms/[form_id]
+
+If you're providing an XML definition for the form, set the content type in the request headers to application/xml:
+	:::term
+	Content-Type: application/xml
+
+And as the PUT body provide the updated XML definition:
+	:::xml
+	<h:html
+		xmlns='http://www.w3.org/2002/xforms'
+		xmlns:dm='http://www.devicemagic.com/XMLSchemaDataTypes'
+		xmlns:ev='http://www.w3.org/2001/xml-events'
+		xmlns:h='http://www.w3.org/1999/xhtml'
+		xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+		<h:head>
+			<h:title>Dummy Form</h:title>
+			<model>
+				<instance xmlns='http://www.devicemagic.com/xforms/dummy_form'>
+					<untitled_form_1>
+						<alpha/>
+						<bravo/>
+					</untitled_form_1>
+				</instance>
+			</model>
+		</h:head>
+		<h:body>
+			<input ref='alpha'>
+				<label>Alpha</label>
+			</input>
+			<input ref='bravo'>
+				<label>Bravo</label>
+			</input>
+		</h:body>
+	</h:html>
+
+You need to use the same form namespace in the updated definition as was in the original.
+
+On success you'll receive a 202 Accepted, with a response body similar to this:
+	:::xml
+	<form>
+		<id>42</id>
+		<namespace>http://www.devicemagic.com/xforms/dummy_form</namespace>
+		<name>Dummy Form</name>
+		<version>1.1</version>
+	</form>
+
+If the request fails, check the response header 'Message' for the reason.
+
+JSON forms work similarly. Send the PUT to the same URL, with content type application/json:
+	:::term
+	HTTP PUT https://www.devicemagic.com/organizations/[organization_id]/forms/[form_id]
+	Content-Type: application/json
+
+A JSON form definition as the PUT body:
+	:::json
+	{
+		"type": "root",
+		"children": [
+		{
+			"identifier": "Free_Text_Question",
+			"title": "Free Text Question",
+			"autoIdentifier": true,
+			"type": "text"
+		},
+		{
+			"identifier": "Sketch_Question",
+			"title": "Sketch Question",
+			"autoIdentifier": true,
+			"type": "sketch"
+		} ],
+		"title": "Dummy Form",
+		"description": "Testing sample"
+	}	
+
+And the 202 Accepted on success will include a body like:
+	:::json
+	{
+		"id": 129,
+		"namespace": "http://www.devicemagic.com/xforms/dummy_sample",
+		"name": "Test Form",
+		"version": "1.1"
+	}
+
+As with the XML, check the response header 'Message' for reasons if the update fails.
+
