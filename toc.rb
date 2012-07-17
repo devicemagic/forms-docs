@@ -19,5 +19,6 @@ section 'api', "Developer API" do
   topic 'http-connector', "HTTP Connector"
   topic 'auth', 'Authentication'
   topic 'forms-api', "Forms API"
+  topic 'devices-api', "Devices API"
   topic 'push-api', "Push API"
 end   
