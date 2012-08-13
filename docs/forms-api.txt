@@ -189,3 +189,11 @@ And the 202 Accepted on success will include a body like:
 
 As with the XML, check the response header 'Message' for reasons if the update fails.
 
+Deleting a form
+---------------
+
+To delete a form, you need to send an HTTP DELETE to:
+	:::term
+	HTTP DELETE https://www.devicemagic.com/organizations/[organization_id]/forms/[form_id]
+
+You'll receive a 200 OK if the delete succeeded, and an HTTP error response otherwise.
