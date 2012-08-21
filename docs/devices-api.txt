@@ -25,7 +25,7 @@ Querying an individual device
 
 To retrieve the properties of a particular device in your organization, send an (authenticated) HTTP GET to:
 	:::term
-	HTTP GET https://www.devicemagic.com/organizations/[org_id]/device/[device_id].xml
+	HTTP GET https://www.devicemagic.com/organizations/[org_id]/devices/[device_id].xml
 
 where the [device_id] is the numeric ID (e.g. 1234, not the string 'iPad / BlackBerry / Android _2234f33fe') of that device.
 
@@ -46,7 +46,7 @@ Approving a device
 
 You can approve devices for your organization that are pending approval via an authenticated HTTP POST to:
 	:::term
-	HTTP POST https://www.devicemagic.com/organizations/[org_id]/device/[device_id]/approve
+	HTTP POST https://www.devicemagic.com/organizations/[org_id]/devices/[device_id]/approve
   
 When you retrieve the XML for the devices (or a single device) for your organization, there's a <pending-approval> element (containing 'true' or 'false') that indicates whether a device has been approved.
 
@@ -57,14 +57,14 @@ Removing a device from your organization
 
 Devices can be removed from your organization via an HTTP DELETE to that device's URL:
 	:::term
-	HTTP DELETE https://www.devicemagic.com/organizations/[org_id]/device/[device_id]
+	HTTP DELETE https://www.devicemagic.com/organizations/[org_id]/devices/[device_id]
 
 Updating the properties of a device
 -----------------------------------
 
 An HTTP PUT to the device's URL will update the properties of the device.
 	:::term
-	HTTP PUT https://www.devicemagic.com/organizations/[org_id]/device/[device_id]
+	HTTP PUT https://www.devicemagic.com/organizations/[org_id]/devices/[device_id]
 The API allows you to update the owner, the description and the form groups to which the device belongs.
 
 The request content of the PUT must be XML describing the changes you require. You'll need to set the Content-Type header of the request to application/xml. An example payload is below:
