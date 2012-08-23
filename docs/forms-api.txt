@@ -197,3 +197,37 @@ To delete a form, you need to send an HTTP DELETE to:
 	HTTP DELETE https://www.devicemagic.com/organizations/[organization_id]/forms/[form_id]
 
 You'll receive a 200 OK if the delete succeeded, and an HTTP error response otherwise.
+
+Updating a form's group
+-----------------------
+
+To change the group to which a form belongs (e.g. publish/un-publish), send an HTTP POST to:
+	:::term
+	HTTP POST https://www.devicemagic.com/organizations/[organization_id]/forms/[form_id]/properties
+
+You can update either via JSON or XML.
+
+If you use XML, set the content type in the request headers to application/xml:
+	:::term
+	Content-Type: application/xml
+
+And provide an XML body, with the required group name (which is case sensitive), as below:
+	:::xml
+	<form_properties>
+		<group>Unpublished</group>
+	</form_properties>
+
+If you prefer JSON, set the content type in the request headers to application/json:
+	:::term
+	Content-Type: application/json
+	
+And use a JSON body as below:
+	:::json
+	{
+		"group": "Unpublished"
+	}
+
+Please note that the group name is case sensitive, and must exist within your organization.
+
+On success you'll receive a 200 OK. If the request fails, check the response header 'Message' for the reason.
+
