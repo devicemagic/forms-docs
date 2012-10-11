@@ -1,0 +1,12 @@
+E-Mail Connector
+================
+
+![email!](http://www.devicemagic.com/images/rc/email_icon.png)
+
+Adding an e-mail connection is quick and easy. If your form data has images, we'll include them as attachments. Some configuration / customization is possible - please see below.
+
+Basic configuration
+--------------------
+
+Just supply a hardcoded e-mail address and you're good to go! 
+

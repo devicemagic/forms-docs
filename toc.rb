@@ -7,12 +7,20 @@ section 'getting-started', "Getting Started" do
   topic 'submitting-data', "Submitting data"
 end
 
+section 'connectors', "Connectors" do
+  topic 'email', "E-Mail"
+  topic 'google', "Google Docs / Drive"
+  topic 'pdf', "PDF"
+  topic 'http-connector', "HTTP Connector"
+end
+
 section 'integrations', "Integrations" do
   topic 'wufoo', "Wufoo"
 end
 
 section 'reference', "Reference" do
   topic 'supported-platforms', "Supported Platforms"
+  topic 'fields', "Form fields"
 end
 
 section 'api', "Developer API" do
