@@ -16,5 +16,6 @@ gem 'indextank', :git => 'git://github.com/hone/indextank-rb.git', :ref => '61c2
 gem 'rack', '1.1.2'
 
 group :development do
+  gem 'shotgun'
   gem 'rake', '0.9.2.2'
 end

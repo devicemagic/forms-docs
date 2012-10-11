@@ -1,0 +1,81 @@
+Devices API
+===========
+
+The devices API allows you to manipulate the devices of your organization. This is an XML API only (for now).
+
+The API requires you to authenticate each call with your API token. Please see our [authentication topic](auth) if you need to know more.
+
+Base URL
+--------
+The devices API is RESTful, operating on this base URL (note the HTTPS):
+	:::term
+	https://www.devicemagic.com/organizations/[org_id]/devices
+
+where your [org_id] is the same ID in the URL when you're logged in and viewing your forms at www.devicemagic.com with your browser.
+
+Querying your devices
+---------------------
+
+To retrieve a list of the devices that are part of your organization, send an (authenticated) HTTP GET to:
+	:::term
+	HTTP GET https://www.devicemagic.com/organizations/[org_id]/devices.xml
+
+Querying an individual device
+-----------------------------
+
+To retrieve the properties of a particular device in your organization, send an (authenticated) HTTP GET to:
+	:::term
+	HTTP GET https://www.devicemagic.com/organizations/[org_id]/devices/[device_id].xml
+
+where the [device_id] is the numeric ID (e.g. 1234, not the string 'iPad / BlackBerry / Android _2234f33fe') of that device.
+
+The return XML will look something like this:
+	:::xml
+	<device>
+		<id>12345</id>
+		<identifier>iPhone_abcdef1234567890</identifier>
+		<organization-id>10</organization-id>
+		<owner>iPhone 4S</owner>
+		<description>Scratched, and dropped once or twice</description>
+		<pending-approval>false</pending-approval>
+		<groups>Default</groups>
+	</device>
+
+Approving a device
+------------------
+
+You can approve devices for your organization that are pending approval via an authenticated HTTP POST to:
+	:::term
+	HTTP POST https://www.devicemagic.com/organizations/[org_id]/devices/[device_id]/approve
+  
+When you retrieve the XML for the devices (or a single device) for your organization, there's a <pending-approval> element (containing 'true' or 'false') that indicates whether a device has been approved.
+
+Approving devices that are already approved has no effect.
+
+Removing a device from your organization
+----------------------------------------
+
+Devices can be removed from your organization via an HTTP DELETE to that device's URL:
+	:::term
+	HTTP DELETE https://www.devicemagic.com/organizations/[org_id]/devices/[device_id]
+
+Updating the properties of a device
+-----------------------------------
+
+An HTTP PUT to the device's URL will update the properties of the device.
+	:::term
+	HTTP PUT https://www.devicemagic.com/organizations/[org_id]/devices/[device_id]
+The API allows you to update the owner, the description and the form groups to which the device belongs.
+
+The request content of the PUT must be XML describing the changes you require. You'll need to set the Content-Type header of the request to application/xml. An example payload is below:
+	:::xml
+	<device>
+		<owner>Andy Warhol</owner>
+		<description>Eight Elvises</description>
+		<groups>Default,Unpublished</groups>
+	</device>
+
+If you leave out any elements in the payload, those properties of the device will be left unchanged.
+
+When you specify groups, provide a comma-separated list of group names. Please don't include spaces unless they're actually part of the group name.
+
