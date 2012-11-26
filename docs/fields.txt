@@ -39,3 +39,50 @@ Free Text Field
  Never means it is never required
  When it's visible mean it is required only when it is visible.
  When it's visible and means it is  required when it is both visable and some other condition is met.
+
+
+
+Yes/No Field
+--------------
+
+ :::json
+	{
+		"type": "root",
+		"children": [
+			{
+				"identifier": "Are_you_OK_",
+				"title": "Are you OK?",
+				"autoIdentifier": true,
+				"type": "boolean",
+				"hint": "Are you ok?",
+				"initialAnswer": "true"
+			}
+		],
+		"title": "Untitled Form"
+	}
+    
+ 
+Properties:
+ 
+ Hint: property
+ This property allows you to give people a hint to answer a specific question.
+ 
+ Initial answer:
+ Boolean (Yes/No).
+
+ Type:
+ What type of data the field accepts. Type for field: Boolean (True or False)
+
+ Identifier:
+ How the field is indentified in the form
+ 
+ Visible:
+ Always and Depends on.
+ Always means that it always shows in the form
+ Depends on wil only show the filed if a set of conditions are true.
+
+ Required:
+ Never, When it's visible, When it's visible and...
+ Never means it is never required
+ When it's visible mean it is required only when it is visible.
+ When it's visible and means it is  required when it is both visable and some other condition is met.
