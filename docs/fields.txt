@@ -17,7 +17,7 @@ Free Text Field
 
 
 
- Free text field is a general filed that can accept any type of data. Text or Numbers.
+ Free text field is a general field that can accept any type of data. Text or Numbers.
  Properties:
  
  Hint: property
@@ -62,6 +62,8 @@ Yes/No Field
 	}
     
  
+The Yes/No field allows you to ask a yes/no question and get a yes/no answer from the user.
+ 
 Properties:
  
  Hint: property
@@ -79,10 +81,75 @@ Properties:
  Visible:
  Always and Depends on.
  Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+ Depends on will only show the filed if a set of conditions are true.
 
  Required:
  Never, When it's visible, When it's visible and...
  Never means it is never required
  When it's visible mean it is required only when it is visible.
  When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+ 
+ 
+ Select Field
+ --------------
+ 
+ :::json
+ 
+ {
+    "type": "root",
+    "children": [
+        {
+            "identifier": "What_is_your_favorite_color_",
+            "title": "What is your favorite color?",
+            "options": [
+                {
+                    "text": "Yellow"
+                },
+                {
+                    "text": "Green"
+                },
+                {
+                    "text": "Red"
+                },
+                {
+                    "text": "Blue"
+                }
+            ],
+            "autoIdentifier": true,
+            "type": "select",
+            "hint": "Its not green.",
+            "initialAnswer": ""
+        }
+    ],
+    "title": "Untitled Form"
+}
+ 
+ 
+ The Select Field allows you to ask a question a provide a specific set of answers for the user to choose from.
+ 
+ Options Button:
+ This is how you add the set of answers the user can pick from. Press the options button and type in the text.
+ There is an option to import from a CSV file. Just import it and the system will automatically ad the values for you.
+ CSV stands for Comma Separated Value.
+ 
+ Initial answer:
+ Allows you to pick a given answer to pick as the default option.
+
+ Type:
+ Text.
+
+ Identifier:
+ How the field is indentified in the form
+ 
+ Visible:
+ Always and Depends on.
+ Always means that it always shows in the form
+ Depends on will only show the filed if a set of conditions are true.
+
+ Required:
+ Never, When it's visible, When it's visible and...
+ Never means it is never required
+ When it's visible mean it is required only when it is visible.
+ When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
