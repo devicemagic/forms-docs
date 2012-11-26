@@ -251,3 +251,144 @@ Properties:
  
  Developers: 
  Note: The back end converts the field to float. 
+ 
+ 
+ Integer Field
+ ----------------
+ 
+ :::json
+ 
+	 {
+		"type": "root",
+		"children": [
+			{
+				"identifier": "Integer_Question",
+				"title": "Integer Question",
+				"autoIdentifier": true,
+				"type": "integer",
+				"hint": "some hint",
+				"initialAnswer": "some valid integer"
+			}
+		],
+		"title": "Untitled Form"
+	}
+
+Integer field is for accepting whole numbers data. Example: 1, 234, 67.
+ Properties:
+ 
+ Hint: property
+ This property allows you to give people a hint to answer a specific question.
+ 
+ Initial answer:
+ Its the answer you want people to type in
+ 
+ Identifier:
+ How the field is indentified in the form
+ 
+ Visible:
+ Always and Depends on.
+ Always means that it always shows in the form
+ Depends on wil only show the filed if a set of conditions are true.
+
+ Required:
+ Never, When it's visible, When it's visible and...
+ Never means it is never required
+ When it's visible mean it is required only when it is visible.
+ When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+ Developers: 
+ Note: The back end converts the field to an integer.
+ 
+ 
+ Location Field
+ ----------------- 
+ 
+ :::json
+	 {
+		"type": "root",
+		"children": [
+			{
+				"identifier": "Location_Question",
+				"title": "Location Question",
+				"autoIdentifier": true,
+				"type": "location",
+				"auto_resolve": true,
+				"hint": "some Hine",
+				"validate_msg": "some Error"
+			}
+		],
+		"title": "Untitled Form"
+	}
+	
+Location field is for accepting the location of users. 
+It can be done automatically by Geolocation.
+
+ Properties:
+ 
+ Hint: property
+ This property allows you to give people a hint to answer a specific question.
+ 
+ Initial answer:
+ Its the answer you want people to type in
+ 
+ Identifier:
+ How the field is indentified in the form
+ 
+ Visible:
+ Always and Depends on.
+ Always means that it always shows in the form
+ Depends on wil only show the filed if a set of conditions are true.
+
+ Required:
+ Never, When it's visible, When it's visible and...
+ Never means it is never required
+ When it's visible mean it is required only when it is visible.
+ When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+ 
+ 
+Email Field
+--------------
+
+ :::json
+	{
+		"type": "root",
+		"children": [
+			{
+				"identifier": "Email_Question",
+				"title": "Email Question",
+				"autoIdentifier": true,
+				"type": "email",
+				"hint": "someHint",
+				"validate_msg": "someError"
+			}
+		],
+		"title": "Untitled Form"
+	}
+	
+	
+The Email field is for accepting the email of the user.. 
+It accpets text.
+
+ Properties:
+ 
+ Hint: property
+ This property allows you to give people a hint to answer a specific question.
+ 
+ Initial answer:
+ Its the answer you want people to type in
+ 
+ Identifier:
+ How the field is indentified in the form
+ 
+ Visible:
+ Always and Depends on.
+ Always means that it always shows in the form
+ Depends on wil only show the filed if a set of conditions are true.
+
+ Required:
+ Never, When it's visible, When it's visible and...
+ Never means it is never required
+ When it's visible mean it is required only when it is visible.
+ When it's visible and means it is  required when it is both visable and some other condition is met.
+ 	
