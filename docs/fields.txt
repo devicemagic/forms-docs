@@ -1,1 +1,41 @@
-Fields documentation file. 
+Free Text Field
+------------------
+ 
+
+ 
+ 
+ :::json
+	 {
+	  "type": "root",
+	  "children": [
+	   {
+		"identifier": "Free_Text_Question",
+		"title": "Free Text Question",
+		"autoIdentifier": true,
+		"type": "text"
+	   }
+	  ],
+	  "title": "Untitled Form"
+	 }
+
+
+
+ Free text field is a general filed that can accept any type of data. Text or Numbers.
+ Properties:
+ 
+ Hint: property
+ This property allows you to give people a hint to answer a specific question.
+ 
+ Initial answer
+ Its the answer you want people to type in
+ 
+ Identifier
+ How the field is indentified in the form
+ 
+ Visible
+ Always and Depends on.
+ Always means that it always shows in the form
+ Depends on wil only show the filed if a set of conditions are true.
+
+ Required:
+ If the field must be filled in the form.
