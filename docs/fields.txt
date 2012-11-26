@@ -392,3 +392,95 @@ It accpets text.
  When it's visible mean it is required only when it is visible.
  When it's visible and means it is  required when it is both visable and some other condition is met.
  	
+
+PhoneNumber Field
+-----------
+ {
+    "type": "root",
+    "children": [
+        {
+            "identifier": "Phone_No__Question",
+            "title": "Phone No. Question",
+            "autoIdentifier": true,
+            "type": "phone_number",
+            "hint": "some Hint",
+            "validate_msg": "some Error"
+        }
+    ],
+    "title": "Untitled Form"
+}
+
+The Phone Number field is for accepting the phone number of the user.. 
+It accpets text.
+
+ Properties:
+ 
+ Hint: property
+ This property allows you to give people a hint to answer a specific question.
+ 
+ Initial answer:
+ Its the answer you want people to type in
+ 
+ Identifier:
+ How the field is indentified in the form
+ 
+ Visible:
+ Always and Depends on.
+ Always means that it always shows in the form
+ Depends on wil only show the filed if a set of conditions are true.
+
+ Required:
+ Never, When it's visible, When it's visible and...
+ Never means it is never required
+ When it's visible mean it is required only when it is visible.
+ When it's visible and means it is  required when it is both visable and some other condition is met.
+ 	
+
+
+Image Field
+-------------
+ {
+    "type": "root",
+    "children": [
+        {
+            "identifier": "Image_Question",
+            "title": "Image Question",
+            "autoIdentifier": true,
+            "type": "image",
+            "hint": "someHint",
+            "validate_msg": "someError"
+			
+        }
+    ],
+    "title": "Untitled Form"
+}
+
+
+The Email field is for accepting the email of the user.. 
+It accpets text.
+
+ Properties:
+ 
+ Extra Large:
+ Allows for extra large image sizes. *Need to know what size extra large is*
+ 
+ Hint: property
+ This property allows you to give people a hint to answer a specific question.
+ 
+ Initial answer:
+ Its the answer you want people to type in
+ 
+ Identifier:
+ How the field is indentified in the form
+ 
+ Visible:
+ Always and Depends on.
+ Always means that it always shows in the form
+ Depends on wil only show the filed if a set of conditions are true.
+
+ Required:
+ Never, When it's visible, When it's visible and...
+ Never means it is never required
+ When it's visible mean it is required only when it is visible.
+ When it's visible and means it is  required when it is both visable and some other condition is met.
+ 	
