@@ -205,3 +205,49 @@ Properties:
  When it's visible mean it is required only when it is visible.
  When it's visible and means it is  required when it is both visable and some other condition is met.
  
+ 
+ 
+ Decimal Field
+------------------
+ 
+ :::json
+	{
+    "type": "root",
+    "children": [
+        {
+            "identifier": "Decimal_Question",
+            "title": "Decimal Question",
+            "autoIdentifier": true,
+            "type": "decimal"
+        }
+    ],
+    "title": "Untitled Form"
+    }
+
+
+
+ Decimal field is for accepting decimal data. Example: 1.4, 4.56, 234.9876, etc.
+ Properties:
+ 
+ Hint: property
+ This property allows you to give people a hint to answer a specific question.
+ 
+ Initial answer:
+ Its the answer you want people to type in
+ 
+ Identifier:
+ How the field is indentified in the form
+ 
+ Visible:
+ Always and Depends on.
+ Always means that it always shows in the form
+ Depends on wil only show the filed if a set of conditions are true.
+
+ Required:
+ Never, When it's visible, When it's visible and...
+ Never means it is never required
+ When it's visible mean it is required only when it is visible.
+ When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+ Developers: 
+ Note: The back end converts the field to float. 
