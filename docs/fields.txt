@@ -153,3 +153,55 @@ Properties:
  When it's visible mean it is required only when it is visible.
  When it's visible and means it is  required when it is both visable and some other condition is met.
  
+ 
+ 
+ 
+ Date Field
+------------------
+ 
+ :::json
+{
+    "type": "root",
+    "children": [
+        {
+            "identifier": "Date_Question",
+            "title": "Date Question",
+            "autoIdentifier": true,
+            "type": "date",
+            "required_rule": "when",
+            "readonly_rule": "when",
+            "hint": "someHint",
+            "validate_msg": "Some Error"
+        }
+    ],
+    "title": "Untitled Form"
+}
+
+
+
+ Date field is a used to accept data related to calendar dates. 
+ Properties:
+
+ Title: A text title for the field.
+ This property allows you to set the title for the field the user will see.
+ 
+ Hint: A text hint for the field.
+ This property allows you to give people a hint to answer a specific question.
+  
+ Identifier
+ How the field is indentified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
+ set to 
+
+ autoIdendifier: Boolean
+ 
+ Visible
+ Always and Depends on.
+ Always means that it always shows in the form
+ Depends on wil only show the filed if a set of conditions are true.
+
+ Required:
+ Never, When it's visible, When it's visible and...
+ Never means it is never required
+ When it's visible mean it is required only when it is visible.
+ When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
