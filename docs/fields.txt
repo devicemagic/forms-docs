@@ -1,9 +1,6 @@
 Free Text Field
 ------------------
  
-
- 
- 
  :::json
 	 {
 	  "type": "root",
@@ -26,16 +23,19 @@ Free Text Field
  Hint: property
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer
+ Initial answer:
  Its the answer you want people to type in
  
- Identifier
+ Identifier:
  How the field is indentified in the form
  
- Visible
+ Visible:
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
  Required:
- If the field must be filled in the form.
+ Never, When it's visible, When it's visible and...
+ Never means it is never required
+ When it's visible mean it is required only when it is visible.
+ When it's visible and means it is  required when it is both visable and some other condition is met.
