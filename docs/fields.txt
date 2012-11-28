@@ -183,7 +183,7 @@ Select Field
  
  Never, When it's visible, When it's visible and...
  
-- Never means it is never required
+- Never means it is never required.
 - When it's visible mean it is required only when it is visible.
 - When it's visible and means it is  required when it is both visable and some other condition is met.
  
@@ -191,7 +191,7 @@ Select Field
  
  
  Date Field
-------------------
+--------------
  
 
         {
@@ -237,7 +237,7 @@ A text title for the field. This property allows you to set the title for the fi
  
  Never, When it's visible, When it's visible and...
  
-- Never means it is never required
+- Never means it is never required.
 - When it's visible mean it is required only when it is visible.
 - When it's visible and means it is  required when it is both visable and some other condition is met.
  
@@ -282,7 +282,7 @@ How the field is indentified in the form
  *Required:*
  Never, When it's visible, When it's visible and...
  
-- Never means it is never required
+- Never means it is never required.
 - When it's visible mean it is required only when it is visible.
 - When it's visible and means it is  required when it is both visable and some other condition is met.
  
@@ -333,7 +333,7 @@ Integer field is for accepting whole numbers data. Example: 1, 234, 67.
 
 Never, When it's visible, When it's visible and...
  
-- Never means it is never required
+- Never means it is never required.
 - When it's visible mean it is required only when it is visible.
 - When it's visible and means it is  required when it is both visable and some other condition is met.
  
@@ -358,22 +358,21 @@ Location Field
 		
 	
 	
-Location field is for accepting the location of users. 
-It can be done automatically by Geolocation.
+Location field is for accepting the location of users. It can be done automatically by Geolocation.
 
- **Properties**
+**Properties**
  
-*Hint:* property
+*Hint:* 
  
- This property allows you to give people a hint to answer a specific question.
+This property allows you to give people a hint to answer a specific question.
  
 *Initial answer:*
  
- Its the answer you want people to type in
+Its the answer you want people to type in
  
 *Identifier:*
  
- How the field is indentified in the form
+How the field is indentified in the form
  
 *Visible:*
  
@@ -385,14 +384,14 @@ It can be done automatically by Geolocation.
 
  Never, When it's visible, When it's visible and...
  
-- Never means it is never required
+- Never means it is never required.
 - When it's visible mean it is required only when it is visible.
 - When it's visible and means it is  required when it is both visable and some other condition is met.
  
  
  
 Email Field
---------------
+-------------
 
  
 	
@@ -408,34 +407,35 @@ Email Field
 	
 	
 	
-The Email field is for accepting the email of the user.. 
-It accpets text.
+The Email field is for accepting the email of the user. It accepts text.
 
- **Properties**
+**Properties**
  
- *Hint* property
- This property allows you to give people a hint to answer a specific question.
+*Hint:* 
+This property allows you to give people a hint to answer a specific question.
  
- *Initial answer*
+*Initial answer:*
  Its the answer you want people to type in
  
- *Identifier*
+*Identifier:*
  How the field is indentified in the form
  
- *Visible*
+*Visible:*
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- *Required*
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+*Required:*
+
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  	
 
-PhoneNumber Field
------------
+Phone Number Field
+------------------
  
         {
             "identifier": "Phone_No__Question",
@@ -448,30 +448,35 @@ PhoneNumber Field
     
  
 
-The Phone Number field is for accepting the phone number of the user.. 
-It accpets text.
+The Phone Number field is for accepting the phone number of the user. It accepts text.
 
- **Properties**
+**Properties**
  
- *Hint* property
- This property allows you to give people a hint to answer a specific question.
+*Hint:* 
  
- *Initial answer*
- Its the answer you want people to type in
+This property allows you to give people a hint to answer a specific question.
  
- *Identifier*
- How the field is indentified in the form
- 
- *Visible*
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+*Initial answer:*
 
- *Required*
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+Its the answer you want people to type in
+ 
+*Identifier:*
+ 
+How the field is indentified in the form
+ 
+*Visible:*
+ 
+Always and Depends on.
+Always means that it always shows in the form.
+Depends on will only show the field if a set of conditions are met (evaluate to true).
+
+*Required:*
+ 
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  	
 
 
@@ -490,33 +495,40 @@ Image Field
     
 
 
-The Email field is for accepting the email of the user.. 
-It accpets text.
+The Image field is for uploading images. 
+It accepts image files (JPEG | PNG | BMP | GIF).
 
- **Properties**
+**Properties**
  
- Extra Large:
- Allows for extra large image sizes. *Need to know what size extra large is*
- 
- *Hint* property
- This property allows you to give people a hint to answer a specific question.
- 
- *Initial answer*
- Its the answer you want people to type in
- 
- *Identifier*
- How the field is indentified in the form
- 
- *Visible*
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+*Extra Large:*
 
- *Required*
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+Allows for extra large image sizes. ????What size is extra large Dusan???
+ 
+*Hint:* 
+
+This property allows you to give people a hint to answer a specific question.
+ 
+*Initial answer:*
+
+Its the answer you want people to type in
+ 
+*Identifier:*
+
+How the field is indentified in the form
+ 
+*Visible:*
+ 
+Always and Depends on.
+Always means that it always shows in the form.
+Depends on wil only show the filed if a set of conditions are true.
+
+*Required:*
+
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  	
 
 	
@@ -536,36 +548,36 @@ Signature Field
 	
 	
 The Signature field is for accepting the signature of the user. 
-It accpets text.
+??????It accepts text???????
 
- **Properties**
+**Properties**
  
- Extra Large:
- Allows for extra large image sizes. *Need to know what size extra large is*
+*Hint:* 
+This property allows you to give people a hint to answer a specific question.
  
- *Hint* property
- This property allows you to give people a hint to answer a specific question.
+*Initial answer:*
+Default value for field.
  
- *Initial answer*
- Its the answer you want people to type in
+*Identifier:*
+How the field is indentified in the form.
  
- *Identifier*
- How the field is indentified in the form
+*Visible:*
  
- *Visible*
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+Always and Depends on.
+Always means that it always shows in the form.
+Depends on wil only show the filed if a set of conditions are true.
 
- *Required*
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+*Required:*
+ 
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  
  
  Barcode Field
- ---------------
+ --------------
 	
 	
 
@@ -582,29 +594,32 @@ It accpets text.
 The Barcode field is for *******? 
 It accepts ****?
 
- **Properties**
+**Properties**
  
 
  
- *Hint* property
- This property allows you to give people a hint to answer a specific question.
+*Hint:* 
+This property allows you to give people a hint to answer a specific question.
  
- *Initial answer*
- Its the answer you want people to type in
+*Initial answer:*
+Default value for field.
  
- *Identifier*
- How the field is indentified in the form
+*Identifier:*
+How the field is indentified in the form
  
- *Visible*
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+*Visible:*
+ 
+Always and Depends on.
+Always means that it always shows in the form.
+Depends on wil only show the filed if a set of conditions are true.
 
- *Required*
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+*Required:*
+
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
 
 
 		
@@ -624,31 +639,35 @@ Sketch Field
 		
 		
 The Sketch field is for ******?. 
-It accpets *****?
+It accepts *****?
  
  **Properties**
  
- 
- 
- *Hint* property
- This property allows you to give people a hint to answer a specific question.
- 
- *Initial answer*
- Its the answer you want people to type in
- 
- *Identifier*
- How the field is indentified in the form
- 
- *Visible*
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+*Hint:* 
 
- *Required*
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+This property allows you to give people a hint to answer a specific question.
+ 
+*Initial answer:*
+
+Default value for the field.
+ 
+*Identifier:*
+
+How the field is indentified in the form
+ 
+*Visible:*
+
+Always and Depends on.
+Always means that it always shows in the form.
+Depends on wil only show the filed if a set of conditions are true.
+
+*Required*
+ 
+Never, When it's visible, When it's visible and...
+
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
         
 Password Field		
 ----------------
@@ -668,29 +687,22 @@ Password Field
 The Password field is for accepting the password of the user. 
 It accepts text.
 
- **Properties**
+**Properties**
  
- 
- 
- *Hint* property
- This property allows you to give people a hint to answer a specific question.
- 
- *Initial answer*
- Its the answer you want people to type in
- 
- *Identifier*
+*Identifier:*
  How the field is indentified in the form
  
- *Visible*
+*Visible:*
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- *Required*
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+*Required:*
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
         
 Calculated Field
 -------------------		
@@ -715,23 +727,25 @@ It accepts *****?
  **Properties**
  
 
+*Hint:*
+
+This property allows you to give people a hint to answer a specific question.
  
- *Hint* property
- This property allows you to give people a hint to answer a specific question.
+*Initial answer:*
+
+Default value for the field.
  
- *Initial answer*
- Its the answer you want people to type in
+*Identifier:*
+How the field is indentified in the form
  
- *Identifier*
- How the field is indentified in the form
- 
- *Visible*
+*Visible:*
  Always and Depends on.
- Always means that it always shows in the form
+ Always means that it always shows in the form.
  Depends on wil only show the filed if a set of conditions are true.
 
- *Required*
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+*Required:*
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
