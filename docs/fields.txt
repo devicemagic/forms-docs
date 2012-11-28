@@ -1,54 +1,77 @@
+Fields
+======
+
+
+
 Free Text Field
-------------------
+---------------
+
+<a id="text" href="">Show Code</a> 
+
+    
+    
+    
+    
  
- :::json
-	 {
-	  "type": "root",
-	  "children": [
-	   {
-		"identifier": "Free_Text_Question",
-		"title": "Free Text Question",
-		"autoIdentifier": true,
-		"type": "text"
-	   }
-	  ],
-	  "title": "Untitled Form"
-	 }
+    {
+    "identifier": "Free_Text_Question",
+    "title": "Free Text Question",
+    "autoIdentifier": true,
+    "type": "text"
+    }
+   
 
 
 
- Free text field is a general field that can accept any type of data. Text or Numbers.
- Properties:
+The free text field is a general field that can accept any type of data. Text or Numbers.
  
- Hint: property
+**Properties**
+
+ 
+*Hint:*
+ 
+ 
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
- Its the answer you want people to type in
+*Initial answer:*
  
- Identifier:
- How the field is indentified in the form
  
- Visible:
+ A default answer provided by you. Should be the most common answer
+ for the specific question.
+ 
+*Indentifier:*
+ 
+ 
+ 
+ How the field is indentified in the form structure. The name of the field.
+ 
+*Visible:*
+ 
+ 
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+*Required:*
+ 
+ 
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required
+ 
+- When it's visible mean it is required only when it is visible.
+ 
+- When it's visible and means it is  required when it is both visable and some other condition is met.
 
 
 
 Yes/No Field
 --------------
 
- :::json
-	{
-		"type": "root",
-		"children": [
+
+ 
+	
 			{
 				"identifier": "Are_you_OK_",
 				"title": "Are you OK?",
@@ -57,48 +80,51 @@ Yes/No Field
 				"hint": "Are you ok?",
 				"initialAnswer": "true"
 			}
-		],
-		"title": "Untitled Form"
-	}
+		
     
  
 The Yes/No field allows you to ask a yes/no question and get a yes/no answer from the user.
  
-Properties:
+**Properties**
  
- Hint: property
+*Hint:* 
+ 
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
+*Initial answer:*
+ 
  Boolean (Yes/No).
 
- Type:
+*Type:*
+ 
  What type of data the field accepts. Type for field: Boolean (True or False)
 
- Identifier:
+*Identifier:*
+ 
  How the field is indentified in the form
  
- Visible:
+*Visible:*
+ 
  Always and Depends on.
  Always means that it always shows in the form
  Depends on will only show the filed if a set of conditions are true.
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+ *Required:*
+ 
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  
  
  
- Select Field
- --------------
+Select Field
+------------
  
- :::json
  
- {
-    "type": "root",
-    "children": [
+ 
+
         {
             "identifier": "What_is_your_favorite_color_",
             "title": "What is your favorite color?",
@@ -115,43 +141,51 @@ Properties:
                 {
                     "text": "Blue"
                 }
-            ],
+            
             "autoIdentifier": true,
             "type": "select",
             "hint": "Its not green.",
             "initialAnswer": ""
         }
-    ],
-    "title": "Untitled Form"
-}
+
  
  
  The Select Field allows you to ask a question a provide a specific set of answers for the user to choose from.
  
- Options Button:
+*Options Button*:
+
+
  This is how you add the set of answers the user can pick from. Press the options button and type in the text.
  There is an option to import from a CSV file. Just import it and the system will automatically ad the values for you.
  CSV stands for Comma Separated Value.
  
- Initial answer:
+*Initial answer:*
+ 
  Allows you to pick a given answer to pick as the default option.
 
- Type:
+ 
+*Type:*
+ 
  Text.
 
- Identifier:
+ *Identifier:*
+ 
  How the field is indentified in the form
  
- Visible:
+ *Visible:*
+ 
+
  Always and Depends on.
  Always means that it always shows in the form
  Depends on will only show the filed if a set of conditions are true.
 
- Required:
+ *Required:*
+ 
  Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+- Never means it is never required
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  
  
  
@@ -159,10 +193,7 @@ Properties:
  Date Field
 ------------------
  
- :::json
-{
-    "type": "root",
-    "children": [
+
         {
             "identifier": "Date_Question",
             "title": "Date Question",
@@ -173,94 +204,98 @@ Properties:
             "hint": "someHint",
             "validate_msg": "Some Error"
         }
-    ],
-    "title": "Untitled Form"
-}
 
 
 
  Date field is a used to accept data related to calendar dates. 
- Properties:
-
- Title: A text title for the field.
- This property allows you to set the title for the field the user will see.
  
- Hint: A text hint for the field.
- This property allows you to give people a hint to answer a specific question.
+ **Properties**
+
+*Title:* 
+A text title for the field. This property allows you to set the title for the field the user will see.
+ 
+*Hint:* 
+ 
+ A text hint for the field. This property allows you to give people a hint to answer a specific question.
   
- Identifier
+ *Identifier:*
+ 
  How the field is indentified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
  set to 
 
- autoIdendifier: Boolean
+ *autoIdendifier:* 
  
- Visible
+ Boolean
+ 
+ *Visible:*
+ 
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required*
+ 
  Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+- Never means it is never required
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  
  
  
  Decimal Field
 ------------------
  
- :::json
-	{
-    "type": "root",
-    "children": [
+ 
+
         {
             "identifier": "Decimal_Question",
             "title": "Decimal Question",
             "autoIdentifier": true,
             "type": "decimal"
         }
-    ],
-    "title": "Untitled Form"
-    }
 
 
 
  Decimal field is for accepting decimal data. Example: 1.4, 4.56, 234.9876, etc.
- Properties:
  
- Hint: property
- This property allows you to give people a hint to answer a specific question.
+**Properties**
  
- Initial answer:
- Its the answer you want people to type in
+*Hint:* 
+
+This property allows you to give people a hint to answer a specific question.
  
- Identifier:
- How the field is indentified in the form
+*Initial answer:*
  
- Visible:
+Its the answer you want people to type in
+ 
+*Identifier:*
+ 
+How the field is indentified in the form
+ 
+*Visible:*
+
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required:*
  Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
  
- Developers: 
- Note: The back end converts the field to float. 
+- Never means it is never required
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+  
+ **Developers Note:** The back end converts the field to type float. 
  
  
- Integer Field
- ----------------
+Integer Field
+----------------
  
- :::json
  
-	 {
-		"type": "root",
-		"children": [
+ 
+
 			{
 				"identifier": "Integer_Question",
 				"title": "Integer Question",
@@ -269,44 +304,48 @@ Properties:
 				"hint": "some hint",
 				"initialAnswer": "some valid integer"
 			}
-		],
-		"title": "Untitled Form"
-	}
+		
+	
 
 Integer field is for accepting whole numbers data. Example: 1, 234, 67.
- Properties:
  
- Hint: property
+**Properties**
+ 
+*Hint:*
+
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
- Its the answer you want people to type in
+*Initial answer:*
+
+ Its the answer you want people to type in.
  
- Identifier:
- How the field is indentified in the form
+*Identifier:*
+
+ How the field is indentified in the form.
  
- Visible:
+*Visible:*
+ 
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+*Required:*
+
+Never, When it's visible, When it's visible and...
  
- Developers: 
- Note: The back end converts the field to an integer.
+- Never means it is never required
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+ **Developers Note:** 
+The back end converts the field to an integer.
  
  
- Location Field
- ----------------- 
+Location Field
+----------------- 
  
- :::json
-	 {
-		"type": "root",
-		"children": [
+ 
+
 			{
 				"identifier": "Location_Question",
 				"title": "Location Question",
@@ -316,44 +355,47 @@ Integer field is for accepting whole numbers data. Example: 1, 234, 67.
 				"hint": "some Hine",
 				"validate_msg": "some Error"
 			}
-		],
-		"title": "Untitled Form"
-	}
+		
+	
 	
 Location field is for accepting the location of users. 
 It can be done automatically by Geolocation.
 
- Properties:
+ **Properties**
  
- Hint: property
+*Hint:* property
+ 
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
+*Initial answer:*
+ 
  Its the answer you want people to type in
  
- Identifier:
+*Identifier:*
+ 
  How the field is indentified in the form
  
- Visible:
+*Visible:*
+ 
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+*Required:*
+
  Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+- Never means it is never required
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  
  
  
 Email Field
 --------------
 
- :::json
-	{
-		"type": "root",
-		"children": [
+ 
+	
 			{
 				"identifier": "Email_Question",
 				"title": "Email Question",
@@ -362,31 +404,30 @@ Email Field
 				"hint": "someHint",
 				"validate_msg": "someError"
 			}
-		],
-		"title": "Untitled Form"
-	}
+		
+	
 	
 	
 The Email field is for accepting the email of the user.. 
 It accpets text.
 
- Properties:
+ **Properties**
  
- Hint: property
+ *Hint* property
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
+ *Initial answer*
  Its the answer you want people to type in
  
- Identifier:
+ *Identifier*
  How the field is indentified in the form
  
- Visible:
+ *Visible*
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required*
  Never, When it's visible, When it's visible and...
  Never means it is never required
  When it's visible mean it is required only when it is visible.
@@ -395,9 +436,7 @@ It accpets text.
 
 PhoneNumber Field
 -----------
- {
-    "type": "root",
-    "children": [
+ 
         {
             "identifier": "Phone_No__Question",
             "title": "Phone No. Question",
@@ -406,30 +445,29 @@ PhoneNumber Field
             "hint": "some Hint",
             "validate_msg": "some Error"
         }
-    ],
-    "title": "Untitled Form"
-}
+    
+ 
 
 The Phone Number field is for accepting the phone number of the user.. 
 It accpets text.
 
- Properties:
+ **Properties**
  
- Hint: property
+ *Hint* property
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
+ *Initial answer*
  Its the answer you want people to type in
  
- Identifier:
+ *Identifier*
  How the field is indentified in the form
  
- Visible:
+ *Visible*
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required*
  Never, When it's visible, When it's visible and...
  Never means it is never required
  When it's visible mean it is required only when it is visible.
@@ -439,9 +477,7 @@ It accpets text.
 
 Image Field
 -------------
- {
-    "type": "root",
-    "children": [
+
         {
             "identifier": "Image_Question",
             "title": "Image Question",
@@ -451,34 +487,32 @@ Image Field
             "validate_msg": "someError"
 			
         }
-    ],
-    "title": "Untitled Form"
-}
+    
 
 
 The Email field is for accepting the email of the user.. 
 It accpets text.
 
- Properties:
+ **Properties**
  
  Extra Large:
  Allows for extra large image sizes. *Need to know what size extra large is*
  
- Hint: property
+ *Hint* property
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
+ *Initial answer*
  Its the answer you want people to type in
  
- Identifier:
+ *Identifier*
  How the field is indentified in the form
  
- Visible:
+ *Visible*
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required*
  Never, When it's visible, When it's visible and...
  Never means it is never required
  When it's visible mean it is required only when it is visible.
@@ -489,10 +523,7 @@ It accpets text.
 Signature Field
 -----------------
 
-	:::json
-	{
-		"type": "root",
-		"children": [
+
 			{
 				"identifier": "Signature_Question",
 				"title": "Signature Question",
@@ -501,33 +532,32 @@ Signature Field
 				"hint": "Some Hint",
 				"validate_msg": "Some Error"
 			}
-		],
-		"title": "Untitled Form"
-	}
+		
+	
 	
 The Signature field is for accepting the signature of the user. 
 It accpets text.
 
- Properties:
+ **Properties**
  
  Extra Large:
  Allows for extra large image sizes. *Need to know what size extra large is*
  
- Hint: property
+ *Hint* property
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
+ *Initial answer*
  Its the answer you want people to type in
  
- Identifier:
+ *Identifier*
  How the field is indentified in the form
  
- Visible:
+ *Visible*
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required*
  Never, When it's visible, When it's visible and...
  Never means it is never required
  When it's visible mean it is required only when it is visible.
@@ -537,10 +567,8 @@ It accpets text.
  Barcode Field
  ---------------
 	
-	:::json
-	 {
-		"type": "root",
-		"children": [
+	
+
 			{
 				"identifier": "Barcode_Question",
 				"title": "Barcode Question",
@@ -548,31 +576,31 @@ It accpets text.
 				"type": "barcode",
 				"hint": "some hint",
 				"validate_msg": "some Error"
-			},
+			}
         
 
 The Barcode field is for *******? 
 It accepts ****?
 
- Properties:
+ **Properties**
  
 
  
- Hint: property
+ *Hint* property
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
+ *Initial answer*
  Its the answer you want people to type in
  
- Identifier:
+ *Identifier*
  How the field is indentified in the form
  
- Visible:
+ *Visible*
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required*
  Never, When it's visible, When it's visible and...
  Never means it is never required
  When it's visible mean it is required only when it is visible.
@@ -584,7 +612,7 @@ It accepts ****?
 Sketch Field
 ---------------	
 
-	:::json
+	
 		{
             "identifier": "Sketch_Question",
             "title": "Sketch Question",
@@ -592,31 +620,31 @@ Sketch Field
             "type": "sketch",
             "hint": "some Hint",
             "validate_msg": "some Error"
-        },
+        }
 		
 		
 The Sketch field is for ******?. 
 It accpets *****?
  
- Properties:
+ **Properties**
  
  
  
- Hint: property
+ *Hint* property
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
+ *Initial answer*
  Its the answer you want people to type in
  
- Identifier:
+ *Identifier*
  How the field is indentified in the form
  
- Visible:
+ *Visible*
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required*
  Never, When it's visible, When it's visible and...
  Never means it is never required
  When it's visible mean it is required only when it is visible.
@@ -625,7 +653,7 @@ It accpets *****?
 Password Field		
 ----------------
 	
- :::json	
+ 	
 		{
             "identifier": "Password_Question",
             "title": "Password Question",
@@ -634,31 +662,31 @@ Password Field
             "required_rule": "always",
             "hint": "some Hint",
             "validate_msg": "some Error"
-        },
-		
+        }
+	
 		
 The Password field is for accepting the password of the user. 
 It accepts text.
 
- Properties:
+ **Properties**
  
  
  
- Hint: property
+ *Hint* property
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
+ *Initial answer*
  Its the answer you want people to type in
  
- Identifier:
+ *Identifier*
  How the field is indentified in the form
  
- Visible:
+ *Visible*
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required*
  Never, When it's visible, When it's visible and...
  Never means it is never required
  When it's visible mean it is required only when it is visible.
@@ -668,7 +696,7 @@ Calculated Field
 -------------------		
 		
 		
-	:::json
+	
 
 	
 		{
@@ -679,33 +707,30 @@ Calculated Field
             "hint": "Some hint",
             "validate_msg": "some Error"
         }
-    ],
-    "title": "Untitled Form"
-}
 
 
 The Calculated field is for calculating value. 
 It accepts *****?
 
- Properties:
+ **Properties**
  
 
  
- Hint: property
+ *Hint* property
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
+ *Initial answer*
  Its the answer you want people to type in
  
- Identifier:
+ *Identifier*
  How the field is indentified in the form
  
- Visible:
+ *Visible*
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required*
  Never, When it's visible, When it's visible and...
  Never means it is never required
  When it's visible mean it is required only when it is visible.

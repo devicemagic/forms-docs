@@ -13,7 +13,7 @@ require './topic'
 # use Rack::Coderay, "//pre[@lang]>code"
 
 require 'coderay'
-require './lib/term.rb'
+#require './lib/term.rb'
 require 'rack/codehighlighter'
 use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => false
 

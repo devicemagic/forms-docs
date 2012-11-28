@@ -7,6 +7,12 @@
 	<title>Device Magic | <%=h @title %></title>
 	<link type="text/css" rel="stylesheet" href="/css/docs.css" media="screen" />
 	<link type="text/css" rel="stylesheet" href="/stylesheets/coderay.css" media="screen" />
+	<style>
+	    pre {display:none;}
+	
+	</style>
+	
+	
 	<script type="text/javascript" src="/javascripts/jquery-1.3.2.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -15,7 +21,14 @@
     	  window.location=$(this).find("a").attr("href"); 
     	  return false;
     	});
-		});
+    	
+    	    
+    	   $('#text').click(function(){ 
+    	    $('#content').find('pre').show("slow");
+    	    return false;
+    	    });
+    	    
+        });
 
 	</script>
 </head>
@@ -37,6 +50,7 @@
 				<li>
 				<h3><%= title %></h3>
 				<ul>
+				    
 					<% topics.each do |slug, title, _| %>
 						<% if params[:topic] == slug %>
 							<li class="current"><a><%=h title %></a></li>
@@ -52,6 +66,7 @@
 
 	<div id="content">
 		<div class="topic_content">
+		
 			<%= yield %>
 		</div>
 	</div>
