@@ -6,7 +6,7 @@ Fields
 Free Text Field
 ---------------
 
-<a id="text" href="">Show Code</a> 
+ 
 
     
     
@@ -576,8 +576,8 @@ Never, When it's visible, When it's visible and...
 - When it's visible and means it is  required when it is both visable and some other condition is met.
  
  
- Barcode Field
- --------------
+Barcode Field
+--------------
 	
 	
 
