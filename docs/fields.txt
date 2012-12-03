@@ -8,7 +8,7 @@ Free Text Field
 
 ![free_text!](http://i.imgur.com/xiTws.png)
  
-
+  :::json
     
     
     
@@ -72,7 +72,7 @@ Yes/No Field
 
 ![Yes/No!]()
  
-	
+  :::json	
 			{
 				"identifier": "Are_you_OK_",
 				"title": "Are you OK?",
@@ -125,7 +125,7 @@ Select Field
  
  ![Select!]()
  
-
+  :::json
         {
             "identifier": "What_is_your_favorite_color_",
             "title": "What is your favorite color?",
@@ -196,6 +196,8 @@ Select Field
  
 ![Date!]()
 
+  :::json
+
         {
             "identifier": "Date_Question",
             "title": "Date Question",
@@ -251,6 +253,7 @@ Date-Time Field
  
 ![Date-Time!]()
 
+  :::json
         
          {
             "identifier": "Date___Time_Question",
@@ -305,7 +308,7 @@ A text title for the field. This property allows you to set the title for the fi
 
 ![Decimal!]() 
  
-
+  :::json
         {
             "identifier": "Decimal_Question",
             "title": "Decimal Question",
@@ -353,7 +356,7 @@ Integer Field
  
 ![Integer!]() 
  
-
+ :::json
 			{
 				"identifier": "Integer_Question",
 				"title": "Integer Question",
@@ -404,6 +407,8 @@ Location Field
  
 ![Location!]() 
 
+  :::json
+
 			{
 				"identifier": "Location_Question",
 				"title": "Location Question",
@@ -453,6 +458,8 @@ Email Field
 
 ![Email!]()  
 	
+	:::json
+	
 			{
 				"identifier": "Email_Question",
 				"title": "Email Question",
@@ -496,6 +503,8 @@ Phone Number Field
 ------------------
  
 ![Prone Number!]()  
+ 
+   :::json
  
         {
             "identifier": "Phone_No__Question",
@@ -545,6 +554,7 @@ Image Field
 
 ![Image!]() 
 
+   :::json
         {
             "identifier": "Image_Question",
             "title": "Image Question",
@@ -599,7 +609,7 @@ Signature Field
 
 ![Signature!]() 
 
-
+  :::json
 			{
 				"identifier": "Signature_Question",
 				"title": "Signature Question",
@@ -644,6 +654,8 @@ Barcode Field
 --------------
 	
 ![Barcode!]() 	
+
+  :::json
 
 			{
 				"identifier": "Barcode_Question",
@@ -693,6 +705,8 @@ Sketch Field
 
 ![Sketch!]() 
 	
+  :::json
+	
 		{
             "identifier": "Sketch_Question",
             "title": "Sketch Question",
@@ -739,6 +753,8 @@ Password Field
 	
 ![Password!]()
   	
+  :::json
+  	
 		{
             "identifier": "Password_Question",
             "title": "Password Question",
@@ -775,6 +791,7 @@ Calculated Field
 		
 ![Calculated!]() 		
 	
+  :::json
 
 	
 		{
