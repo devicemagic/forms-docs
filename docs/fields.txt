@@ -6,6 +6,7 @@ Fields
 Free Text Field
 ---------------
 
+![free_text!](http://i.imgur.com/xiTws.png)
  
 
     
@@ -69,7 +70,7 @@ Never, When it's visible, When it's visible and...
 Yes/No Field
 --------------
 
-
+![Yes/No!]()
  
 	
 			{
@@ -122,7 +123,7 @@ Never, When it's visible, When it's visible and...
 Select Field
 ------------
  
- 
+ ![Select!]()
  
 
         {
@@ -193,6 +194,7 @@ Select Field
  Date Field
 --------------
  
+![Date!]()
 
         {
             "identifier": "Date_Question",
@@ -241,11 +243,67 @@ A text title for the field. This property allows you to set the title for the fi
 - When it's visible mean it is required only when it is visible.
 - When it's visible and means it is  required when it is both visable and some other condition is met.
  
+
+
+
+Date-Time Field
+--------------
  
+![Date-Time!]()
+
+        
+         {
+            "identifier": "Date___Time_Question",
+            "title": "Date + Time Question",
+            "autoIdentifier": true,
+            "type": "datetime"
+         }
+        
+
+
+
+ Date-Time field is a used to accept data related to calendar dates with specific
+ time scheduling. 
  
+ **Properties**
+
+*Title:* 
+A text title for the field. This property allows you to set the title for the field the user will see.
+ 
+*Hint:* 
+ 
+ A text hint for the field. This property allows you to give people a hint to answer a specific question.
+  
+ *Identifier:*
+ 
+ How the field is indentified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
+ set to 
+
+ *autoIdendifier:* 
+ 
+ Boolean
+ 
+ *Visible:*
+ 
+ Always and Depends on.
+ Always means that it always shows in the form
+ Depends on wil only show the filed if a set of conditions are true.
+
+ *Required*
+ 
+ Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
+
+
+
+
  Decimal Field
 ------------------
- 
+
+![Decimal!]() 
  
 
         {
@@ -293,7 +351,7 @@ How the field is indentified in the form
 Integer Field
 ----------------
  
- 
+![Integer!]() 
  
 
 			{
@@ -344,7 +402,7 @@ The back end converts the field to an integer.
 Location Field
 ----------------- 
  
- 
+![Location!]() 
 
 			{
 				"identifier": "Location_Question",
@@ -393,7 +451,7 @@ How the field is indentified in the form
 Email Field
 -------------
 
- 
+![Email!]()  
 	
 			{
 				"identifier": "Email_Question",
@@ -436,6 +494,8 @@ Never, When it's visible, When it's visible and...
 
 Phone Number Field
 ------------------
+ 
+![Prone Number!]()  
  
         {
             "identifier": "Phone_No__Question",
@@ -482,6 +542,8 @@ Never, When it's visible, When it's visible and...
 
 Image Field
 -------------
+
+![Image!]() 
 
         {
             "identifier": "Image_Question",
@@ -535,6 +597,8 @@ Never, When it's visible, When it's visible and...
 Signature Field
 -----------------
 
+![Signature!]() 
+
 
 			{
 				"identifier": "Signature_Question",
@@ -579,7 +643,7 @@ Never, When it's visible, When it's visible and...
 Barcode Field
 --------------
 	
-	
+![Barcode!]() 	
 
 			{
 				"identifier": "Barcode_Question",
@@ -627,6 +691,7 @@ Never, When it's visible, When it's visible and...
 Sketch Field
 ---------------	
 
+![Sketch!]() 
 	
 		{
             "identifier": "Sketch_Question",
@@ -672,7 +737,8 @@ Never, When it's visible, When it's visible and...
 Password Field		
 ----------------
 	
- 	
+![Password!]()
+  	
 		{
             "identifier": "Password_Question",
             "title": "Password Question",
@@ -707,7 +773,7 @@ Never, When it's visible, When it's visible and...
 Calculated Field
 -------------------		
 		
-		
+![Calculated!]() 		
 	
 
 	
