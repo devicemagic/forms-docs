@@ -6,14 +6,10 @@ Fields
 Free Text Field
 ---------------
 
-![free_text!](http://i.imgur.com/xiTws.png)
+![free_text!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/freeText.png)
  
   :::json
     
-    
-    
-    
- 
     {
     "identifier": "Free_Text_Question",
     "title": "Free Text Question",
@@ -44,7 +40,7 @@ The free text field is a general field that can accept any type of data. Text or
  
  
  
- How the field is indentified in the form structure. The name of the field.
+ How the field is identified in the form structure. The name of the field.
  
 *Visible:*
  
@@ -70,7 +66,7 @@ Never, When it's visible, When it's visible and...
 Yes/No Field
 --------------
 
-![Yes/No!]()
+![Yes/No!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/yesno.png)
  
   :::json	
 			{
@@ -102,7 +98,7 @@ The Yes/No field allows you to ask a yes/no question and get a yes/no answer fro
 
 *Identifier:*
  
- How the field is indentified in the form
+ How the field is identified in the form
  
 *Visible:*
  
@@ -123,7 +119,7 @@ Never, When it's visible, When it's visible and...
 Select Field
 ------------
  
- ![Select!]()
+![Select!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/select.png)
  
   :::json
         {
@@ -171,7 +167,7 @@ Select Field
 
  *Identifier:*
  
- How the field is indentified in the form
+ How the field is identified in the form
  
  *Visible:*
  
@@ -194,7 +190,7 @@ Select Field
  Date Field
 --------------
  
-![Date!]()
+![Date!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/date.png)
 
   :::json
 
@@ -224,7 +220,7 @@ A text title for the field. This property allows you to set the title for the fi
   
  *Identifier:*
  
- How the field is indentified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
+ How the field is identified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
  set to 
 
  *autoIdendifier:* 
@@ -251,7 +247,7 @@ A text title for the field. This property allows you to set the title for the fi
 Date-Time Field
 --------------
  
-![Date-Time!]()
+![Date-Time!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/dateTime.png)
 
   :::json
         
@@ -279,7 +275,7 @@ A text title for the field. This property allows you to set the title for the fi
   
  *Identifier:*
  
- How the field is indentified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
+ How the field is identified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
  set to 
 
  *autoIdendifier:* 
@@ -306,7 +302,7 @@ A text title for the field. This property allows you to set the title for the fi
  Decimal Field
 ------------------
 
-![Decimal!]() 
+![Decimal!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/decimal.png) 
  
   :::json
         {
@@ -332,7 +328,7 @@ Its the answer you want people to type in
  
 *Identifier:*
  
-How the field is indentified in the form
+How the field is identified in the form
  
 *Visible:*
 
@@ -354,7 +350,7 @@ How the field is indentified in the form
 Integer Field
 ----------------
  
-![Integer!]() 
+![Integer!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/integer.png) 
  
  :::json
 			{
@@ -382,7 +378,7 @@ Integer field is for accepting whole numbers data. Example: 1, 234, 67.
  
 *Identifier:*
 
- How the field is indentified in the form.
+ How the field is identified in the form.
  
 *Visible:*
  
@@ -405,7 +401,7 @@ The back end converts the field to an integer.
 Location Field
 ----------------- 
  
-![Location!]() 
+![Location!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/location.png) 
 
   :::json
 
@@ -435,7 +431,7 @@ Its the answer you want people to type in
  
 *Identifier:*
  
-How the field is indentified in the form
+How the field is identified in the form
  
 *Visible:*
  
@@ -456,7 +452,7 @@ How the field is indentified in the form
 Email Field
 -------------
 
-![Email!]()  
+![Email!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/email.png)  
 	
 	:::json
 	
@@ -483,7 +479,7 @@ This property allows you to give people a hint to answer a specific question.
  Its the answer you want people to type in
  
 *Identifier:*
- How the field is indentified in the form
+ How the field is identified in the form
  
 *Visible:*
  Always and Depends on.
@@ -502,7 +498,7 @@ Never, When it's visible, When it's visible and...
 Phone Number Field
 ------------------
  
-![Prone Number!]()  
+![Phone Number!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/phone.png)  
  
    :::json
  
@@ -531,7 +527,7 @@ Its the answer you want people to type in
  
 *Identifier:*
  
-How the field is indentified in the form
+How the field is identified in the form
  
 *Visible:*
  
@@ -552,7 +548,7 @@ Never, When it's visible, When it's visible and...
 Image Field
 -------------
 
-![Image!]() 
+![Image!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/image.png) 
 
    :::json
         {
@@ -586,7 +582,7 @@ Its the answer you want people to type in
  
 *Identifier:*
 
-How the field is indentified in the form
+How the field is identified in the form
  
 *Visible:*
  
@@ -607,7 +603,7 @@ Never, When it's visible, When it's visible and...
 Signature Field
 -----------------
 
-![Signature!]() 
+![Signature!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/signature.png) 
 
   :::json
 			{
@@ -633,7 +629,7 @@ This property allows you to give people a hint to answer a specific question.
 Default value for field.
  
 *Identifier:*
-How the field is indentified in the form.
+How the field is identified in the form.
  
 *Visible:*
  
@@ -653,7 +649,7 @@ Never, When it's visible, When it's visible and...
 Barcode Field
 --------------
 	
-![Barcode!]() 	
+![Barcode!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/barcode.png) 	
 
   :::json
 
@@ -681,7 +677,7 @@ This property allows you to give people a hint to answer a specific question.
 Default value for field.
  
 *Identifier:*
-How the field is indentified in the form
+How the field is identified in the form
  
 *Visible:*
  
@@ -703,7 +699,7 @@ Never, When it's visible, When it's visible and...
 Sketch Field
 ---------------	
 
-![Sketch!]() 
+![Sketch!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/sketch.png) 
 	
   :::json
 	
@@ -732,7 +728,7 @@ Default value for the field.
  
 *Identifier:*
 
-How the field is indentified in the form
+How the field is identified in the form
  
 *Visible:*
 
@@ -751,7 +747,7 @@ Never, When it's visible, When it's visible and...
 Password Field		
 ----------------
 	
-![Password!]()
+![Password!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/password.png)
   	
   :::json
   	
@@ -772,7 +768,7 @@ It accepts text.
 **Properties**
  
 *Identifier:*
- How the field is indentified in the form
+ How the field is identified in the form
  
 *Visible:*
  Always and Depends on.
@@ -789,7 +785,7 @@ Never, When it's visible, When it's visible and...
 Calculated Field
 -------------------		
 		
-![Calculated!]() 		
+![Calculated!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/calculated.png) 		
 	
   :::json
 
@@ -819,7 +815,7 @@ This property allows you to give people a hint to answer a specific question.
 Default value for the field.
  
 *Identifier:*
-How the field is indentified in the form
+How the field is identified in the form
  
 *Visible:*
  Always and Depends on.
