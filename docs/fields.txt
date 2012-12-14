@@ -7,6 +7,7 @@ Free Text Field
 ---------------
 
 ![free_text!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/freeText.png)
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
  
   :::json
     
@@ -67,6 +68,7 @@ Yes/No Field
 --------------
 
 ![Yes/No!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/yesno.png)
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
  
   :::json	
 			{
@@ -120,6 +122,7 @@ Select Field
 ------------
  
 ![Select!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/select.png)
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
  
   :::json
         {
@@ -191,6 +194,7 @@ Select Field
 --------------
  
 ![Date!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/date.png)
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
 
   :::json
 
@@ -248,6 +252,7 @@ Date-Time Field
 --------------
  
 ![Date-Time!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/dateTime.png)
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
 
   :::json
         
@@ -303,6 +308,7 @@ A text title for the field. This property allows you to set the title for the fi
 ------------------
 
 ![Decimal!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/decimal.png) 
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
  
   :::json
         {
@@ -351,7 +357,8 @@ Integer Field
 ----------------
  
 ![Integer!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/integer.png) 
- 
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
+
  :::json
 			{
 				"identifier": "Integer_Question",
@@ -402,6 +409,7 @@ Location Field
 ----------------- 
  
 ![Location!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/location.png) 
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
 
   :::json
 
@@ -453,6 +461,7 @@ Email Field
 -------------
 
 ![Email!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/email.png)  
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
 	
 	:::json
 	
@@ -499,6 +508,7 @@ Phone Number Field
 ------------------
  
 ![Phone Number!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/phone.png)  
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
  
    :::json
  
@@ -549,6 +559,7 @@ Image Field
 -------------
 
 ![Image!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/image.png) 
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
 
    :::json
         {
@@ -604,6 +615,7 @@ Signature Field
 -----------------
 
 ![Signature!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/signature.png) 
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
 
   :::json
 			{
@@ -650,6 +662,7 @@ Barcode Field
 --------------
 	
 ![Barcode!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/barcode.png) 	
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
 
   :::json
 
@@ -700,6 +713,7 @@ Sketch Field
 ---------------	
 
 ![Sketch!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/sketch.png) 
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
 	
   :::json
 	
@@ -748,6 +762,7 @@ Password Field
 ----------------
 	
 ![Password!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/password.png)
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
   	
   :::json
   	
@@ -786,6 +801,7 @@ Calculated Field
 -------------------		
 		
 ![Calculated!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/calculated.png) 		
+![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
 	
   :::json
 
