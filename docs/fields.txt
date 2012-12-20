@@ -16,7 +16,7 @@ On iOS device:
 
 
  
-  :::json
+     :::json
     
     {
     "identifier": "Free_Text_Question",
@@ -84,7 +84,7 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG" width="300px" height="440px"></a>
 
  
-  :::json	
+     :::json	
 			{
 				"identifier": "Are_you_OK_",
 				"title": "Are you OK?",
@@ -145,7 +145,7 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG" width="300px" height="440px"></a>
 
  
-  :::json
+     :::json
         {
             "identifier": "What_is_your_favorite_color_",
             "title": "What is your favorite color?",
@@ -223,7 +223,7 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG" width="300px" height="440px"></a>
 
-  :::json
+     :::json
 
         {
             "identifier": "Date_Question",
@@ -287,7 +287,7 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG" width="300px" height="440px"></a>
   
-  :::json
+     :::json
         
          {
             "identifier": "Date___Time_Question",
@@ -350,7 +350,7 @@ On iOS device:
 
 
  
-  :::json
+     :::json
         {
             "identifier": "Decimal_Question",
             "title": "Decimal Question",
@@ -406,7 +406,7 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG" width="300px" height="440px"></a>
  
 
- :::json
+    :::json
 			{
 				"identifier": "Integer_Question",
 				"title": "Integer Question",
@@ -464,7 +464,7 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG" width="300px" height="440px"></a>
 
-  :::json
+     :::json
 
 			{
 				"identifier": "Location_Question",
@@ -522,7 +522,7 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG" width="300px" height="440px"></a>
 	
-	:::json
+	   :::json
 	
 			{
 				"identifier": "Email_Question",
@@ -694,7 +694,7 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG" width="300px" height="440px"></a>
 
-  :::json
+     :::json
 			{
 				"identifier": "Signature_Question",
 				"title": "Signature Question",
@@ -750,7 +750,7 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG" width="300px" height="440px"></a>
 
 
-  :::json
+     :::json
 
 			{
 				"identifier": "Barcode_Question",
@@ -809,7 +809,7 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG" width="300px" height="440px"></a>
 
 	
-  :::json
+     :::json
 	
 		{
             "identifier": "Sketch_Question",
@@ -865,7 +865,7 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG" width="300px" height="440px"></a>
 
   	
-  :::json
+     :::json
   	
 		{
             "identifier": "Password_Question",
@@ -911,7 +911,7 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG" width="300px" height="440px"></a>
 
 	
-  :::json
+     :::json
 
 	
 		{
