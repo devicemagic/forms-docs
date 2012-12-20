@@ -6,7 +6,13 @@ Fields
 Free Text Field
 ---------------
 
+On Builder:
+
 ![free_text!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/freeText.png)
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG" width="300px" height="440px"></a>
  
   :::json
     
@@ -66,7 +72,13 @@ Never, When it's visible, When it's visible and...
 Yes/No Field
 --------------
 
+On Builder:
+
 ![Yes/No!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/yesno.png)
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG" width="300px" height="440px"></a>
  
   :::json	
 			{
@@ -119,7 +131,13 @@ Never, When it's visible, When it's visible and...
 Select Field
 ------------
  
+On Builder: 
+ 
 ![Select!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/select.png)
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG" width="300px" height="440px"></a>
  
   :::json
         {
@@ -190,7 +208,13 @@ Select Field
  Date Field
 --------------
  
+On Builder:
+
 ![Date!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/date.png)
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG" width="300px" height="440px"></a>
 
   :::json
 
@@ -246,9 +270,15 @@ A text title for the field. This property allows you to set the title for the fi
 
 Date-Time Field
 --------------
+
+On Builder:
  
 ![Date-Time!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/dateTime.png)
 
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG" width="300px" height="440px"></a>
+  
   :::json
         
          {
@@ -301,8 +331,13 @@ A text title for the field. This property allows you to set the title for the fi
 
  Decimal Field
 ------------------
+On Builder:
 
 ![Decimal!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/decimal.png) 
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG" width="300px" height="440px"></a>
  
   :::json
         {
@@ -350,7 +385,13 @@ How the field is identified in the form
 Integer Field
 ----------------
  
+On Builder:
+ 
 ![Integer!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/integer.png) 
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG" width="300px" height="440px"></a>
  
  :::json
 			{
@@ -400,8 +441,14 @@ The back end converts the field to an integer.
  
 Location Field
 ----------------- 
- 
+
+On Builder:
+
 ![Location!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/location.png) 
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG" width="300px" height="440px"></a>
 
   :::json
 
@@ -452,7 +499,13 @@ How the field is identified in the form
 Email Field
 -------------
 
+On Builder:
+
 ![Email!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/email.png)  
+	
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG" width="300px" height="440px"></a>
 	
 	:::json
 	
@@ -497,9 +550,15 @@ Never, When it's visible, When it's visible and...
 
 Phone Number Field
 ------------------
+
+On Builder:
  
 ![Phone Number!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/phone.png)  
  
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG" width="300px" height="440px"></a>
+
    :::json
  
         {
@@ -548,7 +607,13 @@ Never, When it's visible, When it's visible and...
 Image Field
 -------------
 
+On Builder:
+
 ![Image!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/image.png) 
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG" width="300px" height="440px"></a>
 
    :::json
         {
@@ -603,7 +668,13 @@ Never, When it's visible, When it's visible and...
 Signature Field
 -----------------
 
+On Builder:
+
 ![Signature!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/signature.png) 
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG" width="300px" height="440px"></a>
 
   :::json
 			{
@@ -618,7 +689,6 @@ Signature Field
 	
 	
 The Signature field is for accepting the signature of the user. 
-??????It accepts text???????
 
 **Properties**
  
@@ -648,8 +718,19 @@ Never, When it's visible, When it's visible and...
  
 Barcode Field
 --------------
+
+On Builder:
 	
 ![Barcode!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/barcode.png) 	
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode0.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode0.PNG" width="300px" height="440px"></a>
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode1.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode1.PNG" width="300px" height="440px"></a>
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG" width="300px" height="440px"></a>
+
 
   :::json
 
@@ -663,8 +744,9 @@ Barcode Field
 			}
         
 
-The Barcode field is for *******? 
-It accepts ****?
+The Barcode field is for scanning a barcode. Point the camera to the
+barcode and the application will scan it automatically. 
+
 
 **Properties**
  
@@ -699,7 +781,14 @@ Never, When it's visible, When it's visible and...
 Sketch Field
 ---------------	
 
+On Builder:
+
 ![Sketch!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/sketch.png) 
+	
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG" width="300px" height="440px"></a>
+
 	
   :::json
 	
@@ -713,8 +802,8 @@ Sketch Field
         }
 		
 		
-The Sketch field is for ******?. 
-It accepts *****?
+The Sketch field is for accepting any type of drawing from the user. 
+
  
  **Properties**
  
@@ -746,8 +835,14 @@ Never, When it's visible, When it's visible and...
         
 Password Field		
 ----------------
+
+On Builder:
 	
 ![Password!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/password.png)
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG" width="300px" height="440px"></a>
   	
   :::json
   	
@@ -783,9 +878,15 @@ Never, When it's visible, When it's visible and...
 - When it's visible and means it is  required when it is both visable and some other condition is met.
         
 Calculated Field
--------------------		
+-------------------	
+
+On Builder:	
 		
 ![Calculated!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/calculated.png) 		
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG" width="300px" height="440px"></a>
 	
   :::json
 
@@ -800,8 +901,8 @@ Calculated Field
         }
 
 
-The Calculated field is for calculating value. 
-It accepts *****?
+The Calculated field is for calculating values. 
+
 
  **Properties**
  
