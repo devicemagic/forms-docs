@@ -9,14 +9,12 @@ Free Text Field
 On Builder:
 
 ![free_text!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/freeText.png)
-<<<<<<< HEAD
 
 On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG" width="300px" height="440px"></a>
-=======
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
->>>>>>> a6d492988e89cb0639593e4016da71af350ee6e9
+
+
  
   :::json
     
@@ -79,14 +77,12 @@ Yes/No Field
 On Builder:
 
 ![Yes/No!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/yesno.png)
-<<<<<<< HEAD
+
 
 On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG" width="300px" height="440px"></a>
-=======
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
->>>>>>> a6d492988e89cb0639593e4016da71af350ee6e9
+
  
   :::json	
 			{
@@ -142,14 +138,12 @@ Select Field
 On Builder: 
  
 ![Select!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/select.png)
-<<<<<<< HEAD
+
 
 On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG" width="300px" height="440px"></a>
-=======
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
->>>>>>> a6d492988e89cb0639593e4016da71af350ee6e9
+
  
   :::json
         {
@@ -223,7 +217,7 @@ On iOS device:
 On Builder:
 
 ![Date!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/date.png)
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
+
 
 On iOS device:
 
@@ -287,7 +281,7 @@ Date-Time Field
 On Builder:
  
 ![Date-Time!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/dateTime.png)
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
+
 
 On iOS device:
 
@@ -348,14 +342,13 @@ A text title for the field. This property allows you to set the title for the fi
 On Builder:
 
 ![Decimal!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/decimal.png) 
-<<<<<<< HEAD
+
 
 On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG" width="300px" height="440px"></a>
-=======
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
->>>>>>> a6d492988e89cb0639593e4016da71af350ee6e9
+
+
  
   :::json
         {
@@ -406,16 +399,13 @@ Integer Field
 On Builder:
  
 ![Integer!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/integer.png) 
-<<<<<<< HEAD
+
 
 On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG" width="300px" height="440px"></a>
  
-=======
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
 
->>>>>>> a6d492988e89cb0639593e4016da71af350ee6e9
  :::json
 			{
 				"identifier": "Integer_Question",
@@ -468,7 +458,7 @@ Location Field
 On Builder:
 
 ![Location!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/location.png) 
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
+
 
 On iOS device:
 
@@ -526,7 +516,7 @@ Email Field
 On Builder:
 
 ![Email!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/email.png)  
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
+
 	
 On iOS device:
 
@@ -579,7 +569,7 @@ Phone Number Field
 On Builder:
  
 ![Phone Number!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/phone.png)  
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
+
  
 On iOS device:
 
@@ -636,7 +626,7 @@ Image Field
 On Builder:
 
 ![Image!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/image.png) 
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
+
 
 On iOS device:
 
@@ -698,7 +688,7 @@ Signature Field
 On Builder:
 
 ![Signature!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/signature.png) 
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
+
 
 On iOS device:
 
@@ -750,7 +740,6 @@ Barcode Field
 On Builder:
 	
 ![Barcode!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/barcode.png) 	
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
 
 On iOS device:
 
@@ -813,7 +802,7 @@ Sketch Field
 On Builder:
 
 ![Sketch!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/sketch.png) 
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
+
 	
 On iOS device:
 
@@ -869,14 +858,12 @@ Password Field
 On Builder:
 	
 ![Password!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/password.png)
-<<<<<<< HEAD
+
 
 On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG" width="300px" height="440px"></a>
-=======
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
->>>>>>> a6d492988e89cb0639593e4016da71af350ee6e9
+
   	
   :::json
   	
@@ -917,14 +904,12 @@ Calculated Field
 On Builder:	
 		
 ![Calculated!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/calculated.png) 		
-<<<<<<< HEAD
+
 
 On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG" width="300px" height="440px"></a>
-=======
-![!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/) {iOS}
->>>>>>> a6d492988e89cb0639593e4016da71af350ee6e9
+
 	
   :::json
 
