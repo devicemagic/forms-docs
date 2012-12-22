@@ -16,8 +16,7 @@ On iOS device:
 
 
  
-     :::json
-    
+    :::json
     {
     "identifier": "Free_Text_Question",
     "title": "Free Text Question",
@@ -48,14 +47,14 @@ The free text field is a general field that can accept any type of data. Text or
  
  
  
- How the field is identified in the form structure. The name of the field.
+ How the field is identified in the form. structure. The name of the field.
  
 *Visible:*
  
  
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
 
  
 *Required:*
@@ -84,15 +83,15 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG" width="300px" height="440px"></a>
 
  
-     :::json	
-			{
-				"identifier": "Are_you_OK_",
-				"title": "Are you OK?",
-				"autoIdentifier": true,
-				"type": "boolean",
-				"hint": "Are you ok?",
-				"initialAnswer": "true"
-			}
+    :::json	
+	{
+	"identifier": "Are_you_OK_",
+	"title": "Are you OK?",
+	"autoIdentifier": true,
+	"type": "boolean",
+	"hint": "Are you ok?",
+	"initialAnswer": "true"
+	}
 		
     
  
@@ -114,13 +113,13 @@ The Yes/No field allows you to ask a yes/no question and get a yes/no answer fro
 
 *Identifier:*
  
- How the field is identified in the form
+ How the field is identified in the form.
  
 *Visible:*
  
- Always and Depends on.
- Always means that it always shows in the form
- Depends on will only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
 
  *Required:*
  
@@ -145,29 +144,28 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG" width="300px" height="440px"></a>
 
  
-     :::json
+    :::json
+    {
+    "identifier": "What_is_your_favorite_color_",
+    "title": "What is your favorite color?",
+    "options": [
         {
-            "identifier": "What_is_your_favorite_color_",
-            "title": "What is your favorite color?",
-            "options": [
-                {
-                    "text": "Yellow"
-                },
-                {
-                    "text": "Green"
-                },
-                {
-                    "text": "Red"
-                },
-                {
-                    "text": "Blue"
-                }
-            
-            "autoIdentifier": true,
-            "type": "select",
-            "hint": "Its not green.",
-            "initialAnswer": ""
-        }
+        "text": "Yellow"
+        },
+        {
+        "text": "Green"
+        },
+        {
+        "text": "Red"
+        },
+        {
+        "text": "Blue"
+        } ]
+    "autoIdentifier": true,
+    "type": "select",
+    "hint": "Its not green.",
+    "initialAnswer": ""
+    }
 
  
  
@@ -191,14 +189,14 @@ On iOS device:
 
  *Identifier:*
  
- How the field is identified in the form
+ How the field is identified in the form.
  
  *Visible:*
  
 
- Always and Depends on.
- Always means that it always shows in the form
- Depends on will only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
 
  *Required:*
  
@@ -223,18 +221,17 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG" width="300px" height="440px"></a>
 
-     :::json
-
-        {
-            "identifier": "Date_Question",
-            "title": "Date Question",
-            "autoIdentifier": true,
-            "type": "date",
-            "required_rule": "when",
-            "readonly_rule": "when",
-            "hint": "someHint",
-            "validate_msg": "Some Error"
-        }
+    :::json
+    {
+    "identifier": "Date_Question",
+    "title": "Date Question",
+    "autoIdentifier": true,
+    "type": "date",
+    "required_rule": "when",
+    "readonly_rule": "when",
+    "hint": "someHint",
+    "validate_msg": "Some Error"
+    }
 
 
 
@@ -247,26 +244,26 @@ A text title for the field. This property allows you to set the title for the fi
  
 *Hint:* 
  
- A text hint for the field. This property allows you to give people a hint to answer a specific question.
+A text hint for the field. This property allows you to give people a hint to answer a specific question.
   
- *Identifier:*
+*Identifier:*
  
- How the field is identified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
- set to 
+How the field is identified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
+set to true. 
 
- *autoIdendifier:* 
+*autoIdendifier:* 
  
- Boolean
+Boolean
  
- *Visible:*
+*Visible:*
  
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
 
- *Required*
+*Required*
  
- Never, When it's visible, When it's visible and...
+Never, When it's visible, When it's visible and...
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
@@ -287,20 +284,19 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG" width="300px" height="440px"></a>
   
-     :::json
+    :::json
+    {
+    "identifier": "Date___Time_Question",
+    "title": "Date + Time Question",
+    "autoIdentifier": true,
+    "type": "datetime"
+    }
         
-         {
-            "identifier": "Date___Time_Question",
-            "title": "Date + Time Question",
-            "autoIdentifier": true,
-            "type": "datetime"
-         }
-        
 
 
 
- Date-Time field is a used to accept data related to calendar dates with specific
- time scheduling. 
+Date-Time field is a used to accept data related to calendar dates with specific
+time scheduling. 
  
  **Properties**
 
@@ -337,7 +333,7 @@ A text title for the field. This property allows you to set the title for the fi
 
 
 
- Decimal Field
+Decimal Field
 ------------------
 On Builder:
 
@@ -350,17 +346,17 @@ On iOS device:
 
 
  
-     :::json
-        {
-            "identifier": "Decimal_Question",
-            "title": "Decimal Question",
-            "autoIdentifier": true,
-            "type": "decimal"
-        }
+    :::json
+    {
+    "identifier": "Decimal_Question",
+    "title": "Decimal Question",
+    "autoIdentifier": true,
+    "type": "decimal"
+    }
 
 
 
- Decimal field is for accepting decimal data. Example: 1.4, 4.56, 234.9876, etc.
+Decimal field is for accepting decimal data. Example: 1.4, 4.56, 234.9876, etc.
  
 **Properties**
  
@@ -370,11 +366,11 @@ This property allows you to give people a hint to answer a specific question.
  
 *Initial answer:*
  
-Its the answer you want people to type in
+It is the answer you want people to type in
  
 *Identifier:*
  
-How the field is identified in the form
+How the field is identified in the form.
  
 *Visible:*
 
@@ -407,14 +403,14 @@ On iOS device:
  
 
     :::json
-			{
-				"identifier": "Integer_Question",
-				"title": "Integer Question",
-				"autoIdentifier": true,
-				"type": "integer",
-				"hint": "some hint",
-				"initialAnswer": "some valid integer"
-			}
+	{
+    "identifier": "Integer_Question",
+    "title": "Integer Question",
+    "autoIdentifier": true,
+	"type": "integer",
+	"hint": "some hint",
+	"initialAnswer": "some valid integer"
+	}
 		
 	
 
@@ -428,7 +424,7 @@ Integer field is for accepting whole numbers data. Example: 1, 234, 67.
  
 *Initial answer:*
 
- Its the answer you want people to type in.
+ It is the answer you want people to type in.
  
 *Identifier:*
 
@@ -464,17 +460,16 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG" width="300px" height="440px"></a>
 
-     :::json
-
-			{
-				"identifier": "Location_Question",
-				"title": "Location Question",
-				"autoIdentifier": true,
-				"type": "location",
-				"auto_resolve": true,
-				"hint": "some Hine",
-				"validate_msg": "some Error"
-			}
+    :::json
+    {
+	"identifier": "Location_Question",
+	"title": "Location Question",
+	"autoIdentifier": true,
+	"type": "location",
+	"auto_resolve": true,
+	"hint": "some Hine",
+	"validate_msg": "some Error"
+	}
 		
 	
 	
@@ -488,17 +483,17 @@ This property allows you to give people a hint to answer a specific question.
  
 *Initial answer:*
  
-Its the answer you want people to type in
+It is the answer you want people to type in.
  
 *Identifier:*
  
-How the field is identified in the form
+How the field is identified in the form.
  
 *Visible:*
  
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
 
 *Required:*
 
@@ -522,16 +517,15 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG" width="300px" height="440px"></a>
 	
-	   :::json
-	
-			{
-				"identifier": "Email_Question",
-				"title": "Email Question",
-				"autoIdentifier": true,
-				"type": "email",
-				"hint": "someHint",
-				"validate_msg": "someError"
-			}
+    :::json
+	{
+    "identifier": "Email_Question",
+    "title": "Email Question",
+	"autoIdentifier": true,
+	"type": "email",
+	"hint": "someHint",
+	"validate_msg": "someError"
+	}
 		
 	
 	
@@ -544,10 +538,10 @@ The Email field is for accepting the email of the user. It accepts text.
 This property allows you to give people a hint to answer a specific question.
  
 *Initial answer:*
- Its the answer you want people to type in
+ It is the answer you want people to type in.
  
 *Identifier:*
- How the field is identified in the form
+ How the field is identified in the form.
  
 *Visible:*
  Always and Depends on.
@@ -575,16 +569,15 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG" width="300px" height="440px"></a>
 
-   :::json
- 
-        {
-            "identifier": "Phone_No__Question",
-            "title": "Phone No. Question",
-            "autoIdentifier": true,
-            "type": "phone_number",
-            "hint": "some Hint",
-            "validate_msg": "some Error"
-        }
+    :::json
+    {
+    "identifier": "Phone_No__Question",
+    "title": "Phone No. Question",
+    "autoIdentifier": true,
+    "type": "phone_number",
+    "hint": "some Hint",
+    "validate_msg": "some Error"
+    }
     
  
 
@@ -598,17 +591,17 @@ This property allows you to give people a hint to answer a specific question.
  
 *Initial answer:*
 
-Its the answer you want people to type in
+It is the answer you want people to type in.
  
 *Identifier:*
  
-How the field is identified in the form
+How the field is identified in the form.
  
 *Visible:*
  
-Always and Depends on.
-Always means that it always shows in the form.
-Depends on will only show the field if a set of conditions are met (evaluate to true).
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on will only show the field if a set of conditions are met (evaluate to true).
 
 *Required:*
  
@@ -632,16 +625,15 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG" width="300px" height="440px"></a>
 
-   :::json
-        {
-            "identifier": "Image_Question",
-            "title": "Image Question",
-            "autoIdentifier": true,
-            "type": "image",
-            "hint": "someHint",
-            "validate_msg": "someError"
-			
-        }
+    :::json
+    {
+    "identifier": "Image_Question",
+    "title": "Image Question",
+    "autoIdentifier": true,
+    "type": "image",
+    "hint": "someHint",
+    "validate_msg": "someError"
+    }
     
 
 
@@ -660,11 +652,11 @@ This property allows you to give people a hint to answer a specific question.
  
 *Initial answer:*
 
-Its the answer you want people to type in
+It is the answer you want people to type in.
  
 *Identifier:*
 
-How the field is identified in the form
+How the field is identified in the form.
  
 *Visible:*
  
@@ -692,17 +684,17 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG" width="300px" height="440px"></a>
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG" width="520px" height="400px"></a>
 
-     :::json
-			{
-				"identifier": "Signature_Question",
-				"title": "Signature Question",
-				"autoIdentifier": true,
-				"type": "signature",
-				"hint": "Some Hint",
-				"validate_msg": "Some Error"
-			}
+    :::json
+	{
+	"identifier": "Signature_Question",
+	"title": "Signature Question",
+	"autoIdentifier": true,
+	"type": "signature",
+	"hint": "Some Hint",
+	"validate_msg": "Some Error"
+	}
 		
 	
 	
@@ -750,16 +742,15 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG" width="300px" height="440px"></a>
 
 
-     :::json
-
-			{
-				"identifier": "Barcode_Question",
-				"title": "Barcode Question",
-				"autoIdentifier": true,
-				"type": "barcode",
-				"hint": "some hint",
-				"validate_msg": "some Error"
-			}
+    :::json
+    {
+	"identifier": "Barcode_Question",
+    "title": "Barcode Question",
+	"autoIdentifier": true,
+	"type": "barcode",
+	"hint": "some hint",
+	"validate_msg": "some Error"
+	}
         
 
 The Barcode field is for scanning a barcode. Point the camera to the
@@ -777,7 +768,7 @@ This property allows you to give people a hint to answer a specific question.
 Default value for field.
  
 *Identifier:*
-How the field is identified in the form
+How the field is identified in the form.
  
 *Visible:*
  
@@ -806,25 +797,24 @@ On Builder:
 	
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG" width="300px" height="440px"></a>
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG" width="520px" height="400px"></a>
 
 	
-     :::json
-	
-		{
-            "identifier": "Sketch_Question",
-            "title": "Sketch Question",
-            "autoIdentifier": true,
-            "type": "sketch",
-            "hint": "some Hint",
-            "validate_msg": "some Error"
-        }
+    :::json
+    {
+    "identifier": "Sketch_Question",
+    "title": "Sketch Question",
+    "autoIdentifier": true,
+    "type": "sketch",
+    "hint": "some Hint",
+    "validate_msg": "some Error"
+    }
 		
 		
 The Sketch field is for accepting any type of drawing from the user. 
 
  
- **Properties**
+**Properties**
  
 *Hint:* 
 
@@ -836,7 +826,7 @@ Default value for the field.
  
 *Identifier:*
 
-How the field is identified in the form
+How the field is identified in the form.
  
 *Visible:*
 
@@ -865,17 +855,16 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG" width="300px" height="440px"></a>
 
   	
-     :::json
-  	
-		{
-            "identifier": "Password_Question",
-            "title": "Password Question",
-            "autoIdentifier": true,
-            "type": "password",
-            "required_rule": "always",
-            "hint": "some Hint",
-            "validate_msg": "some Error"
-        }
+    :::json
+  	{
+    "identifier": "Password_Question",
+    "title": "Password Question",
+    "autoIdentifier": true,
+    "type": "password",
+    "required_rule": "always",
+    "hint": "some Hint",
+    "validate_msg": "some Error"
+    }
 	
 		
 The Password field is for accepting the password of the user. 
@@ -884,12 +873,12 @@ It accepts text.
 **Properties**
  
 *Identifier:*
- How the field is identified in the form
+How the field is identified in the form.
  
 *Visible:*
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
 
 *Required:*
 Never, When it's visible, When it's visible and...
@@ -911,23 +900,21 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG" width="300px" height="440px"></a>
 
 	
-     :::json
-
-	
-		{
-            "identifier": "Calculated_Question",
-            "title": "Calculated Question",
-            "autoIdentifier": true,
-            "type": "calculated",
-            "hint": "Some hint",
-            "validate_msg": "some Error"
-        }
+    :::json
+    {
+    "identifier": "Calculated_Question",
+    "title": "Calculated Question",
+    "autoIdentifier": true,
+    "type": "calculated",
+    "hint": "Some hint",
+    "validate_msg": "some Error"
+    }
 
 
 The Calculated field is for calculating values. 
 
 
- **Properties**
+**Properties**
  
 
 *Hint:*
@@ -939,12 +926,13 @@ This property allows you to give people a hint to answer a specific question.
 Default value for the field.
  
 *Identifier:*
-How the field is identified in the form
+How the field is identified in the form.
  
 *Visible:*
- Always and Depends on.
- Always means that it always shows in the form.
- Depends on wil only show the filed if a set of conditions are true.
+
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
 
 *Required:*
 Never, When it's visible, When it's visible and...
