@@ -29,7 +29,7 @@
 
 
 
-if(document.URL == "http://docs.devicemagic.com/fields") {
+if(document.URL.indexOf('fields') != -1) {
 
 		var debug=true,h2Text="",currentIndex=0,preText="";
 		var preCount = $("pre").length;
@@ -46,7 +46,7 @@ if(document.URL == "http://docs.devicemagic.com/fields") {
 		});
 		var h2IndexCount=0
 		$("h2").each(function(){
-			$(this).append('<a onclick=\"javascript:toggle('+preIDArray[h2IndexCount]+')\"> <p style=\"font-size:medium\">Show Code Example<p></a>');
+			$(this).append('<a onclick=\"javascript:toggle('+preIDArray[h2IndexCount]+')\"> <p style=\"font-size:medium\">Click here to show code example<p></a>');
 			h2IndexCount++;
 		});
 		function toggle(inputID){

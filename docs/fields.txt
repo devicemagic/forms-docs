@@ -6,16 +6,6 @@ Fields
 Free Text Field
 ---------------
 
-On Builder:
-
-![free_text!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/freeText.png)
-
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG" width="300px" height="440px"></a>
-
-
- 
     :::json
     {
     "identifier": "Free_Text_Question",
@@ -23,8 +13,16 @@ On iOS device:
     "autoIdentifier": true,
     "type": "text"
     }
-   
 
+
+
+On Builder:
+
+![free_text!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/freeText.png)
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG" width="300px" height="440px"></a>
 
 
 The free text field is a general field that can accept any type of data. Text or Numbers.
@@ -73,16 +71,6 @@ Never, When it's visible, When it's visible and...
 Yes/No Field
 --------------
 
-On Builder:
-
-![Yes/No!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/yesno.png)
-
-
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG" width="300px" height="440px"></a>
-
- 
     :::json	
 	{
 	"identifier": "Are_you_OK_",
@@ -92,9 +80,17 @@ On iOS device:
 	"hint": "Are you ok?",
 	"initialAnswer": "true"
 	}
-		
-    
- 
+
+On Builder:
+
+![Yes/No!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/yesno.png)
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG" width="300px" height="440px"></a>
+
+
 The Yes/No field allows you to ask a yes/no question and get a yes/no answer from the user.
  
 **Properties**
@@ -133,17 +129,7 @@ Never, When it's visible, When it's visible and...
  
 Select Field
 ------------
- 
-On Builder: 
- 
-![Select!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/select.png)
 
-
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG" width="300px" height="440px"></a>
-
- 
     :::json
     {
     "identifier": "What_is_your_favorite_color_",
@@ -168,8 +154,17 @@ On iOS device:
     }
 
  
+On Builder: 
  
- The Select Field allows you to ask a question a provide a specific set of answers for the user to choose from.
+![Select!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/select.png)
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG" width="300px" height="440px"></a>
+
+ 
+The Select Field allows you to ask a question a provide a specific set of answers for the user to choose from.
  
 *Options Button*:
 
@@ -212,15 +207,6 @@ On iOS device:
  Date Field
 --------------
  
-On Builder:
-
-![Date!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/date.png)
-
-
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG" width="300px" height="440px"></a>
-
     :::json
     {
     "identifier": "Date_Question",
@@ -232,12 +218,21 @@ On iOS device:
     "hint": "someHint",
     "validate_msg": "Some Error"
     }
-
-
-
- Date field is a used to accept data related to calendar dates. 
  
- **Properties**
+ 
+On Builder:
+
+![Date!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/date.png)
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG" width="300px" height="440px"></a>
+
+
+Date field is a used to accept data related to calendar dates. 
+ 
+**Properties**
 
 *Title:* 
 A text title for the field. This property allows you to set the title for the field the user will see.
@@ -275,6 +270,14 @@ Never, When it's visible, When it's visible and...
 Date-Time Field
 --------------
 
+    :::json
+    {
+    "identifier": "Date_Time_Question",
+    "title": "Date + Time Question",
+    "autoIdentifier": true,
+    "type": "datetime"
+    }
+
 On Builder:
  
 ![Date-Time!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/dateTime.png)
@@ -284,16 +287,6 @@ On iOS device:
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG" width="300px" height="440px"></a>
   
-    :::json
-    {
-    "identifier": "Date___Time_Question",
-    "title": "Date + Time Question",
-    "autoIdentifier": true,
-    "type": "datetime"
-    }
-        
-
-
 
 Date-Time field is a used to accept data related to calendar dates with specific
 time scheduling. 
@@ -335,17 +328,7 @@ A text title for the field. This property allows you to set the title for the fi
 
 Decimal Field
 ------------------
-On Builder:
 
-![Decimal!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/decimal.png) 
-
-
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG" width="300px" height="440px"></a>
-
-
- 
     :::json
     {
     "identifier": "Decimal_Question",
@@ -355,6 +338,14 @@ On iOS device:
     }
 
 
+On Builder:
+
+![Decimal!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/decimal.png) 
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG" width="300px" height="440px"></a>
 
 Decimal field is for accepting decimal data. Example: 1.4, 4.56, 234.9876, etc.
  
@@ -391,16 +382,6 @@ How the field is identified in the form.
  
 Integer Field
 ----------------
- 
-On Builder:
- 
-![Integer!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/integer.png) 
-
-
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG" width="300px" height="440px"></a>
- 
 
     :::json
 	{
@@ -411,9 +392,18 @@ On iOS device:
 	"hint": "some hint",
 	"initialAnswer": "some valid integer"
 	}
-		
-	
 
+
+ 
+On Builder:
+ 
+![Integer!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/integer.png) 
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG" width="300px" height="440px"></a>
+ 
 Integer field is for accepting whole numbers data. Example: 1, 234, 67.
  
 **Properties**
@@ -451,15 +441,6 @@ The back end converts the field to an integer.
 Location Field
 ----------------- 
 
-On Builder:
-
-![Location!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/location.png) 
-
-
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG" width="300px" height="440px"></a>
-
     :::json
     {
 	"identifier": "Location_Question",
@@ -470,9 +451,17 @@ On iOS device:
 	"hint": "some Hine",
 	"validate_msg": "some Error"
 	}
-		
-	
-	
+
+
+On Builder:
+
+![Location!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/location.png) 
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG" width="300px" height="440px"></a>
+
 Location field is for accepting the location of users. It can be done automatically by Geolocation.
 
 **Properties**
@@ -508,15 +497,6 @@ How the field is identified in the form.
 Email Field
 -------------
 
-On Builder:
-
-![Email!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/email.png)  
-
-	
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG" width="300px" height="440px"></a>
-	
     :::json
 	{
     "identifier": "Email_Question",
@@ -526,10 +506,17 @@ On iOS device:
 	"hint": "someHint",
 	"validate_msg": "someError"
 	}
-		
+
+On Builder:
+
+![Email!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/email.png)  
+
 	
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG" width="300px" height="440px"></a>
 	
-	
+
 The Email field is for accepting the email of the user. It accepts text.
 
 **Properties**
@@ -560,15 +547,6 @@ Never, When it's visible, When it's visible and...
 Phone Number Field
 ------------------
 
-On Builder:
- 
-![Phone Number!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/phone.png)  
-
- 
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG" width="300px" height="440px"></a>
-
     :::json
     {
     "identifier": "Phone_No__Question",
@@ -578,8 +556,17 @@ On iOS device:
     "hint": "some Hint",
     "validate_msg": "some Error"
     }
-    
+
+
+On Builder:
  
+![Phone Number!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/phone.png)  
+
+ 
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG" width="300px" height="440px"></a>
+
 
 The Phone Number field is for accepting the phone number of the user. It accepts text.
 
@@ -616,15 +603,6 @@ Never, When it's visible, When it's visible and...
 Image Field
 -------------
 
-On Builder:
-
-![Image!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/image.png) 
-
-
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG" width="300px" height="440px"></a>
-
     :::json
     {
     "identifier": "Image_Question",
@@ -634,7 +612,15 @@ On iOS device:
     "hint": "someHint",
     "validate_msg": "someError"
     }
-    
+
+On Builder:
+
+![Image!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/image.png) 
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG" width="300px" height="440px"></a>
 
 
 The Image field is for uploading images. 
@@ -677,14 +663,6 @@ Never, When it's visible, When it's visible and...
 Signature Field
 -----------------
 
-On Builder:
-
-![Signature!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/signature.png) 
-
-
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG" width="520px" height="400px"></a>
 
     :::json
 	{
@@ -695,9 +673,17 @@ On iOS device:
 	"hint": "Some Hint",
 	"validate_msg": "Some Error"
 	}
-		
-	
-	
+
+On Builder:
+
+![Signature!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/signature.png) 
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG" width="520px" height="400px"></a>
+
+
 The Signature field is for accepting the signature of the user. 
 
 **Properties**
@@ -729,6 +715,16 @@ Never, When it's visible, When it's visible and...
 Barcode Field
 --------------
 
+    :::json
+    {
+	"identifier": "Barcode_Question",
+    "title": "Barcode Question",
+	"autoIdentifier": true,
+	"type": "barcode",
+	"hint": "some hint",
+	"validate_msg": "some Error"
+	}
+
 On Builder:
 	
 ![Barcode!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/barcode.png) 	
@@ -740,18 +736,6 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode1.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode1.PNG" width="300px" height="440px"></a>
 
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG" width="300px" height="440px"></a>
-
-
-    :::json
-    {
-	"identifier": "Barcode_Question",
-    "title": "Barcode Question",
-	"autoIdentifier": true,
-	"type": "barcode",
-	"hint": "some hint",
-	"validate_msg": "some Error"
-	}
-        
 
 The Barcode field is for scanning a barcode. Point the camera to the
 barcode and the application will scan it automatically. 
@@ -790,16 +774,6 @@ Never, When it's visible, When it's visible and...
 Sketch Field
 ---------------	
 
-On Builder:
-
-![Sketch!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/sketch.png) 
-
-	
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG" width="520px" height="400px"></a>
-
-	
     :::json
     {
     "identifier": "Sketch_Question",
@@ -809,8 +783,16 @@ On iOS device:
     "hint": "some Hint",
     "validate_msg": "some Error"
     }
-		
-		
+
+On Builder:
+
+![Sketch!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/sketch.png) 
+
+	
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG" width="520px" height="400px"></a>
+
 The Sketch field is for accepting any type of drawing from the user. 
 
  
@@ -845,16 +827,6 @@ Never, When it's visible, When it's visible and...
 Password Field		
 ----------------
 
-On Builder:
-	
-![Password!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/password.png)
-
-
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG" width="300px" height="440px"></a>
-
-  	
     :::json
   	{
     "identifier": "Password_Question",
@@ -865,8 +837,18 @@ On iOS device:
     "hint": "some Hint",
     "validate_msg": "some Error"
     }
+
+
+
+On Builder:
 	
-		
+![Password!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/password.png)
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG" width="300px" height="440px"></a>
+
 The Password field is for accepting the password of the user. 
 It accepts text.
 
@@ -890,16 +872,6 @@ Never, When it's visible, When it's visible and...
 Calculated Field
 -------------------	
 
-On Builder:	
-		
-![Calculated!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/calculated.png) 		
-
-
-On iOS device:
-
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG" width="300px" height="440px"></a>
-
-	
     :::json
     {
     "identifier": "Calculated_Question",
@@ -910,6 +882,14 @@ On iOS device:
     "validate_msg": "some Error"
     }
 
+On Builder:	
+		
+![Calculated!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/calculated.png) 		
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG" width="300px" height="440px"></a>
 
 The Calculated field is for calculating values. 
 
