@@ -8,9 +8,6 @@ section 'getting-started', "Getting Started" do
 end
 
 section 'connectors', "Connectors" do
-  topic 'email', "E-Mail"
-  topic 'google', "Google Docs / Drive"
-  topic 'pdf', "PDF"
   topic 'http-connector', "HTTP Connector"
 end
 
