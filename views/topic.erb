@@ -12,6 +12,7 @@
 
 <% if @toc.size > 0 %>
 	<ul id="toc">
+	   
 		<% @toc.each do |section| %>
 			<li><a href="#<%= slugify(section) %>"><%= section %></a></li>
 		<% end %>
@@ -23,3 +24,41 @@
 <% if ns = next_section(params[:topic]) %>
 	<div id="next_section">Next: <a href="/<%= ns[0] %>"><%=h ns[1] %> &rarr;</div>
 <% end %>
+
+<script type="text/javascript">
+
+
+
+if(document.URL.indexOf('fields') != -1) {
+
+		var debug=true,h2Text="",currentIndex=0,preText="";
+		var preCount = $("pre").length;
+		var preIndexArray  = new Array();
+		var preIDArray = new Array();
+		var preIndexCount=0;
+		$("pre").css('display','none');
+		$("pre").each(function(){
+			preIndexArray[preIndexCount]=$(this).index();
+			$(this).attr("id","pre"+preIndexCount);
+			var preID = $(this).attr("id");
+			preIDArray[preIndexCount]=preID;
+			preIndexCount++;
+		});
+		var h2IndexCount=0
+		$("h2").each(function(){
+			$(this).append('<a onclick=\"javascript:toggle('+preIDArray[h2IndexCount]+')\"> <p style=\"font-size:medium\">Click here to show code example<p></a>');
+			h2IndexCount++;
+		});
+		function toggle(inputID){
+			if ($(inputID).css('display') == 'none'){
+				$(inputID).css('display','');
+			}
+			else if ($(inputID).css('display') != 'none'){
+				$(inputID).css('display','none');
+			}
+			else{
+				$(inputID).css('display','none');
+			}
+		}
+}		
+ </script>

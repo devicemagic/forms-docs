@@ -15,9 +15,15 @@
     	  window.location=$(this).find("a").attr("href"); 
     	  return false;
     	});
-		});
+    	
+    	  
+});
 
 	</script>
+	
+	
+	
+	
 </head>
 <body>
 <div id="header">
@@ -37,6 +43,7 @@
 				<li>
 				<h3><%= title %></h3>
 				<ul>
+				    
 					<% topics.each do |slug, title, _| %>
 						<% if params[:topic] == slug %>
 							<li class="current"><a><%=h title %></a></li>
@@ -52,7 +59,9 @@
 
 	<div id="content">
 		<div class="topic_content">
+		
 			<%= yield %>
+			
 		</div>
 	</div>
 </div>
@@ -73,6 +82,14 @@
   })();
 
 </script>
+
+
+
+
+
 <% end %>
+
+
+
 </body>
 </html>

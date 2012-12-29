@@ -2,584 +2,769 @@ Fields
 ======
 
 Free Text Field
-------------------
+---------------
+
+    :::json
+    {
+    "identifier": "Free_Text_Question",
+    "title": "Free Text Question",
+    "autoIdentifier": true,
+    "type": "text"
+    }
+
+
+
+On Builder:
+
+![free_text!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/freeText.png)
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG" width="300px" height="440px"></a>
+
+
+The free text field is a general field that can accept any type of data. Text or Numbers.
  
- :::json
-	 {
-	  "type": "root",
-	  "children": [
-	   {
-		"identifier": "Free_Text_Question",
-		"title": "Free Text Question",
-		"autoIdentifier": true,
-		"type": "text"
-	   }
-	  ],
-	  "title": "Untitled Form"
-	 }
+**Properties**
 
-
-
- Free text field is a general field that can accept any type of data. Text or Numbers.
- Properties:
  
- Hint: property
+*Hint:*
+ 
+ 
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
- Its the answer you want people to type in
+*Initial answer:*
  
- Identifier:
- How the field is indentified in the form
  
- Visible:
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+ A default answer provided by you. Should be the most common answer
+ for the specific question.
+ 
+*Indentifier:*
+ 
+ 
+ 
+ How the field is identified in the form. structure. The name of the field.
+ 
+*Visible:*
+ 
+ 
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+*Required:*
+ 
+ 
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required
+ 
+- When it's visible mean it is required only when it is visible.
+ 
+- When it's visible and means it is  required when it is both visable and some other condition is met.
 
 
 
 Yes/No Field
 --------------
 
- :::json
+    :::json	
 	{
-		"type": "root",
-		"children": [
-			{
-				"identifier": "Are_you_OK_",
-				"title": "Are you OK?",
-				"autoIdentifier": true,
-				"type": "boolean",
-				"hint": "Are you ok?",
-				"initialAnswer": "true"
-			}
-		],
-		"title": "Untitled Form"
+	"identifier": "Are_you_OK_",
+	"title": "Are you OK?",
+	"autoIdentifier": true,
+	"type": "boolean",
+	"hint": "Are you ok?",
+	"initialAnswer": "true"
 	}
-    
- 
+
+On Builder:
+
+![Yes/No!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/yesno.png)
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG" width="300px" height="440px"></a>
+
+
 The Yes/No field allows you to ask a yes/no question and get a yes/no answer from the user.
  
-Properties:
+**Properties**
  
- Hint: property
+*Hint:* 
+ 
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
+*Initial answer:*
+ 
  Boolean (Yes/No).
 
- Type:
+*Type:*
+ 
  What type of data the field accepts. Type for field: Boolean (True or False)
 
- Identifier:
- How the field is indentified in the form
+*Identifier:*
  
- Visible:
- Always and Depends on.
- Always means that it always shows in the form
- Depends on will only show the filed if a set of conditions are true.
+ How the field is identified in the form.
+ 
+*Visible:*
+ 
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+ *Required:*
+ 
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  
  
  
- Select Field
- --------------
- 
- :::json
- 
- {
-    "type": "root",
-    "children": [
+Select Field
+------------
+
+    :::json
+    {
+    "identifier": "What_is_your_favorite_color_",
+    "title": "What is your favorite color?",
+    "options": [
         {
-            "identifier": "What_is_your_favorite_color_",
-            "title": "What is your favorite color?",
-            "options": [
-                {
-                    "text": "Yellow"
-                },
-                {
-                    "text": "Green"
-                },
-                {
-                    "text": "Red"
-                },
-                {
-                    "text": "Blue"
-                }
-            ],
-            "autoIdentifier": true,
-            "type": "select",
-            "hint": "Its not green.",
-            "initialAnswer": ""
-        }
-    ],
-    "title": "Untitled Form"
-}
+        "text": "Yellow"
+        },
+        {
+        "text": "Green"
+        },
+        {
+        "text": "Red"
+        },
+        {
+        "text": "Blue"
+        } ]
+    "autoIdentifier": true,
+    "type": "select",
+    "hint": "Its not green.",
+    "initialAnswer": ""
+    }
+
  
+On Builder: 
  
- The Select Field allows you to ask a question a provide a specific set of answers for the user to choose from.
+![Select!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/select.png)
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG" width="300px" height="440px"></a>
+
  
- Options Button:
+The Select Field allows you to ask a question a provide a specific set of answers for the user to choose from.
+ 
+*Options Button*:
+
+
  This is how you add the set of answers the user can pick from. Press the options button and type in the text.
  There is an option to import from a CSV file. Just import it and the system will automatically ad the values for you.
  CSV stands for Comma Separated Value.
  
- Initial answer:
+*Initial answer:*
+ 
  Allows you to pick a given answer to pick as the default option.
 
- Type:
+ 
+*Type:*
+ 
  Text.
 
- Identifier:
- How the field is indentified in the form
+ *Identifier:*
  
- Visible:
- Always and Depends on.
- Always means that it always shows in the form
- Depends on will only show the filed if a set of conditions are true.
+ How the field is identified in the form.
+ 
+ *Visible:*
+ 
 
- Required:
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
+
+ *Required:*
+ 
  Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  
  
  
  
  Date Field
-------------------
+--------------
  
- :::json
-{
-    "type": "root",
-    "children": [
-        {
-            "identifier": "Date_Question",
-            "title": "Date Question",
-            "autoIdentifier": true,
-            "type": "date",
-            "required_rule": "when",
-            "readonly_rule": "when",
-            "hint": "someHint",
-            "validate_msg": "Some Error"
-        }
-    ],
-    "title": "Untitled Form"
-}
-
-
-
- Date field is a used to accept data related to calendar dates. 
- Properties:
-
- Title: A text title for the field.
- This property allows you to set the title for the field the user will see.
+    :::json
+    {
+    "identifier": "Date_Question",
+    "title": "Date Question",
+    "autoIdentifier": true,
+    "type": "date",
+    "required_rule": "when",
+    "readonly_rule": "when",
+    "hint": "someHint",
+    "validate_msg": "Some Error"
+    }
  
- Hint: A text hint for the field.
- This property allows you to give people a hint to answer a specific question.
+ 
+On Builder:
+
+![Date!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/date.png)
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG" width="300px" height="440px"></a>
+
+
+Date field is a used to accept data related to calendar dates. 
+ 
+**Properties**
+
+*Title:* 
+A text title for the field. This property allows you to set the title for the field the user will see.
+ 
+*Hint:* 
+ 
+A text hint for the field. This property allows you to give people a hint to answer a specific question.
   
- Identifier
- How the field is indentified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
+*Identifier:*
+ 
+How the field is identified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
+set to true. 
+
+*autoIdendifier:* 
+ 
+Boolean
+ 
+*Visible:*
+ 
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
+
+*Required*
+ 
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+
+
+
+Date-Time Field
+--------------
+
+    :::json
+    {
+    "identifier": "Date_Time_Question",
+    "title": "Date + Time Question",
+    "autoIdentifier": true,
+    "type": "datetime"
+    }
+
+On Builder:
+ 
+![Date-Time!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/dateTime.png)
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG" width="300px" height="440px"></a>
+  
+
+Date-Time field is a used to accept data related to calendar dates with specific
+time scheduling. 
+ 
+ **Properties**
+
+*Title:* 
+A text title for the field. This property allows you to set the title for the field the user will see.
+ 
+*Hint:* 
+ 
+ A text hint for the field. This property allows you to give people a hint to answer a specific question.
+  
+ *Identifier:*
+ 
+ How the field is identified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
  set to 
 
- autoIdendifier: Boolean
+ *autoIdendifier:* 
  
- Visible
+ Boolean
+ 
+ *Visible:*
+ 
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required*
+ 
  Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
  
- 
- 
- Decimal Field
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
+
+
+
+
+Decimal Field
 ------------------
- 
- :::json
-	{
-    "type": "root",
-    "children": [
-        {
-            "identifier": "Decimal_Question",
-            "title": "Decimal Question",
-            "autoIdentifier": true,
-            "type": "decimal"
-        }
-    ],
-    "title": "Untitled Form"
+
+    :::json
+    {
+    "identifier": "Decimal_Question",
+    "title": "Decimal Question",
+    "autoIdentifier": true,
+    "type": "decimal"
     }
 
 
+On Builder:
 
- Decimal field is for accepting decimal data. Example: 1.4, 4.56, 234.9876, etc.
- Properties:
+![Decimal!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/decimal.png) 
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG" width="300px" height="440px"></a>
+
+Decimal field is for accepting decimal data. Example: 1.4, 4.56, 234.9876, etc.
  
- Hint: property
- This property allows you to give people a hint to answer a specific question.
+**Properties**
  
- Initial answer:
- Its the answer you want people to type in
+*Hint:* 
+
+This property allows you to give people a hint to answer a specific question.
  
- Identifier:
- How the field is indentified in the form
+*Initial answer:*
  
- Visible:
+It is the answer you want people to type in
+ 
+*Identifier:*
+ 
+How the field is identified in the form.
+ 
+*Visible:*
+
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+ *Required:*
  Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
  
- Developers: 
- Note: The back end converts the field to float. 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+  
+ **Developers Note:** The back end converts the field to type float. 
  
  
- Integer Field
- ----------------
- 
- :::json
- 
-	 {
-		"type": "root",
-		"children": [
-			{
-				"identifier": "Integer_Question",
-				"title": "Integer Question",
-				"autoIdentifier": true,
-				"type": "integer",
-				"hint": "some hint",
-				"initialAnswer": "some valid integer"
-			}
-		],
-		"title": "Untitled Form"
+Integer Field
+----------------
+
+    :::json
+	{
+    "identifier": "Integer_Question",
+    "title": "Integer Question",
+    "autoIdentifier": true,
+	"type": "integer",
+	"hint": "some hint",
+	"initialAnswer": "some valid integer"
 	}
 
+
+ 
+On Builder:
+ 
+![Integer!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/integer.png) 
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG" width="300px" height="440px"></a>
+ 
 Integer field is for accepting whole numbers data. Example: 1, 234, 67.
- Properties:
  
- Hint: property
+**Properties**
+ 
+*Hint:*
+
  This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
- Its the answer you want people to type in
+*Initial answer:*
+
+ It is the answer you want people to type in.
  
- Identifier:
- How the field is indentified in the form
+*Identifier:*
+
+ How the field is identified in the form.
  
- Visible:
+*Visible:*
+ 
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+*Required:*
+
+Never, When it's visible, When it's visible and...
  
- Developers: 
- Note: The back end converts the field to an integer.
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+ **Developers Note:** 
+The back end converts the field to an integer.
  
  
- Location Field
- ----------------- 
- 
- :::json
-	 {
-		"type": "root",
-		"children": [
-			{
-				"identifier": "Location_Question",
-				"title": "Location Question",
-				"autoIdentifier": true,
-				"type": "location",
-				"auto_resolve": true,
-				"hint": "some Hine",
-				"validate_msg": "some Error"
-			}
-		],
-		"title": "Untitled Form"
+Location Field
+----------------- 
+
+    :::json
+    {
+	"identifier": "Location_Question",
+	"title": "Location Question",
+	"autoIdentifier": true,
+	"type": "location",
+	"auto_resolve": true,
+	"hint": "some Hine",
+	"validate_msg": "some Error"
 	}
-	
-Location field is for accepting the location of users. 
-It can be done automatically by Geolocation.
 
- Properties:
- 
- Hint: property
- This property allows you to give people a hint to answer a specific question.
- 
- Initial answer:
- Its the answer you want people to type in
- 
- Identifier:
- How the field is indentified in the form
- 
- Visible:
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
 
- Required:
+On Builder:
+
+![Location!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/location.png) 
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG" width="300px" height="440px"></a>
+
+Location field is for accepting the location of users. It can be done automatically by Geolocation.
+
+**Properties**
+ 
+*Hint:* 
+ 
+This property allows you to give people a hint to answer a specific question.
+ 
+*Initial answer:*
+ 
+It is the answer you want people to type in.
+ 
+*Identifier:*
+ 
+How the field is identified in the form.
+ 
+*Visible:*
+ 
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
+
+*Required:*
+
  Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  
  
  
 Email Field
---------------
+-------------
 
- :::json
+    :::json
 	{
-		"type": "root",
-		"children": [
-			{
-				"identifier": "Email_Question",
-				"title": "Email Question",
-				"autoIdentifier": true,
-				"type": "email",
-				"hint": "someHint",
-				"validate_msg": "someError"
-			}
-		],
-		"title": "Untitled Form"
+    "identifier": "Email_Question",
+    "title": "Email Question",
+	"autoIdentifier": true,
+	"type": "email",
+	"hint": "someHint",
+	"validate_msg": "someError"
 	}
-	
-	
-The Email field is for accepting the email of the user.. 
-It accpets text.
 
- Properties:
+On Builder:
+
+![Email!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/email.png)  
+
+	
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG" width="300px" height="440px"></a>
+	
+
+The Email field is for accepting the email of the user. It accepts text.
+
+**Properties**
  
- Hint: property
- This property allows you to give people a hint to answer a specific question.
+*Hint:* 
+This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
- Its the answer you want people to type in
+*Initial answer:*
+ It is the answer you want people to type in.
  
- Identifier:
- How the field is indentified in the form
+*Identifier:*
+ How the field is identified in the form.
  
- Visible:
+*Visible:*
  Always and Depends on.
  Always means that it always shows in the form
  Depends on wil only show the filed if a set of conditions are true.
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+*Required:*
+
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  	
 
-PhoneNumber Field
------------
- {
-    "type": "root",
-    "children": [
-        {
-            "identifier": "Phone_No__Question",
-            "title": "Phone No. Question",
-            "autoIdentifier": true,
-            "type": "phone_number",
-            "hint": "some Hint",
-            "validate_msg": "some Error"
-        }
-    ],
-    "title": "Untitled Form"
-}
+Phone Number Field
+------------------
 
-The Phone Number field is for accepting the phone number of the user.. 
-It accpets text.
+    :::json
+    {
+    "identifier": "Phone_No__Question",
+    "title": "Phone No. Question",
+    "autoIdentifier": true,
+    "type": "phone_number",
+    "hint": "some Hint",
+    "validate_msg": "some Error"
+    }
 
- Properties:
- 
- Hint: property
- This property allows you to give people a hint to answer a specific question.
- 
- Initial answer:
- Its the answer you want people to type in
- 
- Identifier:
- How the field is indentified in the form
- 
- Visible:
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+On Builder:
+ 
+![Phone Number!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/phone.png)  
+
+ 
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG" width="300px" height="440px"></a>
+
+
+The Phone Number field is for accepting the phone number of the user. It accepts text.
+
+**Properties**
+ 
+*Hint:* 
+ 
+This property allows you to give people a hint to answer a specific question.
+ 
+*Initial answer:*
+
+It is the answer you want people to type in.
+ 
+*Identifier:*
+ 
+How the field is identified in the form.
+ 
+*Visible:*
+ 
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on will only show the field if a set of conditions are met (evaluate to true).
+
+*Required:*
+ 
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  	
 
 
 Image Field
 -------------
- {
-    "type": "root",
-    "children": [
-        {
-            "identifier": "Image_Question",
-            "title": "Image Question",
-            "autoIdentifier": true,
-            "type": "image",
-            "hint": "someHint",
-            "validate_msg": "someError"
-			
-        }
-    ],
-    "title": "Untitled Form"
-}
+
+    :::json
+    {
+    "identifier": "Image_Question",
+    "title": "Image Question",
+    "autoIdentifier": true,
+    "type": "image",
+    "hint": "someHint",
+    "validate_msg": "someError"
+    }
+
+On Builder:
+
+![Image!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/image.png) 
 
 
-The Email field is for accepting the email of the user.. 
-It accpets text.
+On iOS device:
 
- Properties:
- 
- Extra Large:
- Allows for extra large image sizes. *Need to know what size extra large is*
- 
- Hint: property
- This property allows you to give people a hint to answer a specific question.
- 
- Initial answer:
- Its the answer you want people to type in
- 
- Identifier:
- How the field is indentified in the form
- 
- Visible:
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG" width="300px" height="440px"></a>
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+
+The Image field is for uploading images. 
+It accepts image files (JPEG | PNG | BMP | GIF).
+
+**Properties**
+ 
+*Extra Large:*
+
+Allows for extra large image sizes. ????What size is extra large Dusan???
+ 
+*Hint:* 
+
+This property allows you to give people a hint to answer a specific question.
+ 
+*Initial answer:*
+
+It is the answer you want people to type in.
+ 
+*Identifier:*
+
+How the field is identified in the form.
+ 
+*Visible:*
+ 
+Always and Depends on.
+Always means that it always shows in the form.
+Depends on wil only show the filed if a set of conditions are true.
+
+*Required:*
+
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  	
 
 	
 Signature Field
 -----------------
 
-	:::json
+
+    :::json
 	{
-		"type": "root",
-		"children": [
-			{
-				"identifier": "Signature_Question",
-				"title": "Signature Question",
-				"autoIdentifier": true,
-				"type": "signature",
-				"hint": "Some Hint",
-				"validate_msg": "Some Error"
-			}
-		],
-		"title": "Untitled Form"
+	"identifier": "Signature_Question",
+	"title": "Signature Question",
+	"autoIdentifier": true,
+	"type": "signature",
+	"hint": "Some Hint",
+	"validate_msg": "Some Error"
 	}
-	
+
+On Builder:
+
+![Signature!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/signature.png) 
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG" width="520px" height="400px"></a>
+
+
 The Signature field is for accepting the signature of the user. 
-It accpets text.
 
- Properties:
+**Properties**
  
- Extra Large:
- Allows for extra large image sizes. *Need to know what size extra large is*
+*Hint:* 
+This property allows you to give people a hint to answer a specific question.
  
- Hint: property
- This property allows you to give people a hint to answer a specific question.
+*Initial answer:*
+Default value for field.
  
- Initial answer:
- Its the answer you want people to type in
+*Identifier:*
+How the field is identified in the form.
  
- Identifier:
- How the field is indentified in the form
+*Visible:*
  
- Visible:
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+Always and Depends on.
+Always means that it always shows in the form.
+Depends on wil only show the filed if a set of conditions are true.
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+*Required:*
+ 
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
  
  
- Barcode Field
- ---------------
+Barcode Field
+--------------
+
+    :::json
+    {
+	"identifier": "Barcode_Question",
+    "title": "Barcode Question",
+	"autoIdentifier": true,
+	"type": "barcode",
+	"hint": "some hint",
+	"validate_msg": "some Error"
+	}
+
+On Builder:
 	
-	:::json
-	 {
-		"type": "root",
-		"children": [
-			{
-				"identifier": "Barcode_Question",
-				"title": "Barcode Question",
-				"autoIdentifier": true,
-				"type": "barcode",
-				"hint": "some hint",
-				"validate_msg": "some Error"
-			},
-        
+![Barcode!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/barcode.png) 	
 
-The Barcode field is for *******? 
-It accepts ****?
+On iOS device:
 
- Properties:
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode0.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode0.PNG" width="300px" height="440px"></a>
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode1.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode1.PNG" width="300px" height="440px"></a>
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG" width="300px" height="440px"></a>
+
+The Barcode field is for scanning a barcode. Point the camera to the
+barcode and the application will scan it automatically. 
+
+
+**Properties**
  
 
  
- Hint: property
- This property allows you to give people a hint to answer a specific question.
+*Hint:* 
+This property allows you to give people a hint to answer a specific question.
  
- Initial answer:
- Its the answer you want people to type in
+*Initial answer:*
+Default value for field.
  
- Identifier:
- How the field is indentified in the form
+*Identifier:*
+How the field is identified in the form.
  
- Visible:
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+*Visible:*
+ 
+Always and Depends on.
+Always means that it always shows in the form.
+Depends on wil only show the filed if a set of conditions are true.
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+*Required:*
+
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
 
 
 		
@@ -587,129 +772,149 @@ It accepts ****?
 Sketch Field
 ---------------	
 
-	:::json
-		{
-            "identifier": "Sketch_Question",
-            "title": "Sketch Question",
-            "autoIdentifier": true,
-            "type": "sketch",
-            "hint": "some Hint",
-            "validate_msg": "some Error"
-        },
-		
-		
-The Sketch field is for ******?. 
-It accpets *****?
- 
- Properties:
- 
- 
- 
- Hint: property
- This property allows you to give people a hint to answer a specific question.
- 
- Initial answer:
- Its the answer you want people to type in
- 
- Identifier:
- How the field is indentified in the form
- 
- Visible:
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+    :::json
+    {
+    "identifier": "Sketch_Question",
+    "title": "Sketch Question",
+    "autoIdentifier": true,
+    "type": "sketch",
+    "hint": "some Hint",
+    "validate_msg": "some Error"
+    }
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+On Builder:
+
+![Sketch!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/sketch.png) 
+
+	
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG" width="520px" height="400px"></a>
+
+The Sketch field is for accepting any type of drawing from the user. 
+
+ 
+**Properties**
+ 
+*Hint:* 
+
+This property allows you to give people a hint to answer a specific question.
+ 
+*Initial answer:*
+
+Default value for the field.
+ 
+*Identifier:*
+
+How the field is identified in the form.
+ 
+*Visible:*
+
+Always and Depends on.
+Always means that it always shows in the form.
+Depends on wil only show the filed if a set of conditions are true.
+
+*Required*
+ 
+Never, When it's visible, When it's visible and...
+
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
         
 Password Field		
 ----------------
+
+    :::json
+  	{
+    "identifier": "Password_Question",
+    "title": "Password Question",
+    "autoIdentifier": true,
+    "type": "password",
+    "required_rule": "always",
+    "hint": "some Hint",
+    "validate_msg": "some Error"
+    }
+
+
+
+On Builder:
 	
- :::json	
-		{
-            "identifier": "Password_Question",
-            "title": "Password Question",
-            "autoIdentifier": true,
-            "type": "password",
-            "required_rule": "always",
-            "hint": "some Hint",
-            "validate_msg": "some Error"
-        },
-		
-		
+![Password!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/password.png)
+
+
+On iOS device:
+
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG" width="300px" height="440px"></a>
+
 The Password field is for accepting the password of the user. 
 It accepts text.
 
- Properties:
+**Properties**
  
+*Identifier:*
+How the field is identified in the form.
  
- 
- Hint: property
- This property allows you to give people a hint to answer a specific question.
- 
- Initial answer:
- Its the answer you want people to type in
- 
- Identifier:
- How the field is indentified in the form
- 
- Visible:
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+*Visible:*
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+*Required:*
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
         
 Calculated Field
--------------------		
+-------------------	
+
+    :::json
+    {
+    "identifier": "Calculated_Question",
+    "title": "Calculated Question",
+    "autoIdentifier": true,
+    "type": "calculated",
+    "hint": "Some hint",
+    "validate_msg": "some Error"
+    }
+
+On Builder:	
 		
-		
-	:::json
-
-	
-		{
-            "identifier": "Calculated_Question",
-            "title": "Calculated Question",
-            "autoIdentifier": true,
-            "type": "calculated",
-            "hint": "Some hint",
-            "validate_msg": "some Error"
-        }
-    ],
-    "title": "Untitled Form"
-}
+![Calculated!](https://s3.amazonaws.com/docs_resources/designer/reference/fields/calculated.png) 		
 
 
-The Calculated field is for calculating value. 
-It accepts *****?
+On iOS device:
 
- Properties:
+<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG" width="300px" height="440px"></a>
+
+The Calculated field is for calculating values. 
+
+
+**Properties**
  
 
- 
- Hint: property
- This property allows you to give people a hint to answer a specific question.
- 
- Initial answer:
- Its the answer you want people to type in
- 
- Identifier:
- How the field is indentified in the form
- 
- Visible:
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+*Hint:*
 
- Required:
- Never, When it's visible, When it's visible and...
- Never means it is never required
- When it's visible mean it is required only when it is visible.
- When it's visible and means it is  required when it is both visable and some other condition is met.
+This property allows you to give people a hint to answer a specific question.
+ 
+*Initial answer:*
+
+Default value for the field.
+ 
+*Identifier:*
+How the field is identified in the form.
+ 
+*Visible:*
+
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on wil only show the filed if a set of conditions are true.
+
+*Required:*
+Never, When it's visible, When it's visible and...
+ 
+- Never means it is never required.
+- When it's visible mean it is required only when it is visible.
+- When it's visible and means it is  required when it is both visable and some other condition is met.
