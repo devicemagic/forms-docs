@@ -2,7 +2,7 @@ source :gemcutter
 
 gem 'thin'
 gem 'sinatra'
-gem 'rdiscount'
+gem 'rdiscount', '1.6.8'
 gem 'rest-client'
 gem 'haml'
 gem 'json'
