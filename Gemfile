@@ -1,21 +1,21 @@
 source :gemcutter
 
-gem 'thin', '1.2.7'
-gem 'sinatra', '1.1.0'
-gem 'rdiscount', '1.3.5'
-gem 'rest-client', '1.2.0'
-gem 'haml', '2.2.17'
+gem 'thin'
+gem 'sinatra'
+gem 'rdiscount'
+gem 'rest-client'
+gem 'haml'
 gem 'json'
-gem 'heroku-nav', '0.1.20'
+gem 'heroku-nav'
 gem 'newrelic_rpm'
 gem 'nokogirl'
-gem 'coderay'
+gem 'coderay', '0.9.8'
 gem 'rack-codehighlighter'
 gem 'faraday',   :git => 'git://github.com/technoweenie/faraday',  :ref => '3aa840d012875ee80410'
 gem 'indextank', :git => 'git://github.com/hone/indextank-rb.git', :ref => '61c217938b9c96f69ba0'
-gem 'rack', '1.1.2'
+gem 'rack'
 
 group :development do
   gem 'shotgun'
-  gem 'rake', '0.9.2.2'
+  gem 'rake'
 end
