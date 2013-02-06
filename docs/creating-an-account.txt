@@ -1,7 +1,7 @@
 Creating an account
 ===================
 
-To create a new Mobile Forms account select the [signup](/signup) button on the home page and enter your details in the form that follows. A valid email address is required to activate the account so make sure you enter this correctly.
+To create a new Mobile Forms account select the 'Sign up' button on the home page and enter your details in the form that follows. A valid email address is required to activate the account so make sure you enter this correctly.
 
 ![Signup Button!](http://s3.amazonaws.com/docs_resources/signup.png)
 

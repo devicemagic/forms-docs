@@ -12,7 +12,7 @@ Mobile Devices
 Tablets
 -------
 * <a href="https://market.android.com/details?id=com.devicemagic.androidx.forms">Android 2.2 and above</a>
-* BlackBerry PlayBook (in beta, available soon)
+* <a href="https://appworld.blackberry.com/webstore/content/23200">BlackBerry PlayBook</a>
 * <a href="http://itunes.apple.com/us/app/mobile-forms/id412808376?mt=8">iPad</a>
 
 Desktop (coming soon)
