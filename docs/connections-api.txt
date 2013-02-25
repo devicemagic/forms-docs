@@ -1,0 +1,94 @@
+Connections API
+===============
+
+This API allows you to configure destinations for your submission data.
+
+You can configure connections for each of your forms, and when users submit those forms, the data is delivered through all the connections you've set up.
+
+For now this API only allows you to create HTTP connections for your forms. There's more information about [HTTP connections here](http-connector).
+
+Authentication
+--------------
+
+To use the API, you'll need to obtain an access token and pass this along in each call - please see our [authentication topic](auth) for more information. Your API token can be obtained from your "Edit Organization" screen.
+
+Base URL
+--------
+Because connections are associated with forms, all your API requests that work with connections need to identify the form that you're referring to. So requests will be based on the following URL (note the HTTPS):
+	:::term
+	https://www.devicemagic.com/organizations/[organization_id]/forms/[form_id]/remote_connections
+	
+where
+
+1. Your organization_id is evident from the URL to your dashboard when browsing www.devicemagic.com/organizations/[organization_id]/
+2. The form_id is the id of the form you'd like to work with
+
+Creating a Connection via XML
+-----------------------------
+
+To create a connection for a form, you'll need to send a POST to the URL below.
+    :::term
+    HTTP POST /organizations/[organization_id]/forms/[form_id]/remote_connections
+    Content-Type: application/xml
+
+The POST body XML, needs to look like the following:
+    :::xml
+    <remote_connections>
+      <http_connection>
+        <name>My Connection Name</name>
+        <remote_url>http://my_remote_server.com:8080/deliver</remote_url>
+      </http_connection>
+    </remote_connections>
+  
+The child elements of <http_connection> configure the connection:
+
+1. **name** : The human-friendly name you'd like for the connection. We'll show you this on the connection pages to help you identify your various connections.
+2. **remote_url** : This is the full URL you'd like your submission data to be POSTed to.
+
+If you'd like to create multiple connections for the form at the same time, you can include multiple <http_connection> elements in the POST body:
+    :::xml
+    <remote_connections>
+      <http_connection>
+        ...
+      </http_connection>
+      <http_connection>
+        ...
+      </http_connection>
+    </remote_connections>
+
+Creating a Connection via JSON
+------------------------------
+
+To create a connection for a form, you'll need to send a POST to the URL below.
+    :::term
+    HTTP POST /organizations/[organization_id]/forms/[form_id]/remote_connections
+    Content-Type: application/json
+
+The POST body JSON, needs to look like the following:
+    :::json
+    {
+      "http_connection" : 
+      {
+        "name" : "My Connection Name", 
+        "remote_url" : "http://my_remote_server:8080/deliver"
+      }
+    }
+  
+The child properties configure the connection:
+
+1. **name** : The human-friendly name you'd like for the connection. We'll show you this on the connection pages to help you identify your various connections.
+2. **remote_url** : This is the full URL you'd like your submission data to be POSTed to.
+
+If you'd like to create multiple connections for the form at the same time, provide them in an array in the POST body:
+    :::json
+    [
+      { "http_connection" : { ... } },
+      { "http_connection" : { ... } }
+    ]    
+
+Server Responses
+----------------
+
+On successful creation of connections, you'll receive a 201 Created, along with a response body (in XML, or JSON depending on what your request used) the provides details of the created connections.
+
+If the creation fails, check the response header 'Message'. It should contain a reason for the failure.
