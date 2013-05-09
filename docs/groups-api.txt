@@ -1,0 +1,83 @@
+Groups API
+==========
+
+The groups API allows you to manage groups within your organization.
+
+Each form is assigned to a group, and devices are members of (potentially multiple) groups. This means you can have certain forms only visible to certain devices.
+
+(You may only want you "New Lead" form visible to your sales team, and while you're testing new form designs, you may only want those forms visible on test devices.)
+
+This API allows you to create new groups.
+
+If you're looking to manage the group a form belongs to, please see the [forms API](forms-api). 
+
+If you're looking to organize a device's groups, please see the [devices API](devices-api).
+
+The API requires you to authenticate each call with your API token. Please see our [authentication topic](auth) if you need to know more.
+
+Base URL
+--------
+The groups API is RESTful, operating on this base URL (note the HTTPS):
+	:::term
+	https://www.devicemagic.com/organizations/[org_id]/groups
+
+where your [org_id] is the same ID in the URL when you're logged in and viewing your forms at www.devicemagic.com with your browser.
+
+Creating Groups
+---------------
+
+To create a group, you'll need to do an HTTP POST with the names of the groups you'd like to create to 
+	:::term
+	HTTP POST https://www.devicemagic.com/organizations/[org_id]/groups
+
+Creating Groups via XML
+-----------------------
+
+If you'd like to create groups via XML, you'll need to set the content-type header:
+
+	:::term
+	Content-Type: application/xml
+
+and your POST body will need to look like this:
+	:::xml
+	<groups>
+		<group>
+			<name>My New Group Name</name>
+		<group>
+	<groups>
+
+You can specify multiple groups to create at the same time:
+	:::xml
+	<groups>
+		<group>
+			<name>A First Group</name>
+		<group>
+		<group>
+			<name>A Second Group</name>
+		<group>
+	<groups>
+
+Creating Groups via JSON
+------------------------
+
+If you prefer to use JSON, you'll need to set the content-type header:
+
+	:::term
+	Content-Type: application/json
+
+and your POST body will need to look something like this:
+	:::json
+	[ "My New Group Name" ]
+
+You can create multiple groups at the same time by providing additional names in your array:
+	:::json
+	[ "A First Group", "A Second Group" ]
+
+Server Responses for Group Creation
+-----------------------------------
+
+If your groups were created, the server will respond with a 201 Created.
+
+If no groups were changed, the server will respond with a 304 No Modified.
+
+If there was a problem with a request, the server will respond with a 400 Bad Request. Check the 'Message' header in the response headers for the reason for the problem.

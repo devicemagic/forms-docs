@@ -25,6 +25,7 @@ section 'api', "Developer API" do
   topic 'auth', 'Authentication'
   topic 'forms-api', "Forms API"
   topic 'devices-api', "Devices API"
+  topic 'groups-api', "Groups API"
   topic 'push-api', "Push API"
   topic 'connections-api', "Connections API"
 end   
