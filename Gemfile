@@ -1,3 +1,5 @@
+source 'https://rubygems.org'
+
 gem 'thin'
 gem 'sinatra'
 gem 'rdiscount', '1.6.8'
