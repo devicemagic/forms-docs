@@ -43,7 +43,7 @@ and your POST body will need to look like this:
 	<groups>
 		<group>
 			<name>My New Group Name</name>
-		<group>
+		</group>
 	<groups>
 
 You can specify multiple groups to create at the same time:
@@ -51,10 +51,10 @@ You can specify multiple groups to create at the same time:
 	<groups>
 		<group>
 			<name>A First Group</name>
-		<group>
+		</group>
 		<group>
 			<name>A Second Group</name>
-		<group>
+		</group>
 	<groups>
 
 Creating Groups via JSON
