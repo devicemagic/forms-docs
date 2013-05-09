@@ -44,7 +44,7 @@ and your POST body will need to look like this:
 		<group>
 			<name>My New Group Name</name>
 		</group>
-	<groups>
+	</groups>
 
 You can specify multiple groups to create at the same time:
 	:::xml
@@ -55,7 +55,7 @@ You can specify multiple groups to create at the same time:
 		<group>
 			<name>A Second Group</name>
 		</group>
-	<groups>
+	</groups>
 
 Creating Groups via JSON
 ------------------------
