@@ -5,7 +5,7 @@ The groups API allows you to manage groups within your organization.
 
 Each form is assigned to a group, and devices are members of (potentially multiple) groups. This means you can have certain forms only visible to certain devices.
 
-(You may only want you "New Lead" form visible to your sales team, and while you're testing new form designs, you may only want those forms visible on test devices.)
+(You may only want your "New Lead" form visible to your sales team, and while you're testing new form designs, you may only want those forms visible on test devices.)
 
 This API allows you to create new groups.
 

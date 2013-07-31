@@ -21,13 +21,13 @@ The device will launch a download dialog. Click Download to start downloading. I
 
 ![download!](http://s3.amazonaws.com/docs_resources/device_bb_download.png)
 
-Once the download is complete browse to the application and open it - usually it will be found in the Downloads folder:
+Once the download is complete, browse to the application and open it - usually it will be found in the Downloads folder:
 
 
 ![folder!](http://s3.amazonaws.com/docs_resources/device_bb_downloads.jpg) &nbsp;
 ![icon!](http://s3.amazonaws.com/docs_resources/device_bb_icon.jpg)
 
-When the application starts for the first time you will be asked if you wish to join an existing organization or create a new one. If you created an organization when going through the earlier chapters in this guide select "Join Existing Organization" otherwise select Sign up for free and follow the prompts in the email you will receive. If you are joining an existing organization you will be presented with the following registration screen. 
+When the application starts for the first time you will be asked if you wish to join an existing organization or create a new one. If you created an organization when going through the earlier chapters in this guide, select "Join Existing Organization" otherwise select Sign up for free and follow the prompts in the email you will receive. If you are joining an existing organization you will be presented with the following registration screen. 
 
 ![start](http://s3.amazonaws.com/docs_resources/device_bb_start.png)
 
@@ -45,6 +45,6 @@ Switch back to the website. If you click "devices" the devices page should refre
 
 ![approve](http://s3.amazonaws.com/docs_resources/device_approve.png)
 
-Now have a look at your BlackBerry. If the application the has not already moved past the requesting assignment screen click "Recheck status" - the application should open and begin downloading forms. Notice that our new form has been starred to alert the user to its presence.
+Now have a look at your BlackBerry. If the application has not already moved past the requesting assignment screen click "Recheck status" - the application should open and begin downloading forms. Notice that our new form has been starred to alert the user to its presence.
 
 ![forms](http://s3.amazonaws.com/docs_resources/device_bb_forms.png)

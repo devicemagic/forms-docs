@@ -89,6 +89,6 @@ If you'd like to create multiple connections for the form at the same time, prov
 Server Responses
 ----------------
 
-On successful creation of connections, you'll receive a 201 Created, along with a response body (in XML, or JSON depending on what your request used) the provides details of the created connections.
+On successful creation of connections, you'll receive a 201 Created, along with a response body (in XML, or JSON depending on what your request used) that provides details of the created connections.
 
 If the creation fails, check the response header 'Message'. It should contain a reason for the failure.

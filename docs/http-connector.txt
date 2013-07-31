@@ -21,7 +21,7 @@ Using the "First Form" demo form as an example, this would be a corresponding XM
 	
 
 
-Once your server has finished processing the XML succesfully, return a 20X-series of HTTP response. 
+Once your server has finished processing the XML successfully, return a 20X-series of HTTP response. 
 
 NOTE: Any other response code will be interpreted as a failure by the Mobile Forms server and will continue to attempt delivery at periodic intervals.
 

@@ -57,10 +57,10 @@ The resulting XML fragment will look similar to the following:
 	
 Sending a Push
 --------------
-Depending on the platform, pushing a form to an organization's device will have a different effect. On the BlackBerry platform, the red indicator light is illuminated, the unified inbox receives a message and the device status bar indicates an outstanding form for completion. On iPhone a message will popup if the app is closed. The app icon's badge indicator will also reflect the amount of uncompleted pushed forms
+Depending on the platform, pushing a form to an organization's device will have a different effect. On the BlackBerry platform, the red indicator light is illuminated, the unified inbox receives a message and the device status bar indicates an outstanding form for completion. On iPhone a message will popup if the app is closed. The app icon's badge indicator will also reflect the amount of uncompleted pushed forms.
 
 
-The first thing to realise about the push API is that it allows a "copy" of an existing form (the "template") to be sent to a device with some of the field values automatically populated. Programatically, an XML payload is POST'ed as follows (be sure to set the content type to "application/xml"):
+The first thing to realize about the push API is that it allows a "copy" of an existing form (the "template") to be sent to a device with some of the field values automatically populated. Programatically, an XML payload is POST'ed as follows (be sure to set the content type to "application/xml"):
 	:::term
 	HTTP POST /clients/[device_identifier]/oneshots
 	HTTP POST /clients/Android_351751049564712/oneshots

@@ -50,7 +50,7 @@ The free text field is a general field that can accept any type of data. Text or
  
 - Always and Depends on.
 - Always means that it always shows in the form.
-- Depends on wil only show the filed if a set of conditions are true.
+- Depends on will only show the field if a set of conditions are true.
 
  
 *Required:*
@@ -62,7 +62,7 @@ Never, When it's visible, When it's visible and...
  
 - When it's visible mean it is required only when it is visible.
  
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is required when it is both visible and some other condition is met.
 
 
 
@@ -113,7 +113,7 @@ The Yes/No field allows you to ask a yes/no question and get a yes/no answer fro
  
 - Always and Depends on.
 - Always means that it always shows in the form.
-- Depends on wil only show the filed if a set of conditions are true.
+- Depends on will only show the field if a set of conditions are true.
 
  *Required:*
  
@@ -121,7 +121,7 @@ Never, When it's visible, When it's visible and...
  
 - Never means it is never required
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is required when it is both visible and some other condition is met.
  
  
  
@@ -168,7 +168,7 @@ The Select Field allows you to ask a question a provide a specific set of answer
 
 
  This is how you add the set of answers the user can pick from. Press the options button and type in the text.
- There is an option to import from a CSV file. Just import it and the system will automatically ad the values for you.
+ There is an option to import from a CSV file. Just import it and the system will automatically add the values for you.
  CSV stands for Comma Separated Value.
  
 *Initial answer:*
@@ -189,7 +189,7 @@ The Select Field allows you to ask a question a provide a specific set of answer
 
 - Always and Depends on.
 - Always means that it always shows in the form.
-- Depends on wil only show the filed if a set of conditions are true.
+- Depends on will only show the field if a set of conditions are true.
 
  *Required:*
  
@@ -197,7 +197,7 @@ The Select Field allows you to ask a question a provide a specific set of answer
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is required when it is both visible and some other condition is met.
  
  
  
@@ -228,7 +228,7 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG" width="300px" height="440px"></a>
 
 
-Date field is a used to accept data related to calendar dates. 
+Date field is used to accept data related to calendar dates. 
  
 **Properties**
 
@@ -252,7 +252,7 @@ Boolean
  
 - Always and Depends on.
 - Always means that it always shows in the form.
-- Depends on wil only show the filed if a set of conditions are true.
+- Depends on will only show the field if a set of conditions are true.
 
 *Required*
  
@@ -260,7 +260,7 @@ Never, When it's visible, When it's visible and...
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is required when it is both visible and some other condition is met.
  
 
 
@@ -286,7 +286,7 @@ On iOS device:
 <a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG" width="300px" height="440px"></a>
   
 
-Date-Time field is a used to accept data related to calendar dates with specific
+Date-Time field is used to accept data related to calendar dates with specific
 time scheduling. 
  
  **Properties**
@@ -309,9 +309,9 @@ A text title for the field. This property allows you to set the title for the fi
  
  *Visible:*
  
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form
+- Depends on will only show the field if a set of conditions are true.
 
  *Required*
  
@@ -319,7 +319,7 @@ A text title for the field. This property allows you to set the title for the fi
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.
 
 
 
@@ -363,16 +363,16 @@ How the field is identified in the form.
  
 *Visible:*
 
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form
+- Depends on will only show the field if a set of conditions are true.
 
  *Required:*
  Never, When it's visible, When it's visible and...
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.
  
   
  **Developers Note:** The back end converts the field to type float. 
@@ -420,9 +420,9 @@ Integer field is for accepting whole numbers data. Example: 1, 234, 67.
  
 *Visible:*
  
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form
+- Depends on will only show the field if a set of conditions are true.
 
 *Required:*
 
@@ -430,7 +430,7 @@ Never, When it's visible, When it's visible and...
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.
  
  **Developers Note:** 
 The back end converts the field to an integer.
@@ -480,7 +480,7 @@ How the field is identified in the form.
  
 - Always and Depends on.
 - Always means that it always shows in the form.
-- Depends on wil only show the filed if a set of conditions are true.
+- Depends on will only show the field if a set of conditions are true.
 
 *Required:*
 
@@ -488,7 +488,7 @@ How the field is identified in the form.
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.
  
  
  
@@ -529,9 +529,9 @@ This property allows you to give people a hint to answer a specific question.
  How the field is identified in the form.
  
 *Visible:*
- Always and Depends on.
- Always means that it always shows in the form
- Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form
+- Depends on will only show the field if a set of conditions are true.
 
 *Required:*
 
@@ -539,7 +539,7 @@ Never, When it's visible, When it's visible and...
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.
  	
 
 Phone Number Field
@@ -594,7 +594,7 @@ Never, When it's visible, When it's visible and...
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.
  	
 
 
@@ -628,7 +628,7 @@ It accepts image files (JPEG | PNG | BMP | GIF).
  
 *Extra Large:*
 
-Allows for extra large image sizes. ????What size is extra large Dusan???
+Allows for extra large image sizes.
  
 *Hint:* 
 
@@ -644,9 +644,9 @@ How the field is identified in the form.
  
 *Visible:*
  
-Always and Depends on.
-Always means that it always shows in the form.
-Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on will only show the field if a set of conditions are true.
 
 *Required:*
 
@@ -654,7 +654,7 @@ Never, When it's visible, When it's visible and...
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.
  	
 
 	
@@ -697,9 +697,9 @@ How the field is identified in the form.
  
 *Visible:*
  
-Always and Depends on.
-Always means that it always shows in the form.
-Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on will only show the field if a set of conditions are true.
 
 *Required:*
  
@@ -707,7 +707,7 @@ Never, When it's visible, When it's visible and...
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.
  
  
 Barcode Field
@@ -754,9 +754,9 @@ How the field is identified in the form.
  
 *Visible:*
  
-Always and Depends on.
-Always means that it always shows in the form.
-Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on will only show the field if a set of conditions are true.
 
 *Required:*
 
@@ -764,7 +764,7 @@ Never, When it's visible, When it's visible and...
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.
 
 
 		
@@ -810,9 +810,9 @@ How the field is identified in the form.
  
 *Visible:*
 
-Always and Depends on.
-Always means that it always shows in the form.
-Depends on wil only show the filed if a set of conditions are true.
+- Always and Depends on.
+- Always means that it always shows in the form.
+- Depends on will only show the field if a set of conditions are true.
 
 *Required*
  
@@ -820,7 +820,7 @@ Never, When it's visible, When it's visible and...
 
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.
         
 Password Field		
 ----------------
@@ -858,14 +858,14 @@ How the field is identified in the form.
 *Visible:*
 - Always and Depends on.
 - Always means that it always shows in the form.
-- Depends on wil only show the filed if a set of conditions are true.
+- Depends on will only show the field if a set of conditions are true.
 
 *Required:*
 Never, When it's visible, When it's visible and...
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.
         
 Calculated Field
 -------------------	
@@ -910,11 +910,11 @@ How the field is identified in the form.
 
 - Always and Depends on.
 - Always means that it always shows in the form.
-- Depends on wil only show the filed if a set of conditions are true.
+- Depends on will only show the filed if a set of conditions are true.
 
 *Required:*
 Never, When it's visible, When it's visible and...
  
 - Never means it is never required.
 - When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visable and some other condition is met.
+- When it's visible and means it is  required when it is both visible and some other condition is met.

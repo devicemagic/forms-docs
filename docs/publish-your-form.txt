@@ -1,7 +1,7 @@
 Publish your form
 =================
 
-When you first create a new form, we leave it in un unpublished state. To have it available on devices in the field, you need to publish it in a second step. This ensures that people in the field don't get disrupted. 
+When you first create a new form, we leave it in an unpublished state. To have it available on devices in the field, you need to publish it in a second step. This ensures that people in the field don't get disrupted. 
 
 Go to your forms page via the menu - you will notice the yellow warning note reminding you that some of your forms are still in the "Unpublished" group. Simply use the "Group" drop-down to control the visibility of the form. Select the "Default" group to have all your devices see this form:
 

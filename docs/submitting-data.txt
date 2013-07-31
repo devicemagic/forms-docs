@@ -3,7 +3,7 @@ Submitting Data
 
 Now that our data has somewhere to go, lets look at the process of submitting data from your BlackBerry.
 
-Continuing from the previous step, you should see a list of forms for this organization. Our Travel Log form is starred because its new:
+Continuing from the previous step, you should see a list of forms for this organization. Our Travel Log form is starred because it's new:
 
 ![forms](http://s3.amazonaws.com/docs_resources/device_bb_forms.png)
 
@@ -15,11 +15,11 @@ Click on the form to open it. Completing the form is a simple task of navigating
 
 NOTE: If you ever want to save a form to return to later you can do this by clicking the BlackBerry button and selecting save. Try this now. 
 
-As we did not set any of the questions as required in the designer we could have left out answers to any of the questions and still submit. Finally click "Submit" at the bottom of the form to send. You will be presented with a dialog to check you are finished with the form. Any validation that is attached to form would also be run now to check that your answers were correct.
+As we did not set any of the questions as required in the designer we could have left out answers to any of the questions and still submit. Finally click "Submit" at the bottom of the form to send. You will be presented with a dialog to check you are finished with the form. Any validation that is attached to the form would also be run now to check that your answers were correct.
 
 ![submit](http://s3.amazonaws.com/docs_resources/device_bb_form_submit.png)
 
-Once you have confirmed by clicking "Yes", the application should return to the home screen. At the bottom, below all the forms and saved forms the submitted form will be placed in a queue to be submitted to the server as soon as there is reception or an active Wi-Fi connection. That's one of the most powerful features of Device Magic Mobile Forms - the ability to submit multiple forms without worrying about when and how they get uploaded!
+Once you have confirmed by clicking "Yes", the application should return to the home screen. At the bottom, below all the forms and saved forms, the submitted form will be placed in a queue to be submitted to the server as soon as there is reception or an active Wi-Fi connection. That's one of the most powerful features of Device Magic Mobile Forms - the ability to submit multiple forms without worrying about when and how they get uploaded!
 
 ![queue](http://s3.amazonaws.com/docs_resources/device_bb_forms_queue.png)
 
