@@ -13,7 +13,7 @@ The forms API is RESTful, operating on this base URL (note the HTTPS):
 
 where your [organization_id] is the same ID in the URL when you're logged in and viewing your forms at www.devicemagic.com with your browser.
 
-Creating a new form
+Creating a New Form
 -------------------
 
 To create a new form, you need to send an HTTP POST with the form definition to:
@@ -99,7 +99,7 @@ And the 201 Created on success will include a body like:
 
 As with the XML, check the response header 'Message' for reasons if the creation fails.
 
-Updating an existing form
+Updating an Existing Form
 -------------------------
 
 To update an existing form, you need to send an HTTP PUT with the form definition to:
@@ -189,7 +189,7 @@ And the 202 Accepted on success will include a body like:
 
 As with the XML, check the response header 'Message' for reasons if the update fails.
 
-Deleting a form
+Deleting a Form
 ---------------
 
 To delete a form, you need to send an HTTP DELETE to:
@@ -198,7 +198,7 @@ To delete a form, you need to send an HTTP DELETE to:
 
 You'll receive a 200 OK if the delete succeeded, and an HTTP error response otherwise.
 
-Updating a form's group
+Updating a Form's Group
 -----------------------
 
 To change the group to which a form belongs (e.g. publish/un-publish), send an HTTP POST to:

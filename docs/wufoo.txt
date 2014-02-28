@@ -1,4 +1,4 @@
-Connecting your account with Wufoo
+Connecting Your Account with Wufoo
 ==================================
 
 ![Wufoo logo!](http://s3.amazonaws.com/docs_resources/wufoo/wufoo.jpeg)
@@ -16,22 +16,22 @@ Pre-requisites
 All you need is a Device Magic account (free or paid) and a Wufoo account. You will need to know your Wufoo subdomain and API key. Please consult this guide for information on how to [obtain your API key from Wufoo](http://www.wufoo.com/docs/api/v3/#key).
 
 
-Connecting your account
+Connecting Your Account
 -----------------------
 
 To connect your account, first navigate to your organization account settings:
 
-![Organization settings link!](http://s3.amazonaws.com/docs_resources/wufoo/web_settings_link.png)
+![Organization settings link!](https://s3.amazonaws.com/docs_resources/Integrations+Images/Resized/Account+Settings+Button+Edresized.png)
 
 From there, click the "Wufoo Sync" link:
 
-![Wufoo link!](http://s3.amazonaws.com/docs_resources/wufoo/wufoo_sync_link.png)
+![Wufoo link!](https://s3.amazonaws.com/docs_resources/Integrations+Images/Resized/Advanced+Configuration+Edresized.png)
 
-Supplying your Wufoo details
+Supplying Your Wufoo Details
 ----------------------------
 Enter your Wufoo domain and API key in the configuration page as below:
 
-![Wufoo settings!](http://s3.amazonaws.com/docs_resources/wufoo/wufoo_config.png)
+![Wufoo settings!](https://s3.amazonaws.com/docs_resources/Integrations+Images/Resized/Wufoo+Resized.png)
 
 Upon successful configuration, a "Sync Wufoo Forms" button will appear. Use this every time you make changes to your Wufoo form to keep the two in sync with each other. 
 

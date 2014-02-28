@@ -1,0 +1,47 @@
+Word/PDF Connector
+==================
+
+Another way in which you can get flexibility with your forms is through the use of the Word/PDF Connector. With the Word/PDF Connector, you can export your form and send it to the recipient emails in a Word Document or PDF format.
+
+To do so, all you need to do is follow the simple steps outlined below:
+
+Once you've saved your form and exited the designer, you will arrive back at the Forms page. From here, as explained earlier in the tutorial, you can click the "change" button next to where it says "destination" beneath the title of your new form.
+
+![Change!](https://s3.amazonaws.com/docs_resources/Connectors/Resized/Change+Buttonresized.png)
+
+Now, once you've been taken to the Connections page, you can click the "Add New Connection" button.
+
+![New Connection!](https://s3.amazonaws.com/docs_resources/Connectors/Resized/Add+New+Connection+Button+copyresized.png)
+
+You will now be presented with a set of connector choices. Click the Word/PDF Document option.
+
+![WordPDF!](https://s3.amazonaws.com/docs_resources/Connectors/Resized/WordPDF+Button+Edresized.png)
+
+Now you can create a Word/PDF Document connection.
+
+You can use Word to make your mobile form look like the original paper-based form template, using the provided placeholders and your own branding and logos.
+
+Download the placeholders by clicking on the button that says "Download a sample template".
+
+![Sample Template!](https://s3.amazonaws.com/docs_resources/Connectors/Resized/Download+Sample+Template+Button+Edresized.png)
+
+Once you have created the template and edited it to your satisfaction, save it.
+
+Go back to the webpage and click "Choose File".
+
+![Choose File!](https://s3.amazonaws.com/docs_resources/Connectors/Resized/Choose+File+Button+Edresized.png)
+
+From the menu, find and select your saved form template to upload it.
+
+In the space provided on the New Connection page, type in the recipient email addresses.
+
+![Email Box!](https://s3.amazonaws.com/docs_resources/Connectors/Resized/Email+Box+Edresized.png)
+
+Lastly, click the "Create Word Document Connection" button to send the form.
+
+![Create Word Document!](https://s3.amazonaws.com/docs_resources/Connectors/Resized/Create+Word+Document+Button+Edresized.png)
+
+NOTE: Check the box that says "Deliver as a PDF" to send the form template in PDF format
+
+![Deliver!](https://s3.amazonaws.com/docs_resources/Connectors/Resized/Deliver+as+a+PDF+Edresized.png)
+

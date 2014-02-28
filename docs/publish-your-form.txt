@@ -1,8 +1,14 @@
-Publish your form
+Publishing Your Form
 =================
 
-When you first create a new form, we leave it in an unpublished state. To have it available on devices in the field, you need to publish it in a second step. This ensures that people in the field don't get disrupted. 
+When you first create a new form, it is automatically published so it can be accessed by devices in the field.
 
-Go to your forms page via the menu - you will notice the yellow warning note reminding you that some of your forms are still in the "Unpublished" group. Simply use the "Group" drop-down to control the visibility of the form. Select the "Default" group to have all your devices see this form:
+If you would like to unpublish a form, all you need to do is switch the “Advanced View” UI (User Interface - the way you view the layout of the forms page) to “On”.
 
-![publish!](http://s3.amazonaws.com/docs_resources/form_publish.png)
+It will look like this:
+
+![publish!](https://s3.amazonaws.com/docs_resources/Publishing+Your+Form+Images/Resized/Advanced+View+Resized.png)
+
+You can then view the “drop-down” tab next to your form which will allow you to change it to “Unpublished”.
+
+Let’s leave your Travel Log form on “Default” for now.

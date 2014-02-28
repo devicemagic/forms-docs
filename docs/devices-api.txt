@@ -13,14 +13,14 @@ The devices API is RESTful, operating on this base URL (note the HTTPS):
 
 where your [org_id] is the same ID in the URL when you're logged in and viewing your forms at www.devicemagic.com with your browser.
 
-Querying your devices
+Querying your Devices
 ---------------------
 
 To retrieve a list of the devices that are part of your organization, send an (authenticated) HTTP GET to:
 	:::term
 	HTTP GET https://www.devicemagic.com/organizations/[org_id]/devices.xml
 
-Querying an individual device
+Querying an Individual Device
 -----------------------------
 
 To retrieve the properties of a particular device in your organization, send an (authenticated) HTTP GET to:
@@ -41,7 +41,7 @@ The return XML will look something like this:
 		<groups>Default</groups>
 	</device>
 
-Approving a device
+Approving a Device
 ------------------
 
 You can approve devices for your organization that are pending approval via an authenticated HTTP POST to:
@@ -52,14 +52,14 @@ When you retrieve the XML for the devices (or a single device) for your organiza
 
 Approving devices that are already approved has no effect.
 
-Removing a device from your organization
+Removing a Device from your Organization
 ----------------------------------------
 
 Devices can be removed from your organization via an HTTP DELETE to that device's URL:
 	:::term
 	HTTP DELETE https://www.devicemagic.com/organizations/[org_id]/devices/[device_id]
 
-Updating the properties of a device
+Updating the Properties of a Device
 -----------------------------------
 
 An HTTP PUT to the device's URL will update the properties of the device.

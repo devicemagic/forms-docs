@@ -3,7 +3,7 @@ Authentication
 
 In order to use the [Push API](push-api), you need to authenticate with our servers using [HTTP Basic Authentication](http://en.wikipedia.org/wiki/Basic_access_authentication). Please consult relevant documentation for how to supply Basic Authentication on all REST requests.
 
-Obtaining credentials
+Obtaining Credentials
 ---------------------
 For a username, you need to obtain an API key for your organization. This can be found on your dashboard, after clicking "Edit Organization" and then "Obtain API Key". Use 'x' or any other character as your password (this is ignored). 
 

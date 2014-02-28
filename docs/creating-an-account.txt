@@ -1,25 +1,24 @@
-Creating an account
+Creating an Account
 ===================
 
-To create a new Mobile Forms account select the 'Sign up' button on the home page and enter your details in the form that follows. A valid email address is required to activate the account so make sure you enter this correctly.
+To create a new Mobile Forms account, click the “Sign Up” button on the home page and enter your details in the form that follows. A valid email address is required to activate the account, so make sure you enter this correctly.
 
-![Signup Button!](http://s3.amazonaws.com/docs_resources/signup.png)
+![Signup Button!](https://s3.amazonaws.com/docs_resources/Creating+an+Account+Images/Resized/Sign+Up+Edresized.png)
 
-All users are automatically issued with a 14-day trial account with full functionality. After 14 days you will be contacted by email to allow you to signup up for a paid account or migrate to a free account. Free accounts are fully functional but only support a single device. The HTTP Connector is also not available on free accounts. 
+All users are automatically issued with a 14-day trial account with full functionality. After 14 days you will be contacted by email to allow you to sign up for a paid account or migrate to a free account. Free accounts are fully functional, but only support a single device. The HTTP Connector is also not available on free accounts.
 
 
-Activating your account
+Activating your Account
 -----------------------
 
-Once an account has been created you need to activate it before it can be used. An activation email will be sent to the email address you entered at signup, click the link in this email to activate your account. 
+Once an account has been created you need to activate it before it can be used. An activation email will be sent to the email address you entered at sign up. Click the link in this email to activate your account.
 
 NOTE: If your email client does not let you click on links in emails, copy and paste the link into your browser address bar and press enter
 
 
-Logging in to your account
+Logging in to Your Account
 --------------------------
 
-Following the activation link will automatically log you into your account and take you to your organization's dashboard. 
-However, you can always log in by entering your credentials in the login box in the top right hand corner of the home screen.
+Following the activation link will automatically log you into your account and take you to your organization’s dashboard. However, you can always log in by entering your credentials in the login box in the top right hand corner of the home screen.
 
-![Login Area!](http://s3.amazonaws.com/docs_resources/login_area.png)
+![Login Area!](https://s3.amazonaws.com/docs_resources/Creating+an+Account+Images/Resized/Login+Edresized.png)

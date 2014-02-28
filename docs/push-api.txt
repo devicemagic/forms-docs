@@ -109,7 +109,7 @@ In the event of a successful POST, you will receive an HTTP 202 Created. The Pay
 	  </oneshot>
 	</oneshot_list>
 
-Checking outstanding PUSH forms
+Checking Outstanding PUSH Forms
 -------------------------------
 
 In the event you want to enquire which forms are still outstanding for a device, simply issue a GET request as follows:
@@ -136,7 +136,7 @@ You will receive an XML document containing each form's details:
 	
 You will notice a new namespace has been generated for this form (it's simply the original namespace with a question mark and a GUID following).
 
-Revoking PUSHed forms
+Revoking PUSHed Forms
 ---------------------
 
 To revoke a form, issue an HTTP DELETE as follows:

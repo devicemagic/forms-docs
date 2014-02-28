@@ -20,50 +20,61 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/freeText.PNG" width="300px" height="440px"></a>
+![free text!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Free+Text+Question+Resized.png)
 
 
-The free text field is a general field that can accept any type of data. Text or Numbers.
- 
-**Properties**
+The Free Text Field is a general field that can accept any type of data in the form of text or numbers.
 
- 
+**Properties:**
+
+*Allow Multiple Lines:*
+
+This lets one write multiple lines of text in the answer.
+
+*Advanced:*
+
 *Hint:*
- 
- 
- This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
- 
- 
- A default answer provided by you. Should be the most common answer
- for the specific question.
- 
-*Indentifier:*
- 
- 
- 
- How the field is identified in the form. structure. The name of the field.
- 
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you (can be the most common answer for the question).
+
+*Identifier:*
+
+How the field is identified in the form (the name of the field).
+
 *Visible:*
- 
- 
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the field if a set of conditions are true.
 
- 
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
 *Required:*
- 
- 
-Never, When it's visible, When it's visible and...
- 
-- Never means it is never required
- 
-- When it's visible mean it is required only when it is visible.
- 
-- When it's visible and means it is required when it is both visible and some other condition is met.
 
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
 
 
 Yes/No Field
@@ -86,43 +97,57 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1151.PNG" width="300px" height="440px"></a>
+![yesno!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/YesNo+Question+Resized.png)
 
 
-The Yes/No field allows you to ask a yes/no question and get a yes/no answer from the user.
- 
-**Properties**
- 
-*Hint:* 
- 
- This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
- 
- Boolean (Yes/No).
+The Yes/No Field allows you to ask a yes/no question and get a yes/no answer.
 
-*Type:*
- 
- What type of data the field accepts. Type for field: Boolean (True or False)
+**Properties:**
+
+*Advanced:*
+
+*Hint:*
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you (can be the most common answer for the question - yes/no).
 
 *Identifier:*
- 
- How the field is identified in the form.
- 
-*Visible:*
- 
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the field if a set of conditions are true.
 
- *Required:*
- 
-Never, When it's visible, When it's visible and...
- 
-- Never means it is never required
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is required when it is both visible and some other condition is met.
- 
+How the field is identified in the form (the name of the field).
+
+*Visible:*
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Required:*
+
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
  
  
 Select Field
@@ -159,49 +184,69 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1159.PNG" width="300px" height="440px"></a>
+![select!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Select+Question+Resized.png)
 
  
-The Select Field allows you to ask a question a provide a specific set of answers for the user to choose from.
- 
-*Options Button*:
+The Select Field allows you to ask a question while providing a specific set of answers from which one has to choose.
+
+**Properties:**
+
+*Options:*
+
+This is where you add the set of answers from which one can choose. Press the options button and type in the different answers, adding as many as needed.
+
+There is also the option to import from a CSV (Comma Separated Value) file. If you import from a CSV file then the system will automatically add the values for you.
+
+*Allow Multiple Answers:*
+
+This lets one select multiple answers within the same question.
+
+*Advanced:*
+
+*Hint:*
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+Allows you to choose a given answer as the default option.
+
+*Identifier:*
+
+How the field is identified in the form (the name of the field).
+
+*Visible:*
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Required:*
+
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered. 
 
 
- This is how you add the set of answers the user can pick from. Press the options button and type in the text.
- There is an option to import from a CSV file. Just import it and the system will automatically add the values for you.
- CSV stands for Comma Separated Value.
- 
-*Initial answer:*
- 
- Allows you to pick a given answer to pick as the default option.
-
- 
-*Type:*
- 
- Text.
-
- *Identifier:*
- 
- How the field is identified in the form.
- 
- *Visible:*
- 
-
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the field if a set of conditions are true.
-
- *Required:*
- 
- Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is required when it is both visible and some other condition is met.
- 
- 
- 
- 
  Date Field
 --------------
  
@@ -225,44 +270,128 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/date.PNG" width="300px" height="440px"></a>
+![date!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Date+Question+Resized.png)
 
 
-Date field is used to accept data related to calendar dates. 
- 
-**Properties**
+The Date Field is used to accept data based on calendar dates.
 
-*Title:* 
-A text title for the field. This property allows you to set the title for the field the user will see.
- 
-*Hint:* 
- 
-A text hint for the field. This property allows you to give people a hint to answer a specific question.
-  
+**Properties:**
+
+*Advanced:*
+
+*Hint:*
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you.
+
 *Identifier:*
- 
-How the field is identified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
-set to true. 
 
-*autoIdendifier:* 
- 
-Boolean
- 
+How the field is identified in the form (the name of the field).
+
 *Visible:*
- 
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the field if a set of conditions are true.
 
-*Required*
- 
-Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is required when it is both visible and some other condition is met.
- 
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
+*Required:*
+
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
+
+
+Time Field
+--------------
+
+    :::json
+    {
+    "identifier": "Time_Question",
+    "title": "Time Question",
+    "autoIdentifier": true,
+    "type": "time"
+    }
+
+On Builder:
+ 
+![Time!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Screen+Shot+2014-01-29+at+10.31.55+AM.png)
+
+
+On iOS device:
+
+![time!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Time+Question+Resized.png)
+  
+
+The Time Field is used to accept data based on time.
+
+**Properties:**
+
+*Advanced:*
+
+*Hint:*
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you.
+
+*Identifier:*
+
+How the field is identified in the form (the name of the field).
+
+*Visible:*
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Required:*
+
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
 
 
 Date-Time Field
@@ -283,45 +412,57 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/dateTime.PNG" width="300px" height="440px"></a>
+![datetime!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/DateTime+Question+Resized.png)
   
 
-Date-Time field is used to accept data related to calendar dates with specific
-time scheduling. 
- 
- **Properties**
+The Date-Time Field is used to accept data related to calendar dates with specific time scheduling.
 
-*Title:* 
-A text title for the field. This property allows you to set the title for the field the user will see.
- 
-*Hint:* 
- 
- A text hint for the field. This property allows you to give people a hint to answer a specific question.
-  
- *Identifier:*
- 
- How the field is identified in the form.  If the field property autoIdentifier is set to true, this identifier will be automatically 
- set to 
+**Properties:**
 
- *autoIdendifier:* 
- 
- Boolean
- 
- *Visible:*
- 
-- Always and Depends on.
-- Always means that it always shows in the form
-- Depends on will only show the field if a set of conditions are true.
+*Advanced:*
 
- *Required*
- 
- Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
+*Hint:*
 
+This allows you to give a hint to help people answer a specific question.
 
+*Initial Answer:*
+
+A default answer provided by you.
+
+*Identifier:*
+
+How the field is identified in the form (the name of the field).
+
+*Visible:*
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Required:*
+
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
 
 
 Decimal Field
@@ -343,38 +484,58 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/decimal.PNG" width="300px" height="440px"></a>
+![decimal!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Decimal+Question+Resized.png)
 
-Decimal field is for accepting decimal data. Example: 1.4, 4.56, 234.9876, etc.
- 
-**Properties**
- 
-*Hint:* 
+The Decimal Field is for accepting decimal data. For example: 1.4, 4.56, 5.5, etc.
 
-This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
- 
-It is the answer you want people to type in
- 
+**Properties:**
+
+*Advanced:*
+
+*Hint:*
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you.
+
 *Identifier:*
- 
-How the field is identified in the form.
- 
+
+How the field is identified in the form (the name of the field).
+
 *Visible:*
 
-- Always and Depends on.
-- Always means that it always shows in the form
-- Depends on will only show the field if a set of conditions are true.
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
- *Required:*
- Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
- 
-  
+*Required:*
+
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
+
+
  **Developers Note:** The back end converts the field to type float. 
  
  
@@ -400,37 +561,57 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/integer.PNG" width="300px" height="440px"></a>
+![integer!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Integer+Question+Resized.png)
  
-Integer field is for accepting whole numbers data. Example: 1, 234, 67.
- 
-**Properties**
- 
+The Integer Field is for accepting whole numbers data. For example: 1, 24, 445.
+
+**Properties:**
+
+*Advanced:*
+
 *Hint:*
 
- This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
+This allows you to give a hint to help people answer a specific question.
 
- It is the answer you want people to type in.
- 
+*Initial Answer:*
+
+A default answer provided by you.
+
 *Identifier:*
 
- How the field is identified in the form.
- 
+How the field is identified in the form (the name of the field).
+
 *Visible:*
- 
-- Always and Depends on.
-- Always means that it always shows in the form
-- Depends on will only show the field if a set of conditions are true.
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
 *Required:*
 
-Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
+
  
  **Developers Note:** 
 The back end converts the field to an integer.
@@ -458,40 +639,62 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1139.PNG" width="300px" height="440px"></a>
+![location!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Location+Question+Resized.png)
 
-Location field is for accepting the location of users. It can be done automatically by Geolocation.
+The Location Field is used to accept GPS information based on the location of the person using the device. It is done automatically by Geolocation.
 
-**Properties**
- 
-*Hint:* 
- 
-This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
- 
-It is the answer you want people to type in.
- 
+**Properties:**
+
+*Determined as soon as form opens:*
+
+Check this option so the location of the device is recorded the moment one opens the form.
+
+*Advanced:*
+
+*Hint:*
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you.
+
 *Identifier:*
- 
-How the field is identified in the form.
- 
+
+How the field is identified in the form (the name of the field).
+
 *Visible:*
- 
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the field if a set of conditions are true.
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
 *Required:*
 
- Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
- 
- 
- 
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
+
+
 Email Field
 -------------
 
@@ -512,34 +715,57 @@ On Builder:
 	
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/email.PNG" width="300px" height="440px"></a>
+![email!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Email+Question+Resized.png)
 	
 
-The Email field is for accepting the email of the user. It accepts text.
+The Email Field is used to accept the email address of the one using the device to submit the form.
 
-**Properties**
- 
-*Hint:* 
-This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
- It is the answer you want people to type in.
- 
+**Properties:**
+
+*Advanced:*
+
+*Hint:*
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you.
+
 *Identifier:*
- How the field is identified in the form.
- 
+
+How the field is identified in the form (the name of the field).
+
 *Visible:*
-- Always and Depends on.
-- Always means that it always shows in the form
-- Depends on will only show the field if a set of conditions are true.
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
 *Required:*
 
-Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
  	
 
 Phone Number Field
@@ -563,39 +789,57 @@ On Builder:
  
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/phone.PNG" width="300px" height="440px"></a>
+![phoneno!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/PhoneNo+Question+Resized.png)
 
 
-The Phone Number field is for accepting the phone number of the user. It accepts text.
+The Phone Number Field is used to accept the phone number of the person using the device.
 
-**Properties**
- 
-*Hint:* 
- 
-This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
+**Properties:**
 
-It is the answer you want people to type in.
- 
+*Advanced:*
+
+*Hint:*
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you.
+
 *Identifier:*
- 
-How the field is identified in the form.
- 
+
+How the field is identified in the form (the name of the field).
+
 *Visible:*
- 
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the field if a set of conditions are met (evaluate to true).
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
 *Required:*
- 
-Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
- 	
+
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered. 	
 
 
 Image Field
@@ -618,44 +862,65 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/IMG_1145.PNG" width="300px" height="440px"></a>
+![image!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Image+Question+Edresized.png)
 
 
-The Image field is for uploading images. 
-It accepts image files (JPEG | PNG | BMP | GIF).
+The Image Field is used for uploading images (it accepts JPEG, PNG, BMP and GIF image files).
 
-**Properties**
- 
+**Properties:**
+
 *Extra Large:*
 
 Allows for extra large image sizes.
- 
-*Hint:* 
 
-This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
+*Camera Only:*
 
-It is the answer you want people to type in.
- 
+Limits the uploading options to images taken with the camera while the form is being completed.
+
+*Advanced:*
+
+*Hint:*
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you.
+
 *Identifier:*
 
-How the field is identified in the form.
- 
+How the field is identified in the form (the name of the field).
+
 *Visible:*
- 
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the field if a set of conditions are true.
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
 *Required:*
 
-Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
- 	
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
 
 	
 Signature Field
@@ -679,37 +944,59 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/signature.PNG" width="520px" height="400px"></a>
+![signaturecapture!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Signature+Capture+Question+Resized.png)
 
 
-The Signature field is for accepting the signature of the user. 
+The Signature Field accepts the signature of the person using the device.
 
-**Properties**
- 
-*Hint:* 
-This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
-Default value for field.
- 
-*Identifier:*
-How the field is identified in the form.
- 
-*Visible:*
- 
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the field if a set of conditions are true.
+Properties:
 
-*Required:*
- 
-Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
- 
- 
+Advanced:
+
+Hint:
+
+This allows you to give a hint to help people answer a specific question.
+
+Initial Answer:
+
+A default answer provided by you.
+
+Identifier:
+
+How the field is identified in the form (the name of the field).
+
+Visible:
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+Required:
+
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+Read-Only:
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+Validate Value:
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+Timestamp answer:
+
+Records down the time the question was answered.
+
+Geostamp answer:
+
+Records down the location where the question was answered.
+
+  
 Barcode Field
 --------------
 
@@ -729,45 +1016,59 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode0.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode0.PNG" width="300px" height="440px"></a>
+![barcode!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Barcode+Question+Resized.png)
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode1.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode1.PNG" width="300px" height="440px"></a>
+![barcode2!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Barcode+Question2+Resized.png)
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/barcode2.PNG" width="300px" height="440px"></a>
+The Barcode Field is used to scan barcodes. Point the camera to a barcode and the app will scan it automatically.
 
-The Barcode field is for scanning a barcode. Point the camera to the
-barcode and the application will scan it automatically. 
+**Properties:**
 
+*Advanced:*
 
-**Properties**
- 
+*Hint:*
 
- 
-*Hint:* 
-This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
-Default value for field.
- 
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you.
+
 *Identifier:*
-How the field is identified in the form.
- 
+
+How the field is identified in the form (the name of the field).
+
 *Visible:*
- 
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the field if a set of conditions are true.
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
 *Required:*
 
-Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
+*Read-Only:*
 
-		
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
+
 		
 Sketch Field
 ---------------	
@@ -789,38 +1090,57 @@ On Builder:
 	
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/sketch.PNG" width="520px" height="400px"></a>
+![sketch!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Sketch+Question+Resized.png)
 
-The Sketch field is for accepting any type of drawing from the user. 
+The Sketch Field is used for accepting any type of drawing from the person using the device.
 
- 
-**Properties**
- 
-*Hint:* 
+**Properties:**
 
-This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
+*Advanced:*
 
-Default value for the field.
- 
+*Hint:*
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you.
+
 *Identifier:*
 
-How the field is identified in the form.
- 
+How the field is identified in the form (the name of the field).
+
 *Visible:*
 
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the field if a set of conditions are true.
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
-*Required*
- 
-Never, When it's visible, When it's visible and...
+*Required:*
 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
+
         
 Password Field		
 ----------------
@@ -845,28 +1165,57 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/password.PNG" width="300px" height="440px"></a>
+![password!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Password+Question+Resized.png)
 
-The Password field is for accepting the password of the user. 
-It accepts text.
+The Password Field is used to accept the password of the person using the device.
 
-**Properties**
- 
+**Properties:**
+
+*Advanced:*
+
+*Hint:*
+
+This allows you to give a hint to help people answer a specific question.
+
+*Initial Answer:*
+
+A default answer provided by you.
+
 *Identifier:*
-How the field is identified in the form.
- 
+
+How the field is identified in the form (the name of the field).
+
 *Visible:*
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the field if a set of conditions are true.
+
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
 *Required:*
-Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
-        
+
+- Never (one is never required to answer it in order to submit the form)
+- Always (one has to answer this question in order to submit the form)
+- Only When (one only needs to answer the question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.
+
 Calculated Field
 -------------------	
 
@@ -887,34 +1236,51 @@ On Builder:
 
 On iOS device:
 
-<a href="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG"><img src="https://s3.amazonaws.com/docs_resources/designer/reference/fields/iOS/calculated.PNG" width="300px" height="440px"></a>
+![calculated!](https://s3.amazonaws.com/docs_resources/Form+Fields+Images/Resized/Calculated+Question+Resized.png)
 
-The Calculated field is for calculating values. 
+The Calculated Field is for calculating values.
 
+**Properties:**
 
-**Properties**
- 
+*Set Expression:*
+
+Here you can set the expression that will determine what is calculated.
+
+*Advanced:*
 
 *Hint:*
 
-This property allows you to give people a hint to answer a specific question.
- 
-*Initial answer:*
+This allows you to give a hint to help people answer a specific question.
 
-Default value for the field.
- 
+*Initial Answer:*
+
+A default answer provided by you.
+
 *Identifier:*
-How the field is identified in the form.
- 
+
+How the field is identified in the form (the name of the field).
+
 *Visible:*
 
-- Always and Depends on.
-- Always means that it always shows in the form.
-- Depends on will only show the filed if a set of conditions are true.
+- Always (always shows in the form)
+- Only When (only shows in the form under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
 
-*Required:*
-Never, When it's visible, When it's visible and...
- 
-- Never means it is never required.
-- When it's visible mean it is required only when it is visible.
-- When it's visible and means it is  required when it is both visible and some other condition is met.
+*Read-Only:*
+
+- Never (not a read-only question)
+- Always (always a read-only question)
+- Only When (only a read-only question under certain conditions - decided upon by you when you click the “Set Rule” button that appears)
+
+*Validate Value:*
+
+Allows you to set a rule so as to ensure the question is answered according to a particular condition.
+
+You are also able to set an error message so as to indicate to the person how they went wrong with their answer and what they need to do in order to correct it.
+
+*Timestamp answer:*
+
+Records down the time the question was answered.
+
+*Geostamp answer:*
+
+Records down the location where the question was answered.

@@ -1,31 +1,35 @@
 Submitting Data
 ===============
 
-Now that our data has somewhere to go, lets look at the process of submitting data from your BlackBerry.
+Now that our data has somewhere to go, let’s look at the process of submitting data from your mobile device.
 
-Continuing from the previous step, you should see a list of forms for this organization. Our Travel Log form is starred because it's new:
+Continuing from the previous step, you should see a list of forms for this organization.
 
-![forms](http://s3.amazonaws.com/docs_resources/device_bb_forms.png)
-
-
-Click on the form to open it. Completing the form is a simple task of navigating down through the form and answering each question in turn. 
-
-![form](http://s3.amazonaws.com/docs_resources/device_bb_form.png)
+![forms](https://s3.amazonaws.com/docs_resources/Submitting+Data+Images/Resized/Form+List+Resized.png)
 
 
-NOTE: If you ever want to save a form to return to later you can do this by clicking the BlackBerry button and selecting save. Try this now. 
+Click on the Travel Log form to open it. Completing the form is a simple task of navigating down through the form and answering each question in turn. 
 
-As we did not set any of the questions as required in the designer we could have left out answers to any of the questions and still submit. Finally click "Submit" at the bottom of the form to send. You will be presented with a dialog to check you are finished with the form. Any validation that is attached to the form would also be run now to check that your answers were correct.
+NOTE: If you ever want to save a form and return to it later, you can do so by pressing the “Save” button at the bottom of the form 
 
-![submit](http://s3.amazonaws.com/docs_resources/device_bb_form_submit.png)
+As we did not set any of the questions as “required” in the designer, we are able to leave out answers to any of the questions and still submit the form.
 
-Once you have confirmed by clicking "Yes", the application should return to the home screen. At the bottom, below all the forms and saved forms, the submitted form will be placed in a queue to be submitted to the server as soon as there is reception or an active Wi-Fi connection. That's one of the most powerful features of Device Magic Mobile Forms - the ability to submit multiple forms without worrying about when and how they get uploaded!
+Click “Submit” at the bottom of the form to send.
 
-![queue](http://s3.amazonaws.com/docs_resources/device_bb_forms_queue.png)
+![submit](https://s3.amazonaws.com/docs_resources/Submitting+Data+Images/Resized/Submit+Button+Edresized.png)
 
-Now, navigate back to Google Docs in your browser and check that the record was submitted correctly. 
+You will be presented with a dialogue box to check if you are finished with the form. Any validation that is attached to the form would also be run now to check that the answers are correct.
+
+![dialogue box](https://s3.amazonaws.com/docs_resources/Submitting+Data+Images/Resized/Submit+Form+Dialogue+Box+Edresized.png)
+
+Once you have confirmed by clicking “Submit”, the Mobile Forms app will return to the home screen.
+
+The newly submitted form will be placed in a queue to be submitted to the server as soon as there is reception or an active Wi-Fi connection. That’s one of our favourite features of our Mobile Forms app - the ability to submit multiple forms and not having to worry about when and how they get uploaded!
+
+![queue](https://s3.amazonaws.com/docs_resources/Submitting+Data+Images/Resized/Uploading+Resized.png)
+
+Now, navigate back to Google Docs in your browser to check that the record was submitted correctly.
 
 ![row](http://s3.amazonaws.com/docs_resources/google_row.png)
 
-
-This concludes our introductory tutorial. For extra credit - once your data is in Google Docs, explore the built in features of that product to download it as Excel, share with colleagues etc.
+This concludes our introductory tutorial.

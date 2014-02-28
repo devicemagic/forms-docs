@@ -1,0 +1,19 @@
+Configuring by Clicking on a Link
+=================================
+
+Mobile Forms on iOS and Android supports its own scheme protocol, so you can send users a configuration link they can click which will connect the device to your organization.
+
+It looks like this:
+
+<b>dmforms://requestassignment?organizationkey=MYKEY&operatorname=MOBILE_USER_NAME</b>
+
+When the user clicks this link (which can be sent via text message, email or any other digital medium) the app will launch and join the organization. You do need to URL encode the parameters, though, so the actual link may not be as neat as in the example above.
+
+Here is an example where the two parameter values are:
+
+<b>organizationkey: VAN424<br>
+</br>operatorname: John Doe</b><br>
+
+</br><b>dmforms://requestassignment?organizationkey=VAN424&operatorname=John%20Doe</b>
+
+With this feature, you can easily generate custom configuration links for your users.

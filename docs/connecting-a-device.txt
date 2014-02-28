@@ -1,50 +1,50 @@
-Connecting a device
+Connecting a Device
 ===================
 
-To follow the steps bellow you will need access to an Android, BlackBerry or iPhone device/tablet. We've only shown steps for a BlackBerry smartphone, but the steps are identical on different platforms.
+To follow the steps below, you will need access to an Android, Blackberry or iPhone device (mobile phone/ tablet).
 
-Inviting a device
+Below are steps for an Android smartphone, but the steps are identical on the various different platforms.
+
+Inviting a Device
 -----------------
 
-To add a device you will need to switch to the devices view: 
+To add a device, you will need to go to the “Devices” page.
 
-![devices!](http://s3.amazonaws.com/docs_resources/menu_devices.png)
+![devices!](https://s3.amazonaws.com/docs_resources/Connecting+a+Device+Images/Resized/Devices+Button+Edresized.png)
 
-If the device you wish to add has a valid email address you can send it an invite to connect to your new organization. Alternatively, direct the device owner to download the Device Magic Mobile Forms app from the relevant app store.
+If the device you wish to add has a valid email address, you can send it an invite to connect to your new organization. Alternatively, you can direct the device owner to download Device Magic’s Mobile Forms app from the relevant app store.
 
-In a few minutes the device should receive a new email. Open the email and follow the link to download the client. 
+In a few minutes, the device should receive a new email. Open the email and follow the link to download the app.
 
-![email!](http://s3.amazonaws.com/docs_resources/device_bb_invite_email.gif)
-
-
-The device will launch a download dialog. Click Download to start downloading. If you already have a version of the "Forms" application on your BlackBerry it may ask you if you wish to replace it. 
-
-![download!](http://s3.amazonaws.com/docs_resources/device_bb_download.png)
-
-Once the download is complete, browse to the application and open it - usually it will be found in the Downloads folder:
+![email!](https://s3.amazonaws.com/docs_resources/Connecting+a+Device+Images/Resized/Mobile+Forms+Invitation+Resized.png)
 
 
-![folder!](http://s3.amazonaws.com/docs_resources/device_bb_downloads.jpg) &nbsp;
-![icon!](http://s3.amazonaws.com/docs_resources/device_bb_icon.jpg)
+The device will launch a download dialogue. Click on one of the links that will take you to an app store to start downloading. If you already have a version of the “Forms” app, it may ask if you wish to replace it.
 
-When the application starts for the first time you will be asked if you wish to join an existing organization or create a new one. If you created an organization when going through the earlier chapters in this guide, select "Join Existing Organization" otherwise select Sign up for free and follow the prompts in the email you will receive. If you are joining an existing organization you will be presented with the following registration screen. 
+Once the download is complete, open the app.
 
-![start](http://s3.amazonaws.com/docs_resources/device_bb_start.png)
+When the app starts up for the first time, you will be asked if you would like to join an existing organization or create a new one. If you created an organization when going through the earlier steps in this guide, select “Join Existing Organization”. If you did not, then click the Sign Up Free button and follow the prompts in the email you will receive.
 
-Enter your full name under operator name and your organization key:
+If you are joining an existing organization you will be presented with the following registration screen:
 
-![operator](http://s3.amazonaws.com/docs_resources/device_bb_join.png)
+![download!](https://s3.amazonaws.com/docs_resources/Connecting+a+Device+Images/Resized/Welcome+Resized.png)
 
-NOTE: You can find the organization key in the invitation email, or on your dashboard. 
+Enter your full name and Organization Key.
 
-Finally click "Request Assignment" - the device will attempt to contact our servers and join your organization. The account administrator (this is probably you if you're reading this!) should receive an email to notify you that the device is awaiting your approval. 
+![operator](https://s3.amazonaws.com/docs_resources/Connecting+a+Device+Images/Resized/Device+Assignment+Resized.png)
 
-![waiting](http://s3.amazonaws.com/docs_resources/device_bb_waiting.png)
+NOTE: You can find your organization key in the invitation email or on your dashboard
 
-Switch back to the website. If you click "devices" the devices page should refresh and you should see your device waiting to be assigned. If you don't see anything double check that you entered the Organization ID correctly on your device.
+Finally, click “Request Assignment”. The device will then attempt to contact our servers and join your organization. The account administrator (which could be you, if you are reading this) will receive an email to notify you that the device is awaiting your approval. 
 
-![approve](http://s3.amazonaws.com/docs_resources/device_approve.png)
+![waiting](https://s3.amazonaws.com/docs_resources/Connecting+a+Device+Images/Resized/Assignment+Pending+Edresized.png)
 
-Now have a look at your BlackBerry. If the application has not already moved past the requesting assignment screen click "Recheck status" - the application should open and begin downloading forms. Notice that our new form has been starred to alert the user to its presence.
+Switch back to the website. If you click “Devices”, the “Devices” page will refresh and you will see your device waiting to be assigned (if you don’t see anything, double check that you entered the Organization Key correctly on your device). Click “Approve”.
 
-![forms](http://s3.amazonaws.com/docs_resources/device_bb_forms.png)
+![approve](https://s3.amazonaws.com/docs_resources/Connecting+Your+Form+to+Google+Docs+Images/Resized/Approve+Button+Edresized.png)
+
+Now have a look at your mobile phone. If the application has not already moved past the “Requesting Assignment” screen, then click “Update”. The application should open and begin downloading forms.
+
+![forms](https://s3.amazonaws.com/docs_resources/Connecting+a+Device+Images/Resized/Update+Button+Edresized.png)
+
+Notice that the new form is starred to alert the user to its presence.

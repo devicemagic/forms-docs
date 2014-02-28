@@ -1,21 +1,26 @@
-Adding a Connection to your form
+Adding a Connection to Your Form
 ===============================
 
-As soon as you've saved your form and exited the designer, you should be confronted with a screen like this:
+As soon as you’ve saved your form and exited the designer, you should be taken back to the Forms page. From here, you can click the “change” button next to where it says “destination” beneath the title of your new form.
 
-![save!](http://s3.amazonaws.com/docs_resources/form_connector.png)
+![save!](https://s3.amazonaws.com/docs_resources/Connecting+Your+Form+to+Google+Docs+Images/Resized/Change+Buttonresized.png)
 
-Device Magic Mobile Forms is a store-and-forward platform; we don't aggregate your data, instead relying on 3rd parties or other technologies that usually do a better job of this than we could. In this tutorial, we're going to send the travel log data to a Google Spreadsheet, so go ahead and click the "Add New Connection" button. You should be presented with a set of connector choices:
+Device Magic’s Mobile Forms is a store-and-forward platform. We don’t aggregate your data - instead, we rely on 3rd parties or other technologies (who do a better job of this than we could).
 
-Go ahead and click the Google Spreadsheet option to configure it:
+Let’s send the Travel Log data to a Google Spreadsheet. Go ahead and click the “Add New Connection” button.
 
-![save!](http://s3.amazonaws.com/docs_resources/connector_google.png)
+![save!](https://s3.amazonaws.com/docs_resources/Connecting+Your+Form+to+Google+Docs+Images/Resized/Add+New+Connection+Buttonresized.png)
 
+You should now be presented with a set of connector choices. Click the Google Spreadsheet option. You will see that we’ve automatically used your form name to name the spreadsheet.
 
-As you can see, we already pre-populated the Spreadsheet name based on the name of your form. Don't worry if it already exists in Google Docs - we'll create a new doc on your behalf. If you're not signed into Google already, you will be prompted to do so first. Thereafter, you need to grant Device Magic permission to work with your Google Docs account:
+![permission](https://s3.amazonaws.com/docs_resources/Connecting+Your+Form+to+Google+Docs+Images/Resized/Google+Spreadsheet+Buttonresized.png)
 
-![permission](http://s3.amazonaws.com/docs_resources/connector_google_permission.png)
+Now you can create a Google Spreadsheet connection.
 
-Please click "Grant access" so we can make the doc on your behalf. If all goes well, you will be redirected to the newly-minted connection page. This will include a handy link directly to the spreadsheet. Clicking this will open the doc in a new tab - keep this open so you can see the new data as it arrives.
+Don’t worry if it already exists in Google Docs - we’ll create a new one on your behalf! If you’re not signed in to Google already, you will be prompted to do so first. Thereafter, you need to grant Device Magic permission to work with your Google Docs account.
 
-![finished](http://s3.amazonaws.com/docs_resources/connector_google_finished.png)
+![permission](https://s3.amazonaws.com/docs_resources/Connecting+Your+Form+to+Google+Docs+Images/Resized/Grant+Access+Resized.png)
+
+Please click “Grant access” so we can make the doc on your behalf. After this, you will be redirected to the newly-minted connection page. This will include a handy link directly to the spreadsheet. Clicking this will open the doc in a new tab - keep this open so you can see the new data as it arrives.
+
+![finished](https://s3.amazonaws.com/docs_resources/Connecting+Your+Form+to+Google+Docs+Images/Resized/Remote+Connection+Resized.png)
