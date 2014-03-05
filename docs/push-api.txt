@@ -148,3 +148,18 @@ where the [oneshot_id] is obtained by performing an enquiry as above.
 To revoke all oneshots for a particular device, use:
 	:::term
 	POST /clients/[device_id]/oneshots/destroy_all
+	
+Advanced - Pushing Images & GPS Co-ordinates
+--------------------------------------------
+
+Sometimes it can be convenient to push binary data types into Pushed forms. For example, you may want to provide a base image for a sketch question, or supply a reference image. Any binary field can be pre-populated just as you would a regular field, but you have to Base64 encode the binary image data so it's valid XML. 
+
+NOTE: Images must be in JPEG format.
+
+Pushing GPS co-ordinates for a location question enables you to pre-populate a location question. This is useful if you want to provide field workers with an address they can navigate to. Every location question in the Mobile Forms app has a "Show on Map" from wherein you can invoke the native device navigation app, if available. For example, populate the field as follows:
+    :::xml
+    <customer-address>lat=17.977768, long=-76.782512</customer-address>
+    
+Note that the above format is the same as the location format received when forms are submitted, without the accuracy components.
+   
+

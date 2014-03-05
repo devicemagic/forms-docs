@@ -627,7 +627,7 @@ Location Field
 	"autoIdentifier": true,
 	"type": "location",
 	"auto_resolve": true,
-	"hint": "some Hine",
+	"hint": "some Hint",
 	"validate_msg": "some Error"
 	}
 
