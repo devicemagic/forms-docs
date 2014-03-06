@@ -37,6 +37,10 @@ The POST body XML, needs to look like the following:
       <http_connection>
         <name>My Connection Name</name>
         <remote_url>http://my_remote_server.com:8080/deliver</remote_url>
+        <headers>
+          <header_1>value_1</header_1>
+          <header_2>value_2</header_2>
+        <headers>
       </http_connection>
     </remote_connections>
   
@@ -44,6 +48,7 @@ The child elements of <http_connection> configure the connection:
 
 1. **name** : The human-friendly name you'd like for the connection. We'll show you this on the connection pages to help you identify your various connections.
 2. **remote_url** : This is the full URL you'd like your submission data to be POSTed to.
+3. **headers** : These are option custom HTTP headers that our server will include in the POST request we send to your server.
 
 If you'd like to create multiple connections for the form at the same time, you can include multiple <http_connection> elements in the POST body:
     :::xml
@@ -70,7 +75,8 @@ The POST body JSON, needs to look like the following:
       "http_connection" : 
       {
         "name" : "My Connection Name", 
-        "remote_url" : "http://my_remote_server:8080/deliver"
+        "remote_url" : "http://my_remote_server:8080/deliver",
+        "headers" : { "header_1" : "value_1", "header_2" : "value_2" }
       }
     }
   
@@ -78,6 +84,7 @@ The child properties configure the connection:
 
 1. **name** : The human-friendly name you'd like for the connection. We'll show you this on the connection pages to help you identify your various connections.
 2. **remote_url** : This is the full URL you'd like your submission data to be POSTed to.
+3. **headers** : These are option custom HTTP headers that our server will include in the POST request we send to your server.
 
 If you'd like to create multiple connections for the form at the same time, provide them in an array in the POST body:
     :::json
