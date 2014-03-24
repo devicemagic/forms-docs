@@ -17,11 +17,12 @@ require './lib/term.rb'
 require 'rack/codehighlighter'
 use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => false
 
-configure :production do
-    ENV['APP_ROOT'] ||= File.dirname(__FILE__)
-    $:.unshift "#{ENV['APP_ROOT']}/vendor/plugins/newrelic_rpm/lib"
-    require 'newrelic_rpm'
-end
+# Not using New Relic on this instance at the moment:
+# configure :production do
+#     ENV['APP_ROOT'] ||= File.dirname(__FILE__)
+#     $:.unshift "#{ENV['APP_ROOT']}/vendor/plugins/newrelic_rpm/lib"
+#     require 'newrelic_rpm'
+# end
 
 $LOAD_PATH << File.dirname(__FILE__) + '/lib'
 
