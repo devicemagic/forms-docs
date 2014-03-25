@@ -109,6 +109,61 @@ In the event of a successful POST, you will receive an HTTP 202 Created. The Pay
 	  </oneshot>
 	</oneshot_list>
 
+If you'd prefer to push oneshot forms using JSON, you can do this too.
+
+As with the XML, you need to send your POST to:
+	:::term
+	HTTP POST /clients/[device_identifier]/oneshots
+
+Please don't forget to set your authentication header, as well as the content type:
+	:::term
+	Content-Type: application/json
+	Authorization: Basic KJHG865fytSDadsst6y7u566eA==
+
+For the body of your POST, the JSON looks like this:
+	:::json
+	{
+		"form_namespace" : "http://www.devicemagic.com/xforms/e1848a68-08dd-4425-a377-c27059bcaa8f", 
+		"payload" : {
+			"comments" : "Nothing to see here. Move along."
+		}
+	}
+
+You can also change the form name and description too:
+	:::json
+	{
+		"form_namespace" : "http://www.devicemagic.com/xforms/e1848a68-08dd-4425-a377-c27059bcaa8f", 
+		"form_name" : "My Simple Form", 
+		"form_description" : "Just testing oneshots", 
+		"payload" : {
+			"comments" : "Nothing to see here. Move along."
+		}
+	}
+
+And if you have groups and subforms that you'd like to push values for, it'll need to look like this:
+	:::json
+	{
+		"form_namespace" : "http://www.devicemagic.com/xforms/e1848a68-08dd-4425-a377-c27059bcaa8f", 
+		"payload" : {
+			"question_1" : "asparagus",
+			"subform_1" : {
+				"inner_question" : "beetroot",
+				"inner_question_2" : "cabbage"
+			},
+			"question_2" : "dates",
+			"group_1" : [
+				{ 
+					"group_question_1" : "elderberries", 
+					"group_question_2" : "figs"
+				},
+				{ 
+					"group_question_1" : "grapes", 
+					"group_question_2" : "haricots"
+				}
+			]
+		}
+	}
+
 Checking Outstanding PUSH Forms
 -------------------------------
 
