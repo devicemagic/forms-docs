@@ -47,7 +47,7 @@ Approving a Device
 You can approve devices for your organization that are pending approval via an authenticated HTTP POST to:
 	:::term
 	HTTP POST https://www.devicemagic.com/organizations/[org_id]/devices/[device_id]/approve
-  
+
 When you retrieve the XML for the devices (or a single device) for your organization, there's a <pending-approval> element (containing 'true' or 'false') that indicates whether a device has been approved.
 
 Approving devices that are already approved has no effect.
@@ -73,9 +73,41 @@ The request content of the PUT must be XML describing the changes you require. Y
 		<owner>Andy Warhol</owner>
 		<description>Eight Elvises</description>
 		<groups>Default,Unpublished</groups>
+		<custom-attributes>
+			<custom-attribute>
+				<key>name</key>
+				<value>Andy's Phone</value>
+			</custom-attribute>
+			<custom-attribute>
+				<key>alt_number</key>
+				<value>+15417543010</value>
+			</custom-attribute>
+		</custom-attributes>
 	</device>
 
 If you leave out any elements in the payload, those properties of the device will be left unchanged.
 
 When you specify groups, provide a comma-separated list of group names. Please don't include spaces unless they're actually part of the group name.
+
+Appending to the custom attributes of a Device
+-----------------------------------
+
+An HTTP PUT to the device's custom_attributes URL will append to the custom attributes of the device.
+	:::term
+	HTTP PUT https://www.devicemagic.com/organizations/[org_id]/devices/[device_id]/custom_attributes
+
+The request content of the PUT must be XML describing the custom attributes you want to append. You'll need to set the Content-Type header of the request to application/xml. An example payload is below:
+	:::xml
+	<custom-attributes>
+		<custom-attribute>
+			<key>inventory_number</key>
+			<value>1234567</value>
+		</custom-attribute>
+		<custom-attribute>
+			<key>alt_number</key>
+			<value>+15417543010</value>
+		</custom-attribute>
+	</custom-attributes>
+
+This will append to the existing custom attributes, only overwriting existing attributes that have the same key as a new attribute.
 
